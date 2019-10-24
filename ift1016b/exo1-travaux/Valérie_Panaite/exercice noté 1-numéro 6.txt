@@ -1,0 +1,8 @@
+var p = 200000
+var n = 360
+var t = 5.5
+var u = t/12*100
+var v = Math.pow(1+t,n)
+var m = p*v*u/(v-1)
+print(m)
+9166666.666666666

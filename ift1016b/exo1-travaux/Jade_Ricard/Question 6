@@ -1,0 +1,8 @@
+var n = 360;
+var p = 200000;
+var t = 5.5;
+var x = (1+(t/(12*100)));
+var m = (p*(Math.pow(x,n))*(t/(12*100)))/((Math.pow(x,n))-1);
+print (m)
+1135.578002694005
+//Jade Ricard 

@@ -1,0 +1,8 @@
+var p = 200000;
+var t = 360;
+var n = 0.055;
+var v = t/12*100;
+var w = Math.pow((v+1),n);
+var x = w - 1;
+var m = p*w*v/x;
+print(m);

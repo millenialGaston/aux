@@ -1,0 +1,14 @@
+//Camille Deneault et Marc-Antoine Akzam-Ouellette
+
+var p = 200000;
+var i = 55/10;
+var n = 360;
+
+var k = i/(12*100);
+var d = 1+k;
+var t = Math.pow(d,n);
+
+var m = (p*t*k)/(t-1);
+print(m);
+1135.578002694005
+

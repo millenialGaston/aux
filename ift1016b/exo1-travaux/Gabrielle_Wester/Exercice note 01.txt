@@ -1,0 +1,4 @@
+\\Alexandre Montreuil et Gabrielle Wester, Exercice noté 01, numéro 6.
+
+var p=200000, n=360, i=5.5, a=(i/(12*100)), b= Math.pow(1+a,n), c= b*a, d= b-1, m= (p*c)/b;
+print (m)

@@ -1,0 +1,23 @@
+/*Ariane Paradis
+Calcul de paiements mensuels sur prêt*/
+
+//Déclaration des variables du programme
+
+var p=200000;
+var t=0.055;
+var n=360;
+
+//Déclaration de variables pour éviter la redondance dans la formule
+
+var a=Math.pow(1+(t/(12*100)),n);
+var b=(t/(12*100));
+var c=Math.pow(1+(t/(12*100)),n);
+
+//Nouvelle formule en utilisant les nouvelles variables
+
+var m=(p*a*b)/(c-1);
+
+//Impression de la réponse
+
+print (m);
+560.1642240940638

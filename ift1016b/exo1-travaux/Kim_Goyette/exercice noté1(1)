@@ -1,0 +1,9 @@
+
+var p = 200000;
+var n = 360;
+var i = 5.5;
+var k = (i/(12*100));
+var m = (p*(Math.pow((1+k),n)*(k))/(Math.pow((1+k),n)-1));
+print(m);
+         
+         

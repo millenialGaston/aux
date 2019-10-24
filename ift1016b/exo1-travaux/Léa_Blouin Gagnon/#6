@@ -1,0 +1,21 @@
+
+Par Geneviève Martin et Léa Blouin Gagnon
+
+#6
+
+var p = 200000;
+var t = 0.055;
+var n = 360;
+var a = t/1200;
+var b = 1+a;
+var c = Math.pow(b,n);
+var d = c*p;
+var e = d*a;
+var f = c-1;
+var m = e/f;
+print(m);
+560.1642240940638
+
+
+Les paiements mensuels pour ce prêt seraient d'environ 560,16$. 
+

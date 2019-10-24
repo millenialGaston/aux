@@ -1,0 +1,19 @@
+﻿// Exercice noté #1
+// Numéro 6 (code)
+
+// Code par Amanda Tanguay & Catherine Daunais
+// 18 septembre 2019
+
+		// Déclaration de variables
+		
+			var p = 200000;         // montant du prêt
+			var n = 360;		// nombre de mois
+			var i = 0.055; 		// taux d'intérêt
+			var m;			// montant à payer à chaque mois
+             	  	 
+
+		// Formule pour calculer le montant à payer à chaque mois
+		
+			m = ((p)*Math.pow((1+(i/(12*100))),n) * (i/(12*100))) / (Math.pow(1 + (i/(12*100)),n)-1);
+ 
+				print(m);
