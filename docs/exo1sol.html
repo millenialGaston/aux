@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-10-25 Fri 00:26 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>exo1-solutionnaire</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Frederic Boileau" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">exo1-solutionnaire</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgd4ff088">1. commentaires</a></li>
+<li><a href="#org77f6fde">2. solutionnaire</a>
+<ul>
+<li><a href="#orgbbe5461">2.1. 1 conversions de bases:</a>
+<ul>
+<li><a href="#orgec88f40">2.1.1. a) déterminer la puissance de chaque chiffre pour un nombre de 5 chiffres en base 7:&#xa0;&#xa0;&#xa0;<span class="tag"><span class="nomark">nomark</span></span></a></li>
+<li><a href="#org7d39ee4">2.1.2. b) convertir le nombre 2aa3 16 en décimal.</a></li>
+<li><a href="#org371aa70">2.1.3. c) convertir le nombre 4b16</a></li>
+<li><a href="#orgfe705e4">2.1.4. d) comment peut-on encoder l&rsquo;entier (1011) avec la notation hex de js?</a></li>
+<li><a href="#org893fe89">2.1.5. e) quelle est la valeur de 0xee (javascript)?</a></li>
+</ul>
+</li>
+<li><a href="#orgb92bf52">2.2. 2 représenter un nombre 17 selon la convention non signée sur 5 bits.</a></li>
+<li><a href="#orgcb49aad">2.3. 3 décodage de nombres binaires signés.</a></li>
+<li><a href="#org892ccd6">2.4. 4 ieee 754 (double i.e. 64 bits)</a>
+<ul>
+<li><a href="#org1c1ee0e">2.4.1. question</a></li>
+<li><a href="#org6750965">2.4.2. reponse</a></li>
+<li><a href="#org9d2544e">2.4.3. explications</a></li>
+<li><a href="#org4900519">2.4.4. liens</a></li>
+</ul>
+</li>
+<li><a href="#org69192f7">2.5. 5 js arithmetic expressions&#xa0;&#xa0;&#xa0;<span class="tag"><span class="nomark">nomark</span></span></a></li>
+<li><a href="#org960c096">2.6. 6 js abstraction through bindings</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd4ff088" class="outline-2">
+<h2 id="orgd4ff088"><span class="section-number-2">1</span> commentaires</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Dans l&rsquo;ensemble l&rsquo;exercice a été réussi par tout le monde. Les seuls points qui
+semblent avoir décontenancés certains sont les nombres signés. Il est important
+de comprendre qu&rsquo;un nombre signé n&rsquo;est négatif que si son chiffre le plus à
+gauche est un &rsquo;1&rsquo;. <b>Dans ce cas la valeur encodée est le négatif du complément.</b>
+</p>
+
+<p>
+Autrement dit si on a \[a = (1010 1101)_{2}\] en complément à deux
+la représentation décimale du nombres est \[a = (- (b + 1))_{10} \]
+où b est le complément à un de a.
+</p>
+
+<p>
+Vous avez tendance, sur la moyenne, à écrire de longues démarches pour votre
+raisonnement. N&rsquo;écrivez tout de même pas seulement la réponse mais, par exemple,
+pas besoin de montrer toute les étapes d&rsquo;une division au long.
+</p>
+
+<ul class="org-ul">
+<li>Pour les prochains travaux essayez svp de :
+
+<ul class="org-ul">
+<li>Garder les mêmes équipes au fur et à mesure</li>
+
+<li>Nommer les fichier exo_&lt;num&gt;_&lt;prenom1&gt;_&lt;nom1&gt;_&lt;prenom2&gt;_&lt;nom2&gt;</li>
+
+<li>Ne faire qu&rsquo;une seule remise par équipe</li>
+
+<li><p>
+ne pas remettre de zip, un pdf pour les questions c&rsquo;est bien, mais, encore
+mieux, juste un fichier texte simple :) Les formatages fancy de word
+m&rsquo;importent peux. Il est possible de formater et structurer (faire des
+titres, des listes etc) du texte en utilisant qu&rsquo;un fichier texte pur. C&rsquo;est
+en utilisant un langage de <i>markup</i> ou de typographie comme latex. Exemples:
+HTML, LATEX, org mode.
+</p>
+
+<p>
+Le plus simple et pratique: la version github de markdown:
+<a href="https://guides.github.com/features/mastering-markdown/">https://guides.github.com/features/mastering-markdown/</a>
+</p></li>
+</ul></li>
+</ul>
+
+<p>
+Si vous scannez vos copies essayez de vous assurer que l&rsquo;image ait un minimum de
+contraste svp.
+</p>
+
+<p>
+Pour des questions vous pouvez me contacter par courriel mais pour chatter vous
+pouvez rejoindre le serveur discord suivant : <a href="https://discord.gg/jTu9aWW">https://discord.gg/jTu9aWW</a>
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org77f6fde" class="outline-2">
+<h2 id="org77f6fde"><span class="section-number-2">2</span> solutionnaire</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgbbe5461" class="outline-3">
+<h3 id="orgbbe5461"><span class="section-number-3">2.1</span> 1 conversions de bases:</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-orgec88f40" class="outline-4">
+<h4 id="orgec88f40"><span class="section-number-4">2.1.1</span> a) déterminer la puissance de chaque chiffre pour un nombre de 5 chiffres en base 7:&#xa0;&#xa0;&#xa0;<span class="tag"><span class="nomark">nomark</span></span></h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li>question pas clair donc pas prise en compte</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7d39ee4" class="outline-4">
+<h4 id="org7d39ee4"><span class="section-number-4">2.1.2</span> b) convertir le nombre 2aa3 16 en décimal.</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<p>
+\[ (2aa3)_{hex} = 2 \times 16^3 + 10\times 16^2 + 10\times 16^1 + 3\times 16^0
+ = (100915)_{10} \]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org371aa70" class="outline-4">
+<h4 id="org371aa70"><span class="section-number-4">2.1.3</span> c) convertir le nombre 4b16</h4>
+<div class="outline-text-4" id="text-2-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="org8abd364"></a>d&rsquo;hexadécimal à décimal<br />
+<div class="outline-text-5" id="text-2-1-3-1">
+<p>
+\[ 4B_{16} = (4\times 16^1 + 11\times 1)_{10} = 75_{10} \]
+</p>
+</div>
+</li>
+
+<li><a id="org14e9c8a"></a>d&rsquo;hexadécimal à binaire<br />
+<div class="outline-text-5" id="text-2-1-3-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">4</td>
+<td class="org-right">B</td>
+</tr>
+
+<tr>
+<td class="org-right">0100</td>
+<td class="org-right">1011</td>
+</tr>
+</tbody>
+</table>
+<p>
+-&gt; \[ 4B_{16} = 01001011_{2} \]
+</p>
+</div>
+</li>
+
+<li><a id="orgfb8b6ff"></a>d&rsquo;hexadécimal à octal<br />
+<div class="outline-text-5" id="text-2-1-3-3">
+<p>
+On peut faire des paquets de 3 avec la représentation binaire. Il faut commencer
+par les chiffres les moins représentatifs (la droite) vers les plus
+représentatifs (la gauche). Si le nombre de bits n&rsquo;est pas un multiple de 3
+le &ldquo;paquet&rdquo; le plus à gauche n&rsquo;aura pas trois chiffre. On interprète cela
+comme un (comme ici) ou deux <code>0</code> de implicite à gauche.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">(0) 01</td>
+<td class="org-right">001</td>
+<td class="org-right">011</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">3</td>
+</tr>
+</tbody>
+</table>
+<p>
+-&gt; \[4B_{16} = (01001011)_{2} = (0 01001011)_{2} = (113)_{8} \]
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+
+<div id="outline-container-orgfe705e4" class="outline-4">
+<h4 id="orgfe705e4"><span class="section-number-4">2.1.4</span> d) comment peut-on encoder l&rsquo;entier (1011) avec la notation hex de js?</h4>
+<div class="outline-text-4" id="text-2-1-4">
+<p>
+Pour indiquer que le nombre est écrit en hexa en js on le précède de &rsquo;0x&rsquo;.
+Le plus rapide est toujours de connaître ses puissances.
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">2<sup>12</sup></th>
+<th scope="col" class="org-left">2<sup>8</sup></th>
+<th scope="col" class="org-left">2<sup>4</sup></th>
+<th scope="col" class="org-left">2<sup>0</sup></th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">16<sup>3</sup></th>
+<th scope="col" class="org-left">16<sup>2</sup></th>
+<th scope="col" class="org-left">16<sup>1</sup></th>
+<th scope="col" class="org-left">2<sup>0</sup></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">4096</td>
+<td class="org-left">256</td>
+<td class="org-left">16</td>
+<td class="org-left">1</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+En mathématiques la notation \[ a \equiv b \mod n \] veut dire que le restant de
+la division de a par n est b. Par exemple \[ 17 \equiv 2 \mod 5 \] puisque \[ 17
+= 3\times 5 + 2 \] Je determine d&rsquo;abord les puissances des 16 non nulles en
+faisant les calculs de restants. Sur une calculatrice qui comporte l&rsquo;option (et
+JS) c&rsquo;est l&rsquo;opération nommée. <i>modulo</i> qui donne le restant d&rsquo;une division
+entière, d&rsquo;où la notation.
+</p>
+
+<p>
+En connaissant ses puissances  de 16 on peut assez vite déterminer la plus forte
+puissance nécessaire (trois dans ce cas).
+</p>
+
+\begin{alignat*}{3}
+ &1011 & &\equiv 243 & &\mod 256  \\
+ &243  & &\equiv 3   & &\mod 16
+ \end{alignat*}
+
+\begin{align*}
+ 1011/ 256 &\approx 3.9  \\
+243/16 &\approx 15.2
+\end{align*}
+
+<p>
+Donc \[ (1011)_{10} = (3F3)_{16} \] en JS c&rsquo;est donc
+<code>0x3F3</code>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org893fe89" class="outline-4">
+<h4 id="org893fe89"><span class="section-number-4">2.1.5</span> e) quelle est la valeur de 0xee (javascript)?</h4>
+<div class="outline-text-4" id="text-2-1-5">
+<p>
+\[ 0xee = (ee)_{\mathrm{hex}} = (14\times 16^1 + 14\times 16^0)_{10} = (238)_{10} \]
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb92bf52" class="outline-3">
+<h3 id="orgb92bf52"><span class="section-number-3">2.2</span> 2 représenter un nombre 17 selon la convention non signée sur 5 bits.</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+on sait que 17 = 16 + 1 donc nous avons: 10000 + 00001 = 10001
+<i>évidemment le fait que le nombre est non-signé est crucial</i>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcb49aad" class="outline-3">
+<h3 id="orgcb49aad"><span class="section-number-3">2.3</span> 3 décodage de nombres binaires signés.</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+quelle valeurs sont encodées par la convention complément à 2 sur 5 bits par les chaines
+binaires suivantes :
+</p>
+<ul class="org-ul">
+<li>01101 : le chiffre le plus significatif est un zéro donc on n&rsquo;a pas à se
+soucier des compléments, la valeur en décimale s&rsquo;écrit <b>13</b></li>
+<li>10011 : est le complément à 1 sur 5 bits du nombre précédent,
+la  valeur s&rsquo;écrit donc -13 en décimale avec signe.</li>
+<li id="note ">observer que la somme des deux nombres en binaires donne 100000</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org892ccd6" class="outline-3">
+<h3 id="org892ccd6"><span class="section-number-3">2.4</span> 4 ieee 754 (double i.e. 64 bits)</h3>
+<div class="outline-text-3" id="text-2-4">
+</div>
+<div id="outline-container-org1c1ee0e" class="outline-4">
+<h4 id="org1c1ee0e"><span class="section-number-4">2.4.1</span> question</h4>
+<div class="outline-text-4" id="text-2-4-1">
+<p>
+rappeler l&rsquo;anatomie d&rsquo;un nombre à virgule flottante précision double ieee 754 (64 bits).
+quel et l&rsquo;encodage en précision double ieee 754 (64 bits) des nombres point flottants
+3.15 e -4? donnez le contenu des champs s, e et f.
+</p>
+</div>
+</div>
+<div id="outline-container-org6750965" class="outline-4">
+<h4 id="org6750965"><span class="section-number-4">2.4.2</span> reponse</h4>
+<div class="outline-text-4" id="text-2-4-2">
+<table id="org1ddd4e7" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">decimal</th>
+<th scope="col" class="org-right">bit-signe (s)</th>
+<th scope="col" class="org-right">exposent (e)</th>
+<th scope="col" class="org-right">mantisse (f)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">3.15</td>
+<td class="org-right">0</td>
+<td class="org-right">10000000000</td>
+<td class="org-right">1001001100110011001100110011001100110011001100110011</td>
+</tr>
+
+<tr>
+<td class="org-right">-4</td>
+<td class="org-right">1</td>
+<td class="org-right">10000000001</td>
+<td class="org-right">0000000000000000000000000000000000000000000000000000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org9d2544e" class="outline-4">
+<h4 id="org9d2544e"><span class="section-number-4">2.4.3</span> explications</h4>
+<div class="outline-text-4" id="text-2-4-3">
+<p>
+tout d&rsquo;abord prendre le réflexe de remarquer que 4 est une puissance de deux,
+alors que 3.15 loin de là. le nombre 3 est simplement 011 en binaire
+(modulo le padding a gauche). les parties fractionnaires sont plus faciles
+à comprendre en forme fractionnelle et d&rsquo;enlever les puissances de deux.
+\[ 0.15 = 3/20 = 3 /(5 \times 2^{2} ) = 3/5 \times 2^{-2} = 0.6 \times 2^{-2  }\]
+</p>
+
+<table id="org0c99a1c" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">\(0.6 \times 2\)</td>
+<td class="org-right">1.2</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-left">\(0.2 \times 2\)</td>
+<td class="org-right">0.4</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">\(0.4 \times 2\)</td>
+<td class="org-right">0.8</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">\(0.8 \times 2\)</td>
+<td class="org-right">1.6</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-left">0.6</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">etc.</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org4900519" class="outline-4">
+<h4 id="org4900519"><span class="section-number-4">2.4.4</span> liens</h4>
+<div class="outline-text-4" id="text-2-4-4">
+<ul class="org-ul">
+<li><a href="https://stackoverflow.com/questions/4987176/how-do-you-convert-a-fraction-to-binary">https://stackoverflow.com/questions/4987176/how-do-you-convert-a-fraction-to-binary</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org69192f7" class="outline-3">
+<h3 id="org69192f7"><span class="section-number-3">2.5</span> 5 js arithmetic expressions&#xa0;&#xa0;&#xa0;<span class="tag"><span class="nomark">nomark</span></span></h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+trouve la plus petite expression javascript (ayant le minimum de caractères
+incluant les parenthèses et symboles, et pas de blancs) contenant les nombres
+10, 2,3, et 4 (exactement une fois chaque), et les opérateurs +, - et * (autant
+de foi que vous voulez), dont la valeur est 9.
+</p>
+
+<p>
+La motivation de la question était de vous faire expérimenter avec la préséance
+des opérateurs en JS. Ceci étant dit, ce genre de questions est assez difficile;
+une seule équipe a fourni une sorte de preuve (qui était une exhaustion, c&rsquo;est à
+dire observer toutes permutations de base possible et s&rsquo;arrêter à la plus
+courte, ce qui devient assez vite impossible si on élargi le nombre de
+combinaisons possibles)
+</p>
+
+<p>
+Ceux qui n&rsquo;ont pas trouvé la <i>plus courte</i> expressions n&rsquo;ont pas été pénalisés.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="color: #eed891;">10</span>-<span style="color: #eed891;">2</span>+<span style="color: #eed891;">4</span>-<span style="color: #eed891;">3</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org960c096" class="outline-3">
+<h3 id="org960c096"><span class="section-number-3">2.6</span> 6 js abstraction through bindings</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+lorsqu&rsquo;on obtient un prêt hypothécaire à paiements fixes, on s&rsquo;engage à rembourser le prêt
+sur un certain nombre de mois en payant le même montant à chaque mois. si p est le
+montant du prêt, et que n est le nombre de mois, et que i [sic, t] est le taux d&rsquo;intérêt
+annuel en pourcents, alors la formule mathématique suivante peut être utilisée
+pour calculer <code>m</code>, le montant à payer à chaque mois:
+</p>
+
+<p>
+\[
+m = \frac{p(1+\frac{t}{12\times 100})^n \times \frac{t}{12\times 100}}
+{(1+\frac{t}{12\times 100})^{n }-1}
+\]
+</p>
+
+<p>
+on veut en général abstraire la structure des détails d&rsquo;un programme. puisque
+la valeur \[ \frac{t}{12\times 100} \] semble se répéter on déclare une nouvelles variable
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="color: #513C44;">// </span><span style="color: #513C44;">constantes</span>
+<span style="color: #a9779c;">let</span> <span style="color: #9d81ba;">p</span> = <span style="color: #eed891;">200000</span>
+<span style="color: #a9779c;">let</span> <span style="color: #9d81ba;">t</span> = <span style="color: #eed891;">5.5</span>
+<span style="color: #a9779c;">let</span> <span style="color: #9d81ba;">n</span> = <span style="color: #eed891;">360</span>
+<span style="color: #513C44;">// </span><span style="color: #513C44;">parametre calcul&#233;</span>
+<span style="color: #a9779c;">let</span> <span style="color: #9d81ba;">taux_mens</span> = t/<span style="color: #a0586c;">(</span><span style="color: #eed891;">12</span>*<span style="color: #eed891;">100</span><span style="color: #a0586c;">)</span>
+<span style="color: #513C44;">// </span><span style="color: #513C44;">montant a payer</span>
+<span style="color: #a9779c;">let</span> <span style="color: #9d81ba;">m</span> = <span style="color: #a0586c;">(</span>p * <span style="color: #9d81ba;">(</span><span style="color: #80bcb6;">(</span><span style="color: #eed891;">1</span> + taux_mens<span style="color: #80bcb6;">)</span>**n<span style="color: #9d81ba;">)</span> * taux_mens<span style="color: #a0586c;">)</span>/<span style="color: #a0586c;">(</span><span style="color: #9d81ba;">(</span><span style="color: #80bcb6;">(</span><span style="color: #eed891;">1</span> + taux_mens<span style="color: #80bcb6;">)</span>**n<span style="color: #9d81ba;">)</span> -<span style="color: #eed891;">1</span><span style="color: #a0586c;">)</span>
+console.log<span style="color: #a0586c;">(</span>m<span style="color: #a0586c;">)</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Frederic Boileau</p>
+<p class="date">Created: 2019-10-25 Fri 00:26</p>
+</div>
+</body>
+</html>
