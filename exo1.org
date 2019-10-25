@@ -264,128 +264,28 @@ console.log(m)
 
 * correction
 
-** fixme chirele abenaim
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Chirèle Abenhaim_13929948/Exercices 1-5.docx][Exercices 1-5.docx]]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Chirèle Abenhaim_13929948/Programme de lexercice 6][Programme de lexercice 6]]
-** fixme camille deaneault & marc-antoine akzam-ouellette
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Camille Deneault_13929936/Camille Deneault et Marc-Antoine Akzam-Ouellette_Exercice 1][Camille Deneault et Marc-Antoine Akzam-Ouellette_Exercice 1]]
+** still issues
+*** fixme chirele abenaim
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Chirèle Abenhaim_13929948/Exercices 1-5.docx][Exercices 1-5.docx]]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Chirèle Abenhaim_13929948/Programme de lexercice 6][Programme de lexercice 6]]
+*** fixme camille deaneault & marc-antoine akzam-ouellette
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Camille Deneault_13929936/Camille Deneault et Marc-Antoine Akzam-Ouellette_Exercice 1][Camille Deneault et Marc-Antoine Akzam-Ouellette_Exercice 1]]
 
 
-** done Marguerite_Nolin                                                :ok:
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Marguerite_Nolin/Marguerite Nolin- Exercice noté 01- Prog.zip][Marguerite Nolin- Exercice noté 01- Prog.zip]]
-** done never tourigny Élodie_Petit                                     :ok:
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Élodie_Petit/Exercice noté 1 CodeBoot.pdf][Exercice noté 1 CodeBoot.pdf]]
-
-** done megan giguere bliane beauvais                                   :ok:
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Eliane Beauvais_13929937/Exercice noté 01 - EB et MG.docx][Exercice noté 01 - EB et MG.docx]]
-** done camille deneault & Marc-Antoine_Akzam-Ouellette                 :ok:
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Marc-Antoine_Akzam-Ouellette/excercice noté 1.docx][excercice noté 1.docx]]
-** done yuri anne prevost & Laura_Trubiano                              :ok:
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Laura_Trubiano/Excercice_1.zip][Excercice_1.zip]]
-** done genevieve martin & Léa_Blouin Gagnon                            :ok:
-mais common
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Léa_Blouin Gagnon/#6][#6]]
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Léa_Blouin Gagnon/Archive.zip][Archive.zip]]
-** done [[/home/gaston/aux/ift1016b/exo1-travaux/Sophie_Detroio/][Sophie_Detroio/]]                                                 :ok:
-file:~/aux/ift1016b/exo1-travaux/Sophie_Detroio/sophiedetroioexo1.pdf
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Sophie_Detroio/Sophie.Detroio.IFT1016B.Exercice#1.zip][Sophie.Detroio.IFT1016B.Exercice#1.zip]]
-** done laurence boi? & marie-noëlle lortie                             :ok:
-mais comon
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Marie-Noëlle_Lortie/ExNoté 01 en pdf.pdf][ExNoté 01 en pdf.pdf]]
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Marie-Noëlle_Lortie/exnote01.js][exnote01.js]]
-** done laurie charet & mary-maxime leclair                             :ok:
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Mary-Maxime_Leclair/Exercice6.vf.js][Exercice6.vf.js]]
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Mary-Maxime_Leclair/Travail prog 1.pdf][Travail prog 1.pdf]]
-** done noemie nolmand                                                  :ok:
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Noémie_Olmand/Exercice #1 Q (1).6][Exercice #1 Q (1).6]]
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Noémie_Olmand/Exercices-noté 1.pdf][Exercices-noté 1.pdf]]
-** done paulina jaramillo                                               :ok:
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Paulina_Jaramillo Salazar/IMG_20190924_150953-converted.pdf][IMG_20190924_150953-converted.pdf]]
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Paulina_Jaramillo Salazar/paulina.jaramillo.Q#6.exercice1.pdf][paulina.jaramillo.Q#6.exercice1.pdf]]
-** done justine larochelle-guy & audrey-anne turcotte                   :ok:
-CLOSED: [2019-10-23 Wed 05:48]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Justine Larochelle-Guy_13929914/Exercice Noté 01 Justine L-G et Audrey-Anne Tpdf][Exercice Noté 01 Justine L-G et Audrey-Anne Tpdf]]
-** done xavier michaud                                                  :ok:
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Xavier_Michaud/Question 1 à 5.pdf][Question 1 à 5.pdf]]
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Xavier_Michaud/Question 6.js][Question 6.js]]
-
-** done lea tremblay                                                    :ok:
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Léa_Tremblay/Exercice 1 noté.pdf][Exercice 1 noté.pdf]]
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Léa_Tremblay/IMG_2818-converti.pdf][IMG_2818-converti.pdf]]
-
-** done jade ricard
-CLOSED: [2019-10-23 Wed 05:43]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Jade Ricard_13929957/Exercice noté 1 Jade Ricard .pdf][Exercice noté 1 Jade Ricard .pdf]]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Jade Ricard_13929957/Question 6][Question 6]]
-** done hamza zarglayoun & sylvie tran                                  :ok:
-CLOSED: [2019-10-23 Wed 05:42]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Hamza Zarglayoun_13929926/exercice noté #1 (numéros 1 à 5).pdf][exercice noté #1 (numéros 1 à 5).pdf]]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Hamza Zarglayoun_13929926/numéro 6.js][numéro 6.js]]
-** done julie guertin                                                   :ok:
-CLOSED: [2019-10-23 Wed 05:45]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Julie Guertin_13929940/JGuertin_exercice1.pdf][JGuertin_exercice1.pdf]]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Julie Guertin_13929940/julie-guertin-exercice1.js][julie-guertin-exercice1.js]]
-** done guillaume labonte-pelletier                                     :ok:
-CLOSED: [2019-10-23 Wed 05:41]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Guillaume Labonté-Pelletier_13929959/ExerciceNoté01_Question06.js][ExerciceNoté01_Question06.js]]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Guillaume Labonté-Pelletier_13929959/GuillaumeLabonté-Pelletier_ExerciceNoté01.pdf][GuillaumeLabonté-Pelletier_ExerciceNoté01.pdf]]
-** done ghita bardaoui & celia khaldi                                   :ok:
-CLOSED: [2019-10-23 Wed 05:40]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Ghita Bardaoui_13929960/IFT1010 exercice noté- Ghita Bardaoui et Celia Khaldi.pdf][IFT1010 exercice noté- Ghita Bardaoui et Celia Khaldi.pdf]]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Ghita Bardaoui_13929960/ex-note-num-6-Ghita Bardaoui et Celia Khaldi.js][ex-note-num-6-Ghita Bardaoui et Celia Khaldi.js]]
-** done gabrielle wester & alexandre montreuil                          :ok:
-CLOSED: [2019-10-23 Wed 05:35]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Gabrielle Wester_13929910/Exercice note 01.txt][Exercice note 01.txt]]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Gabrielle Wester_13929910/IFT1016 Exercice noté 01 Alexandre Montreuil et Gabrielle Wester.pdf][IFT1016 Exercice noté 01 Alexandre Montreuil et Gabrielle Wester.pdf]]
-** done david richard & jonathan dion                                   :ok:
-CLOSED: [2019-10-23 Wed 05:32]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/David Richard_13929908/exercice 1 prog.pdf][exercice 1 prog.pdf]]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/David Richard_13929908/exercice 1.js][exercice 1.js]]
-** done cleo st-martin & marie-jeanne blouin                            :ok:
-CLOSED: [2019-10-23 Wed 05:28]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Cléo St-Martin_13929950/Blouin_St-Martin_Exercice1.js][Blouin_St-Martin_Exercice1.js]]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Cléo St-Martin_13929950/Blouin_St_Martin_Exercie-noté-1.pdf][Blouin_St_Martin_Exercie-noté-1.pdf]]
-** done charlotte roy & maude turgeon-ares                              :ok:
-CLOSED: [2019-10-23 Wed 05:27]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Charlotte Roy_13929903/Exercice note 1][Exercice note 1]]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Charlotte Roy_13929903/Exercice1q6.js][Exercice1q6.js]]
-** done charline desromes & arielles desnoyers                          :ok:
-CLOSED: [2019-10-23 Wed 05:26]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Charline Delorme_13929929/PROG TP 1.pdf][PROG TP 1.pdf]]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Charline Delorme_13929929/tp 1.js][tp 1.js]]
-** done camille bouchard                                                :ok:
-CLOSED: [2019-10-23 Wed 05:11]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Camille Bouchard_13929923/Exercice 1.pdf][Exercice 1.pdf]]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Camille Bouchard_13929923/untitled2.js][untitled2.js]]
-** done amanda tanguay & catherine daunais                              :ok:
-CLOSED: [2019-10-23 Wed 05:25]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Catherine Daunais_13929955/Exercice noté 1_Code #6_Daunais_Tanguay.txt][Exercice noté 1_Code #6_Daunais_Tanguay.txt]]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Catherine Daunais_13929955/Exercice noté 1_Daunais_Tanguay.pdf][Exercice noté 1_Daunais_Tanguay.pdf]]
-** done nassereddine bissan
-CLOSED: [2019-10-22 Tue 21:53]
-*** fichiers
-**** [[/home/sole/udem/aux/aux-if1016/travaux/Bissan Nassereddine_13929920/NassereddineBissan-Exercice01.pdf][NassereddineBissan-Exercice01.pdf]]
-**** [[/home/sole/udem/aux/aux-if1016/travaux/Bissan Nassereddine_13929920/Programme 6.pdf][Programme 6.pdf]]
-
-** done ariane paradis
-CLOSED: [2019-10-22 Tue 21:46]
-
-*** fichiers
-**** [[/home/sole/udem/aux/aux-if1016/travaux/Ariane Paradis_13929946/Exercice noté 1.pdf][Exercice noté 1.pdf]]
-**** [[/home/sole/udem/aux/aux-if1016/travaux/Ariane Paradis_13929946/Paiements mensuels sur prêt][Paiements mensuels sur prêt]]
-** done adrian minano-lozano
+** perfect mark
+*** done adrian minano-lozano
 CLOSED: [2019-10-22 Tue 21:30]
-*** resume
+**** resume
 #+name: tp1:adrian_minano_lozano_13929938
 | 1a | 1b | 1c | 1d | 1e | 2 | 3 | 4 | 5 | 6 | total |
 |----+----+----+----+----+---+---+---+---+---+-------|
 |  0 |  0 |  0 |  0 |  0 | 0 | 0 | 0 | 0 | 0 |     0 |
 
-*** commentaires
+**** commentaires
 - met des parenthèses autour des nombres avant de specifier la base stp, j'ai
   du plisser les yeux pour comprendre :
   [[file:./images/screenshot-01.png]]
-*** code
+**** code
 #+begin_src js
 var p=200000;
 var t=5.5;
@@ -400,32 +300,20 @@ print (m);
 sans soucis mais pour les programmes plus long stp essaie de mettre des noms de
 variables plus descriptifs quand tu vas en avoir plus :) (pour 5 lignes des
 lettres au hasard ca va, )
-*** fichiers
+**** fichiers
 - [[/home/sole/udem/aux/aux-if1016/travaux/adrian\ minano-lozano_13929938/exercice\ noté 1-adrian\ minano-lozano.pdf][exercice noté 1-adrian minano-lozano.pdf]]
 - [[/home/sole/udem/aux/aux-if1016/travaux/adrian minano-lozano_13929938/exercice1.js][exercice1.js]]
-** done ariane brucher & heloise tanguay
-CLOSED: [2019-10-22 Tue 21:44]
-*** resume
-#+name: tp1:
-| 1a | 1b | 1c | 1d | 1e | 2 | 3 | 4 | 5 | 6 | total |
-|----+----+----+----+----+---+---+---+---+---+-------|
-|  0 |  0 |  0 |  0 |  0 | 0 | 0 | 0 | 0 | 0 |     0 |
-
-*** fichiers
-**** [[/home/sole/udem/aux/aux-if1016/travaux/Ariane Brucher_13929972/BrucherAriane-TanguayHeloise-Exercice1.js][BrucherAriane-TanguayHeloise-Exercice1.js]]
-**** [[/home/sole/udem/aux/aux-if1016/travaux/Ariane Brucher_13929972/BrucherAriane-TanguayHeloise-Exercice1.pdf][BrucherAriane-TanguayHeloise-Exercice1.pdf]]
-
-** done alexy pauzé & emmanuelle vigneron
+*** done alexy pauzé & emmanuelle vigneron
 CLOSED: [2019-10-22 Tue 21:30]
-*** resume
+**** resume
 #+name: tp1:
 | 1a | 1b | 1c | 1d | 1e | 2 | 3 | 4 | 5 | 6 | total |
 |----+----+----+----+----+---+---+---+---+---+-------|
 |  0 |  0 |  0 |  0 |  0 | 0 | 0 | 0 | 0 | 0 |     0 |
 
-*** commentaires
+**** commentaires
 Excellent travail mais en pdf svp la prochaine fois :)
-*** code
+**** code
 #+begin_src js
 //Alexy Pauzé et Emmanuelle Vigneron
 //Calcul du taux d'intérêt
@@ -438,104 +326,219 @@ var c = Math.pow((1+r),n);
 var m = (p*c*r)/(c-1);
 print (m);
 #+end_src
-*** fichiers
-**** [[file:~/udem/aux/aux-if1016/travaux/Alexy Pauzé_13929961/Exercice.1.Alexy_Emmanuelle_final.pdf][exo1_alexyPauze&EmmanuelleVigneron]]
-**** [[/home/sole/udem/aux/aux-if1016/travaux/Alexy Pauzé_13929961/Exercice1 Pauzé-Vigneron.js][Exercice1 Pauzé-Vigneron.js]]
-** done ana nader & clara eloy
+**** fichiers
+***** [[file:~/udem/aux/aux-if1016/travaux/Alexy Pauzé_13929961/Exercice.1.Alexy_Emmanuelle_final.pdf][exo1_alexyPauze&EmmanuelleVigneron]]
+***** [[/home/sole/udem/aux/aux-if1016/travaux/Alexy Pauzé_13929961/Exercice1 Pauzé-Vigneron.js][Exercice1 Pauzé-Vigneron.js]]
+*** done amanda tanguay & catherine daunais                            :ok:
+CLOSED: [2019-10-23 Wed 05:25]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Catherine Daunais_13929955/Exercice noté 1_Code #6_Daunais_Tanguay.txt][Exercice noté 1_Code #6_Daunais_Tanguay.txt]]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Catherine Daunais_13929955/Exercice noté 1_Daunais_Tanguay.pdf][Exercice noté 1_Daunais_Tanguay.pdf]]
+*** done ana nader & clara eloy
 CLOSED: [2019-10-22 Tue 21:30]
-*** resume
+**** resume
 #+name: tp1:adrian_minano_lozano_13929938
 | 1a |   1b | 1c | 1d | 1e | 2 | 3 | 4 | 5 | 6 | total |
 |----+------+----+----+----+---+---+---+---+---+-------|
 |  0 | -0.5 |  0 |  0 |  0 | 0 | 0 | 0 | 0 | 0 |     0 |
 
-*** fichiers
-**** [[/home/sole/udem/aux/aux-if1016/travaux/Ana Neder_13929947/exercice noté 1- question 6.txt][exercice noté 1- question 6.txt]]
-**** [[/home/sole/udem/aux/aux-if1016/travaux/Ana Neder_13929947/exercice noté 1-question 1 à 5.pdf][exercice noté 1-question 1 à 5.pdf]]
-** done arielle desnoyers & charline delorme
-CLOSED: [2019-10-22 Tue 21:50]
-*** resume
+**** fichiers
+***** [[/home/sole/udem/aux/aux-if1016/travaux/Ana Neder_13929947/exercice noté 1- question 6.txt][exercice noté 1- question 6.txt]]
+***** [[/home/sole/udem/aux/aux-if1016/travaux/Ana Neder_13929947/exercice noté 1-question 1 à 5.pdf][exercice noté 1-question 1 à 5.pdf]]
+*** done ariane brucher & heloise tanguay
+CLOSED: [2019-10-22 Tue 21:44]
+**** resume
 #+name: tp1:
 | 1a | 1b | 1c | 1d | 1e | 2 | 3 | 4 | 5 | 6 | total |
 |----+----+----+----+----+---+---+---+---+---+-------|
 |  0 |  0 |  0 |  0 |  0 | 0 | 0 | 0 | 0 | 0 |     0 |
-*** fichiers
-**** [[/home/sole/udem/aux/aux-if1016/travaux/Arielle Desnoyers_13929964/Exercice 6][Exercice 6]]
-**** [[/home/sole/udem/aux/aux-if1016/travaux/Arielle Desnoyers_13929964/PROG TP 1.pdf][PROG TP 1.pdf]]
+
+**** fichiers
+***** [[/home/sole/udem/aux/aux-if1016/travaux/Ariane Brucher_13929972/BrucherAriane-TanguayHeloise-Exercice1.js][BrucherAriane-TanguayHeloise-Exercice1.js]]
+***** [[/home/sole/udem/aux/aux-if1016/travaux/Ariane Brucher_13929972/BrucherAriane-TanguayHeloise-Exercice1.pdf][BrucherAriane-TanguayHeloise-Exercice1.pdf]]
+
+*** done ariane paradis
+CLOSED: [2019-10-22 Tue 21:46]
+
+**** fichiers
+***** [[/home/sole/udem/aux/aux-if1016/travaux/Ariane Paradis_13929946/Exercice noté 1.pdf][Exercice noté 1.pdf]]
+***** [[/home/sole/udem/aux/aux-if1016/travaux/Ariane Paradis_13929946/Paiements mensuels sur prêt][Paiements mensuels sur prêt]]
+*** done arielle desnoyers & charline delorme
+CLOSED: [2019-10-22 Tue 21:50]
+**** resume
+#+name: tp1:
+| 1a | 1b | 1c | 1d | 1e | 2 | 3 | 4 | 5 | 6 | total |
+|----+----+----+----+----+---+---+---+---+---+-------|
+|  0 |  0 |  0 |  0 |  0 | 0 | 0 | 0 | 0 | 0 |     0 |
+**** fichiers
+***** [[/home/sole/udem/aux/aux-if1016/travaux/Arielle Desnoyers_13929964/Exercice 6][Exercice 6]]
+***** [[/home/sole/udem/aux/aux-if1016/travaux/Arielle Desnoyers_13929964/PROG TP 1.pdf][PROG TP 1.pdf]]
+
+*** done camille bouchard                                              :ok:
+CLOSED: [2019-10-23 Wed 05:11]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Camille Bouchard_13929923/Exercice 1.pdf][Exercice 1.pdf]]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Camille Bouchard_13929923/untitled2.js][untitled2.js]]
+*** done camille deneault & Marc-Antoine_Akzam-Ouellette               :ok:
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Marc-Antoine_Akzam-Ouellette/excercice noté 1.docx][excercice noté 1.docx]]
+*** done charline desromes & arielles desnoyers                        :ok:
+CLOSED: [2019-10-23 Wed 05:26]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Charline Delorme_13929929/PROG TP 1.pdf][PROG TP 1.pdf]]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Charline Delorme_13929929/tp 1.js][tp 1.js]]
+*** done charlotte roy & maude turgeon-ares                            :ok:
+CLOSED: [2019-10-23 Wed 05:27]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Charlotte Roy_13929903/Exercice note 1][Exercice note 1]]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Charlotte Roy_13929903/Exercice1q6.js][Exercice1q6.js]]
+*** done cleo st-martin & marie-jeanne blouin                          :ok:
+CLOSED: [2019-10-23 Wed 05:28]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Cléo St-Martin_13929950/Blouin_St-Martin_Exercice1.js][Blouin_St-Martin_Exercice1.js]]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Cléo St-Martin_13929950/Blouin_St_Martin_Exercie-noté-1.pdf][Blouin_St_Martin_Exercie-noté-1.pdf]]
+*** done david richard & jonathan dion                                 :ok:
+CLOSED: [2019-10-23 Wed 05:32]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/David Richard_13929908/exercice 1 prog.pdf][exercice 1 prog.pdf]]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/David Richard_13929908/exercice 1.js][exercice 1.js]]
+*** done gabrielle wester & alexandre montreuil                        :ok:
+CLOSED: [2019-10-23 Wed 05:35]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Gabrielle Wester_13929910/Exercice note 01.txt][Exercice note 01.txt]]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Gabrielle Wester_13929910/IFT1016 Exercice noté 01 Alexandre Montreuil et Gabrielle Wester.pdf][IFT1016 Exercice noté 01 Alexandre Montreuil et Gabrielle Wester.pdf]]
+*** done genevieve martin & Léa_Blouin Gagnon                          :ok:
+mais common
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Léa_Blouin Gagnon/#6][#6]]
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Léa_Blouin Gagnon/Archive.zip][Archive.zip]]
+*** done ghita bardaoui & celia khaldi                                 :ok:
+CLOSED: [2019-10-23 Wed 05:40]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Ghita Bardaoui_13929960/IFT1010 exercice noté- Ghita Bardaoui et Celia Khaldi.pdf][IFT1010 exercice noté- Ghita Bardaoui et Celia Khaldi.pdf]]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Ghita Bardaoui_13929960/ex-note-num-6-Ghita Bardaoui et Celia Khaldi.js][ex-note-num-6-Ghita Bardaoui et Celia Khaldi.js]]
+*** done guillaume labonte-pelletier                                   :ok:
+CLOSED: [2019-10-23 Wed 05:41]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Guillaume Labonté-Pelletier_13929959/ExerciceNoté01_Question06.js][ExerciceNoté01_Question06.js]]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Guillaume Labonté-Pelletier_13929959/GuillaumeLabonté-Pelletier_ExerciceNoté01.pdf][GuillaumeLabonté-Pelletier_ExerciceNoté01.pdf]]
+*** done hamza zarglayoun & sylvie tran                                :ok:
+CLOSED: [2019-10-23 Wed 05:42]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Hamza Zarglayoun_13929926/exercice noté #1 (numéros 1 à 5).pdf][exercice noté #1 (numéros 1 à 5).pdf]]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Hamza Zarglayoun_13929926/numéro 6.js][numéro 6.js]]
+*** done jade ricard
+CLOSED: [2019-10-23 Wed 05:43]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Jade Ricard_13929957/Exercice noté 1 Jade Ricard .pdf][Exercice noté 1 Jade Ricard .pdf]]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Jade Ricard_13929957/Question 6][Question 6]]
+*** done julie guertin                                                 :ok:
+CLOSED: [2019-10-23 Wed 05:45]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Julie Guertin_13929940/JGuertin_exercice1.pdf][JGuertin_exercice1.pdf]]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Julie Guertin_13929940/julie-guertin-exercice1.js][julie-guertin-exercice1.js]]
+*** done justine larochelle-guy & audrey-anne turcotte                 :ok:
+CLOSED: [2019-10-23 Wed 05:48]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Justine Larochelle-Guy_13929914/Exercice Noté 01 Justine L-G et Audrey-Anne Tpdf][Exercice Noté 01 Justine L-G et Audrey-Anne Tpdf]]
+*** done laurence boilard & marie-noëlle lortie                        :ok:
+mais comon
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Marie-Noëlle_Lortie/ExNoté 01 en pdf.pdf][ExNoté 01 en pdf.pdf]]
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Marie-Noëlle_Lortie/exnote01.js][exnote01.js]]
+*** done laurie charet & mary-maxime leclair                           :ok:
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Mary-Maxime_Leclair/Exercice6.vf.js][Exercice6.vf.js]]
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Mary-Maxime_Leclair/Travail prog 1.pdf][Travail prog 1.pdf]]
+*** done lea tremblay                                                  :ok:
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Léa_Tremblay/Exercice 1 noté.pdf][Exercice 1 noté.pdf]]
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Léa_Tremblay/IMG_2818-converti.pdf][IMG_2818-converti.pdf]]
+
+*** done Marguerite_Nolin                                      :ok:studium:
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Marguerite_Nolin/Marguerite Nolin- Exercice noté 01- Prog.zip][Marguerite Nolin- Exercice noté 01- Prog.zip]]
+*** done megan giguere bliane beauvais                                 :ok:
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Eliane Beauvais_13929937/Exercice noté 01 - EB et MG.docx][Exercice noté 01 - EB et MG.docx]]
+*** done nassereddine bissan
+CLOSED: [2019-10-22 Tue 21:53]
+**** fichiers
+***** [[/home/sole/udem/aux/aux-if1016/travaux/Bissan Nassereddine_13929920/NassereddineBissan-Exercice01.pdf][NassereddineBissan-Exercice01.pdf]]
+***** [[/home/sole/udem/aux/aux-if1016/travaux/Bissan Nassereddine_13929920/Programme 6.pdf][Programme 6.pdf]]
+
+*** done never tourigny Élodie_Petit                                   :ok:
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Élodie_Petit/Exercice noté 1 CodeBoot.pdf][Exercice noté 1 CodeBoot.pdf]]
+
+*** done noemie nolmand                                                :ok:
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Noémie_Olmand/Exercice #1 Q (1).6][Exercice #1 Q (1).6]]
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Noémie_Olmand/Exercices-noté 1.pdf][Exercices-noté 1.pdf]]
+*** done paulina jaramillo                                             :ok:
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Paulina_Jaramillo Salazar/IMG_20190924_150953-converted.pdf][IMG_20190924_150953-converted.pdf]]
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Paulina_Jaramillo Salazar/paulina.jaramillo.Q#6.exercice1.pdf][paulina.jaramillo.Q#6.exercice1.pdf]]
+*** done [[/home/gaston/aux/ift1016b/exo1-travaux/Sophie_Detroio/][Sophie_Detroio/]]                                               :ok:
+file:~/aux/ift1016b/exo1-travaux/Sophie_Detroio/sophiedetroioexo1.pdf
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Sophie_Detroio/Sophie.Detroio.IFT1016B.Exercice#1.zip][Sophie.Detroio.IFT1016B.Exercice#1.zip]]
+*** done xavier michaud                                                :ok:
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Xavier_Michaud/Question 1 à 5.pdf][Question 1 à 5.pdf]]
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Xavier_Michaud/Question 6.js][Question 6.js]]
+
+*** done yuri anne prevost & Laura_Trubiano                            :ok:
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Laura_Trubiano/Excercice_1.zip][Excercice_1.zip]]
 
 
-
-** done nawal imad & roua nour briedj                              :notperf:
+** not perfect
+*** done nawal imad & roua nour briedj                            :notperf:
 3 : -0.5
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Roua_Nour Briedj/remise exercice 1 /][remise exercice 1 /]]
-**** [[/home/gaston/aux/ift1016b/exo1-travaux/Roua_Nour Briedj/remise exercice 1 /exercice-noté-1-programme.pdf][exercice-noté-1-programme.pdf]]
-**** [[/home/gaston/aux/ift1016b/exo1-travaux/Roua_Nour Briedj/remise exercice 1 /exercice-noté-1.pdf][exercice-noté-1.pdf]]
-** done laura pesenti & maude-isabelle ouellet                     :notperf:
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Roua_Nour Briedj/remise exercice 1 /][remise exercice 1 /]]
+***** [[/home/gaston/aux/ift1016b/exo1-travaux/Roua_Nour Briedj/remise exercice 1 /exercice-noté-1-programme.pdf][exercice-noté-1-programme.pdf]]
+***** [[/home/gaston/aux/ift1016b/exo1-travaux/Roua_Nour Briedj/remise exercice 1 /exercice-noté-1.pdf][exercice-noté-1.pdf]]
+*** done laura pesenti & maude-isabelle ouellet                   :notperf:
 fail: 3 et 4 : -1
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Laura_Pesenti/Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/][Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/]]    :notperf:
-**** [[/home/gaston/aux/ift1016b/exo1-travaux/Laura_Pesenti/Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/Exercie noté 1 - Laura Pesenti et Maude-Isabelle Ouellet.pdf][Exercie noté 1 - Laura Pesenti et Maude-Isabelle Ouellet.pdf]]
-**** [[/home/gaston/aux/ift1016b/exo1-travaux/Laura_Pesenti/Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/Question 6 - Exercice noté 1.js][Question 6 - Exercice noté 1.js]]
-** done melanie tack Marianne_Lemieux                              :notperf:
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Laura_Pesenti/Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/][Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/]] :notperf:
+***** [[/home/gaston/aux/ift1016b/exo1-travaux/Laura_Pesenti/Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/Exercie noté 1 - Laura Pesenti et Maude-Isabelle Ouellet.pdf][Exercie noté 1 - Laura Pesenti et Maude-Isabelle Ouellet.pdf]]
+***** [[/home/gaston/aux/ift1016b/exo1-travaux/Laura_Pesenti/Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/Question 6 - Exercice noté 1.js][Question 6 - Exercice noté 1.js]]
+*** done melanie tack Marianne_Lemieux                            :notperf:
 -0.5 3
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Marianne_Lemieux/M. Lemieux_M. Tak (1).js][M. Lemieux_M. Tak (1).js]]
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Marianne_Lemieux/M.Lemieux_M.Tak_Exercice_noté_1.docx][M.Lemieux_M.Tak_Exercice_noté_1.docx]]
-** done sandrine rochon & sarah dery                               :notperf:
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Marianne_Lemieux/M. Lemieux_M. Tak (1).js][M. Lemieux_M. Tak (1).js]]
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Marianne_Lemieux/M.Lemieux_M.Tak_Exercice_noté_1.docx][M.Lemieux_M.Tak_Exercice_noté_1.docx]]
+*** done sandrine rochon & sarah dery                             :notperf:
 3:-0.5
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Sandrine_Rochon/Exercice noté 1 #1-5.pdf][Exercice noté 1 #1-5.pdf]]
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Sandrine_Rochon/Exercice noté 1 #6.js][Exercice noté 1 #6.js]]
-** done valerie panaite                                            :notperf:
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Sandrine_Rochon/Exercice noté 1 #1-5.pdf][Exercice noté 1 #1-5.pdf]]
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Sandrine_Rochon/Exercice noté 1 #6.js][Exercice noté 1 #6.js]]
+*** done valerie panaite                                          :notperf:
 -0.5 3
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Valérie_Panaite/exercice noté 1-numéro 6.txt][exercice noté 1-numéro 6.txt]]
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Valérie_Panaite/exercice noté-#1-5.pdf][exercice noté-#1-5.pdf]]
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Valérie_Panaite/exercice noté 1-numéro 6.txt][exercice noté 1-numéro 6.txt]]
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Valérie_Panaite/exercice noté-#1-5.pdf][exercice noté-#1-5.pdf]]
 
-** done [[/home/gaston/aux/ift1016b/exo1-travaux/Kim_Goyette/][Kim_Goyette/]]                                               :notperf:
+*** done [[/home/gaston/aux/ift1016b/exo1-travaux/Kim_Goyette/][Kim_Goyette/]]                                             :notperf:
 fail 3(un tout petit peu) et 4 : -0.5
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Kim_Goyette/exercice noté1(1)][exercice noté1(1)]]
-*** [[/home/gaston/aux/ift1016b/exo1-travaux/Kim_Goyette/exercices1.pdf][exercices1.pdf]]
-** done janice bessard & marie-helene st-jean                      :notperf:
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Kim_Goyette/exercice noté1(1)][exercice noté1(1)]]
+**** [[/home/gaston/aux/ift1016b/exo1-travaux/Kim_Goyette/exercices1.pdf][exercices1.pdf]]
+*** done janice bessard & marie-helene st-jean                    :notperf:
 CLOSED: [2019-10-23 Wed 05:44]
 -0.5 pour le 3
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Janice Bessard_13929956/ExerciceNoté01.js][ExerciceNoté01.js]]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Janice Bessard_13929956/exerciceNoté1.pdf][exerciceNoté1.pdf]]
-** done andreanne bernatchez                                       :notperf:
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Janice Bessard_13929956/ExerciceNoté01.js][ExerciceNoté01.js]]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Janice Bessard_13929956/exerciceNoté1.pdf][exerciceNoté1.pdf]]
+*** done andreanne bernatchez                                     :notperf:
 CLOSED: [2019-10-22 Tue 21:42]
-*** resume
+**** resume
 #+name: tp1:
 | 1a | 1b | 1c | 1d | 1e | 2 |    3 | 4 | 5 | 6 | total |
 |----+----+----+----+----+---+------+---+---+---+-------|
 |  0 |  0 |  0 |  0 |  0 | 0 | -0.5 | 0 | 0 | 0 |  -0.5 |
 
-*** fichiers
-**** [[/home/sole/udem/aux/aux-if1016/travaux/Andréanne Bernatchez_13929906/andreannedeflated/exo1.pdf][Exercice 01]]
-**** [[/home/sole/udem/aux/aux-if1016/travaux/Andréanne Bernatchez_13929906/Exercice 1 (Codeboot).js][Exercice 1 (Codeboot).js]]
-** done camille sylvestre                                          :notperf:
+**** fichiers
+***** [[/home/sole/udem/aux/aux-if1016/travaux/Andréanne Bernatchez_13929906/andreannedeflated/exo1.pdf][Exercice 01]]
+***** [[/home/sole/udem/aux/aux-if1016/travaux/Andréanne Bernatchez_13929906/Exercice 1 (Codeboot).js][Exercice 1 (Codeboot).js]]
+*** done camille sylvestre                                        :notperf:
 CLOSED: [2019-10-23 Wed 05:15]
 
-*** resume
+**** resume
 | 1a | 1b | 1c | 1d | 1e | 2 |    3 | 4 |    5 | 6 | total |
 |----+----+----+----+----+---+------+---+------+---+-------|
 |  0 |  0 |  0 |  0 |  0 | 0 | -0.5 | 0 | -0.5 | 0 |     0 |
 
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Camille Sylvestre_13929927/dev 1 num 6 Camille Sylvestre (2).js][dev 1 num 6 Camille Sylvestre (2).js]]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Camille Sylvestre_13929927/devoir1 num#-5 Camille Sylvestre.pdf][devoir1 num#-5 Camille Sylvestre.pdf]]
-** done amélie boucher & vanessa Potvin Bujold                     :notperf:
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Camille Sylvestre_13929927/dev 1 num 6 Camille Sylvestre (2).js][dev 1 num 6 Camille Sylvestre (2).js]]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Camille Sylvestre_13929927/devoir1 num#-5 Camille Sylvestre.pdf][devoir1 num#-5 Camille Sylvestre.pdf]]
+*** done amélie boucher & vanessa Potvin Bujold                   :notperf:
 CLOSED: [2019-10-22 Tue 21:30]
-*** resume
+**** resume
 #+name: tp1:
 | 1a | 1b |   1c | 1d | 1e | 2 | 3 | 4 | 5 | 6 | total |
 |----+----+------+----+----+---+---+---+---+---+-------|
 |  0 |  0 | -0.5 |  0 |  0 | 0 | 0 | 0 | 0 | 0 |   -.5 |
 
-*** fichiers
-**** [[/home/sole/udem/aux/aux-if1016/travaux/Amélie Boucher_13929924/TP1.pdf][TP1.pdf]]
-**** code [[/home/sole/udem/aux/aux-if1016/travaux/Amélie Boucher_13929924/Exercicenoté1.pdf][Exercicenoté1.pdf]]
-** done coralie bibeau & ariane garneau                            :notperf:
+**** fichiers
+***** [[/home/sole/udem/aux/aux-if1016/travaux/Amélie Boucher_13929924/TP1.pdf][TP1.pdf]]
+***** code [[/home/sole/udem/aux/aux-if1016/travaux/Amélie Boucher_13929924/Exercicenoté1.pdf][Exercicenoté1.pdf]]
+*** done coralie bibeau & ariane garneau                          :notperf:
 CLOSED: [2019-10-23 Wed 05:30]
 |    3 |
 | -0.5 |
 
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Coralie Bibeau_13929918/Exercice 1 Coralie et Ariane.js][Exercice 1 Coralie et Ariane.js]]
-*** [[/home/sole/udem/aux/aux-if1016/travaux/Coralie Bibeau_13929918/Exercice 1 Coralie et Ariane.pdf][Exercice 1 Coralie et Ariane.pdf]]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Coralie Bibeau_13929918/Exercice 1 Coralie et Ariane.js][Exercice 1 Coralie et Ariane.js]]
+**** [[/home/sole/udem/aux/aux-if1016/travaux/Coralie Bibeau_13929918/Exercice 1 Coralie et Ariane.pdf][Exercice 1 Coralie et Ariane.pdf]]
 
 
 * old

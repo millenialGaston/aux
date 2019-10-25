@@ -1,0 +1,211 @@
+#+TITLE: exo1-solutionnaire
+#+AUTHOR: Frederic Boileau
+#+email:frederic.boileau@protonmail.com
+#+html_head: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+#+startup:  inlineimages lognoteclock-out hideblocks
+#+todo: fixme(r) todo(t) inprog(p) wait(w) | done(d)
+
+* commentaires
+
+Dans l'ensemble l'exercice a été réussi par tout le monde. Les seuls points qui
+semblent avoir décontenancés certains sont les nombres signés. Il est important
+de comprendre qu'un nombre signé n'est négatif que si son chiffre le plus à
+gauche est un '1'. *Dans ce cas la valeur encodée est le négatif du complément.*
+
+Autrement dit si on a $$a = (1010 1101)_{2}$$ en complément à deux
+la représentation décimale du nombres est $$a = (- (b + 1))_{10} $$
+où b est le complément à un de a.
+
+Vous avez tendance, sur la moyenne, à écrire de longues démarches pour votre
+raisonnement. N'écrivez tout de même pas seulement la réponse mais, par exemple,
+pas besoin de montrer toute les étapes d'une division au long.
+
+- Pour les prochains travaux essayez svp de :
+
+  - Garder les mêmes équipes au fur et à mesure
+
+  - Nommer les fichier exo_<num>_<prenom1>_<nom1>_<prenom2>_<nom2>
+
+  - Ne faire qu'une seule remise par équipe
+
+  - ne pas remettre de zip, un pdf pour les questions c'est bien, mais, encore
+    mieux, juste un fichier texte simple :) Les formatages fancy de word
+    m'importent peux. Il est possible de formater et structurer (faire des
+    titres, des listes etc) du texte en utilisant qu'un fichier texte pur. C'est
+    en utilisant un langage de /markup/ ou de typographie comme latex. Exemples:
+    HTML, LATEX, org mode.
+
+    Le plus simple et pratique: la version github de markdown:
+    https://guides.github.com/features/mastering-markdown/
+
+Si vous scannez vos copies essayez de vous assurer que l'image ait un minimum de
+contraste svp.
+
+Pour des questions vous pouvez me contacter par courriel mais pour chatter vous
+pouvez rejoindre le serveur discord suivant : https://discord.gg/jTu9aWW
+
+
+
+* solutionnaire
+** 1 conversions de bases:
+*** a) déterminer la puissance de chaque chiffre pour un nombre de 5 chiffres en base 7: :nomark:
+- question pas clair donc pas prise en compte
+*** b) convertir le nombre 2aa3 16 en décimal.
+
+$$ (2aa3)_{hex} = 2 \times 16^3 + 10\times 16^2 + 10\times 16^1 + 3\times 16^0
+ = (100915)_{10} $$
+
+*** c) convertir le nombre 4b16
+
+**** d'hexadécimal à décimal
+
+$$ 4B_{16} = (4\times 16^1 + 11\times 1)_{10} = 75_{10} $$
+
+**** d'hexadécimal à binaire
+
+|    4 |    B |
+| 0100 | 1011 |
+-> $$ 4B_{16} = 01001011_{2} $$
+
+**** d'hexadécimal à octal
+
+On peut faire des paquets de 3 avec la représentation binaire. Il faut commencer
+par les chiffres les moins représentatifs (la droite) vers les plus
+représentatifs (la gauche). Si le nombre de bits n'est pas un multiple de 3
+le "paquet" le plus à gauche n'aura pas trois chiffre. On interprète cela
+comme un (comme ici) ou deux =0= de implicite à gauche.
+
+| (0) 01 | 001 | 011 |
+|      1 |   1 |   3 |
+-> $$4B_{16} = (01001011)_{2} = (0 01001011)_{2} = (113)_{8} $$
+
+
+*** d) comment peut-on encoder l'entier (1011) avec la notation hex de js?
+
+Pour indiquer que le nombre est écrit en hexa en js on le précède de '0x'.
+Le plus rapide est toujours de connaître ses puissances.
+|      |      |      |     |
+| 2^12 |  2^8 |  2^4 | 2^0 |
+| 16^3 | 16^2 | 16^1 | 2^0 |
+|------+------+------+-----|
+| 4096 |  256 |   16 |   1 |
+
+En mathématiques la notation $$ a \equiv b \mod n $$ veut dire que le restant de
+la division de a par n est b. Par exemple $$ 17 \equiv 2 \mod 5 $$ puisque $$ 17
+= 3\times 5 + 2 $$ Je determine d'abord les puissances des 16 non nulles en
+faisant les calculs de restants. Sur une calculatrice qui comporte l'option (et
+JS) c'est l'opération nommée. /modulo/ qui donne le restant d'une division
+entière, d'où la notation.
+
+En connaissant ses puissances  de 16 on peut assez vite déterminer la plus forte
+puissance nécessaire (trois dans ce cas).
+
+\begin{alignat*}{3}
+ &1011 & &\equiv 243 & &\mod 256  \\
+ &243  & &\equiv 3   & &\mod 16
+ \end{alignat*}
+
+\begin{align*}
+ 1011/ 256 &\approx 3.9  \\
+243/16 &\approx 15.2
+\end{align*}
+
+Donc $$ (1011)_{10} = (3F3)_{16} $$ en JS c'est donc
+=0x3F3=
+
+*** e) quelle est la valeur de 0xee (javascript)?
+
+$$ 0xee = (ee)_{\mathrm{hex}} = (14\times 16^1 + 14\times 16^0)_{10} = (238)_{10} $$
+
+** 2 représenter un nombre 17 selon la convention non signée sur 5 bits.
+on sait que 17 = 16 + 1 donc nous avons: 10000 + 00001 = 10001
+/évidemment le fait que le nombre est non-signé est crucial/
+
+** 3 décodage de nombres binaires signés.
+quelle valeurs sont encodées par la convention complément à 2 sur 5 bits par les chaines
+binaires suivantes :
+ - 01101 : le chiffre le plus significatif est un zéro donc on n'a pas à se
+   soucier des compléments, la valeur en décimale s'écrit *13*
+ - 10011 : est le complément à 1 sur 5 bits du nombre précédent,
+   la  valeur s'écrit donc -13 en décimale avec signe.
+ - note  :: observer que la somme des deux nombres en binaires donne 100000
+
+** 4 ieee 754 (double i.e. 64 bits)
+*** question
+rappeler l'anatomie d'un nombre à virgule flottante précision double ieee 754 (64 bits).
+quel et l'encodage en précision double ieee 754 (64 bits) des nombres point flottants
+3.15 e -4? donnez le contenu des champs s, e et f.
+*** reponse
+
+#+name: conversion table
+|---------+---------------+--------------+------------------------------------------------------|
+| decimal | bit-signe (s) | exposent (e) |                                         mantisse (f) |
+|---------+---------------+--------------+------------------------------------------------------|
+|    3.15 |             0 |  10000000000 | 1001001100110011001100110011001100110011001100110011 |
+|      -4 |             1 |  10000000001 | 0000000000000000000000000000000000000000000000000000 |
+
+*** explications
+tout d'abord prendre le réflexe de remarquer que 4 est une puissance de deux,
+alors que 3.15 loin de là. le nombre 3 est simplement 011 en binaire
+(modulo le padding a gauche). les parties fractionnaires sont plus faciles
+à comprendre en forme fractionnelle et d'enlever les puissances de deux.
+$$ 0.15 = 3/20 = 3 /(5 \times 2^{2} ) = 3/5 \times 2^{-2} = 0.6 \times 2^{-2  }$$
+
+#+name: converting fractional part to binary
+| $0.6 \times 2$ | 1.2 | 1 |
+| $0.2 \times 2$ | 0.4 | 0 |
+| $0.4 \times 2$ | 0.8 | 0 |
+| $0.8 \times 2$ | 1.6 | 1 |
+| 0.6            |     |   |
+| etc.           |     |   |
+*** liens
+- https://stackoverflow.com/questions/4987176/how-do-you-convert-a-fraction-to-binary
+
+** 5 js arithmetic expressions                                      :nomark:
+trouve la plus petite expression javascript (ayant le minimum de caractères
+incluant les parenthèses et symboles, et pas de blancs) contenant les nombres
+10, 2,3, et 4 (exactement une fois chaque), et les opérateurs +, - et * (autant
+de foi que vous voulez), dont la valeur est 9.
+
+La motivation de la question était de vous faire expérimenter avec la préséance
+des opérateurs en JS. Ceci étant dit, ce genre de questions est assez difficile;
+une seule équipe a fourni une sorte de preuve (qui était une exhaustion, c'est à
+dire observer toutes permutations de base possible et s'arrêter à la plus
+courte, ce qui devient assez vite impossible si on élargi le nombre de
+combinaisons possibles)
+
+Ceux qui n'ont pas trouvé la /plus courte/ expressions n'ont pas été pénalisés.
+
+#+begin_src js
+10-2+4-3
+#+end_src
+
+** 6 js abstraction through bindings
+lorsqu'on obtient un prêt hypothécaire à paiements fixes, on s'engage à rembourser le prêt
+sur un certain nombre de mois en payant le même montant à chaque mois. si p est le
+montant du prêt, et que n est le nombre de mois, et que i [sic, t] est le taux d'intérêt
+annuel en pourcents, alors la formule mathématique suivante peut être utilisée
+pour calculer =m=, le montant à payer à chaque mois:
+
+$$
+m = \frac{p(1+\frac{t}{12\times 100})^n \times \frac{t}{12\times 100}}
+{(1+\frac{t}{12\times 100})^{n }-1}
+$$
+
+on veut en général abstraire la structure des détails d'un programme. puisque
+la valeur $$ \frac{t}{12\times 100} $$ semble se répéter on déclare une nouvelles variable
+
+#+begin_src js
+// constantes
+let p = 200000
+let t = 5.5
+let n = 360
+// parametre calculé
+let taux_mens = t/(12*100)
+// montant a payer
+let m = (p * ((1 + taux_mens)**n) * taux_mens)/(((1 + taux_mens)**n) -1)
+console.log(m)
+#+end_src
+
+#+results:
+: 1135.578002694001
