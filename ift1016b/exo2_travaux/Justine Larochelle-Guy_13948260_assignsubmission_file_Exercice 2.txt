@@ -1,0 +1,21 @@
+//Audrey-anne Turotte et Justine larochelle guy  Exercise 2 : Détermination d'un mot de passe valide//
+
+var mot = prompt("Choisissez un mot de passe s.v.p");
+print("mot de passe"+" "+mot);
+print(mot.length-1);
+
+var valide = (((mot.length) >= 4)&&(mot.length <= 8))
+             &&(mot.charAt(0))!=(mot.charAt(mot.length - 1))
+             &&(((mot.charAt(0)>="A")&&(mot.charAt(0)<="Z"))|| ((mot.charAt(0)>="a")&&(mot.charAt(0)<="z")))
+             &&(!(((mot.charAt(1)>="A")&&(mot.charAt(1)<="Z"))|| ((mot.charAt(1)>="a")&&(mot.charAt(1)<="z"))||((mot.charAt(1)>=0)&&(mot.charAt(1) <=9))));
+if ( valide===true){ 
+    var confirmation = prompt("Confirmez votre mot de passe s.v.p");
+	var identique = ( mot === confirmation);
+ 	if(mot===confirmation) alert("Vous avez bien rentré votre mot de passe"); 
+ 	if(mot != confirmation) alert("Vous n'avez pas réécrit le même mot de passe");
+}
+if (valide===false){ 
+    alert ("Votre mot de passe ne respecte pas les critères de sécurité");
+}
+
+

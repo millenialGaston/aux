@@ -1,0 +1,29 @@
+﻿//Eliane Beauvais et Mégan Giguère, 1 oct 2019
+//Entrer le mot de passe
+var mot = prompt ("Mot de passe?");
+print ("Mot de passe :"+mot);
+//Établir les variables
+var longueur = mot.length;
+var premier = mot.charAt(0);
+var dernier = mot.charAt(mot.length-1);
+var deuxieme = mot.charAt(1);
+//vérification de la validité
+var valide = (4 <= longueur) && (longueur <= 8) && (premier != dernier) && (premier >= "A" && premier <= "z") && ((deuxieme > "z" || deuxieme < "a") && (deuxieme > "Z" || deuxieme < "A") && (deuxieme > "9" || deuxieme < "0"));
+//Si la validité est ok
+if (valide == true){
+    var confirmation = prompt ("Répéter le mot de passe.");
+    print ("Mot de passe:"+confirmation);
+    var identique = mot === confirmation;
+    //Si mdp2 est ok
+    if (identique == true){
+        alert ("Vous avez bien configuré votre mot de passe!");
+    //Si mdp2 est pas ok
+    }else{
+        alert ("Vous n'avez pas réécrit le même mot de passe");
+    }
+//si mdp ne respecte pas les critères
+}else{ 
+    alert("Votre mot de passe ne respecte pas les critères de sécurité.");
+}
+
+

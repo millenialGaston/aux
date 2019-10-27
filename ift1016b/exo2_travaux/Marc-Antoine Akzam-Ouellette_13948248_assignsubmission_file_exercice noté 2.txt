@@ -1,0 +1,58 @@
+﻿
+Exercice noté 2
+
+par Marc-antoine Akzam-Ouellette et Camille Deneault
+
+IFT1016-B-A19-Programmation 1
+
+pour madame Alena Tsikhanovich
+et monsieur Frédéric Boileau
+
+Le 4 octobre 2019
+
+
+
+
+
+
+
+
+// l'usager doit rentrer un mot de passe respectant les critères établis.
+var mot= prompt("Entrer votre mot de passe.");
+print(mot);
+var valide=((mot.length>=4)&&(mot.length<=8))&&(mot.charAt(0)!=mot.charAt(mot.length-1))&&
+    (((mot.charCodeAt(0)>=65)&&(mot.charCodeAt(0)<=90))||((mot.charCodeAt(0)>=97)&&(mot.charCodeAt(0)<=122)))
+&&(mot.charCodeAt(1)<=47)||(mot.charCodeAt(1)>=58)
+   &&(mot.charCodeAt(1)<=64)||(mot.charCodeAt(1)>=91)
+&&(mot.charCodeAt(1)<=96)||(mot.charCodeAt(1)>=123);
+
+// si le mot de passe respecte les critères, la variable valide affichera "true".
+
+valide;
+
+// si le mot de passe ne respecte pas les critères, le sytème affichera les commandes suivantes.
+
+if (valide == false)
+{
+    alert("Votre mot de passe ne respecte pas les critères demandés.");
+print("Votre mot de passe ne respecte pas les critères demandés.");
+     } 
+
+else // si le mot de passe respecte les critères, le système demandera à l'usager de rentrer son mot de passe à nouveau.
+{
+    var confirmation = prompt("Entrer votre mot de passe à nouveau.");
+    var confirmation;
+    
+    if (confirmation == mot) { //si le deuxième mot de passe rentré est le même que le premier, les commandes suivantes s'afficheront.
+        var identique;
+         print("Votre mot de passe est accepté.");
+        alert("Votre mot de passe est accepté.");
+        
+        // si le deuxième mot de passe rentré n'est pas le même que le premier, les commandes suivantes s'afficheront.
+        
+} else { alert("Le mot de passe rentré ne correspond pas au premier.");
+        print("Le mot de passe rentré ne correspond pas au premier.");
+    }
+}
+  
+        

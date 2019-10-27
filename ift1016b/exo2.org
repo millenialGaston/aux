@@ -1,0 +1,120 @@
+#+TITLE: exo2
+#+author: frederic boileau
+#+email: frederic.boileau@protonmail.com
+
+* exo2 travaux [2/46]
+** DONE [[/home/gaston/aux/ift1016b/exo2_travaux/Adrian Minano-Lozano_13948222_assignsubmission_file_pass.js][Adrian Minano-Lozano_13948222_assignsubmission_file_pass.js]] :notperf:
+CLOSED: [2019-10-27 Sun 07:09]
+pas d' indentation.
+attention else vs else if
+
+** DONE [[/home/gaston/aux/ift1016b/exo2_travaux/Alexy Pauzé_13948213_assignsubmission_file_pass.js][Alexy Pauzé_13948213_assignsubmission_file_pass.js]]              :ok:
+CLOSED: [2019-10-27 Sun 07:09]
+
+Vous avez l'air de confondre le nom d'une variable (ici i, m,d) et la
+valeur qu'on lui attribue. attention!. Sinon tout est bon
+#+begin_src js
+var i= 'identique';
+var m = 'valide';
+var d= 'dernier';
+#+end_src
+#+end_src
+
+
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Amélie Boucher_13948274_assignsubmission_file_Exercice 2 (Amélie Boucher).pdf][Amélie Boucher_13948274_assignsubmission_file_Exercice 2 (Amélie Boucher).pdf]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Ana Neder_13948224_assignsubmission_file_pass.js][Ana Neder_13948224_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Ariane Brucher_13948236_assignsubmission_file_pass.js][Ariane Brucher_13948236_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Ariane Paradis_13948212_assignsubmission_file_pass(3).js][Ariane Paradis_13948212_assignsubmission_file_pass(3).js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Bissan Nassereddine_13948210_assignsubmission_file_pass.js][Bissan Nassereddine_13948210_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Camille Bouchard_13948207_assignsubmission_file_pass.js][Camille Bouchard_13948207_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Camille Sylvestre_13948229_assignsubmission_file_pass.js][Camille Sylvestre_13948229_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Catherine Daunais_13948265_assignsubmission_file_pass.js][Catherine Daunais_13948265_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Celia Khaldi_13948270_assignsubmission_file_pass.js][Celia Khaldi_13948270_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Charline Delorme_13948269_assignsubmission_file_pass.js][Charline Delorme_13948269_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Charlotte Roy_13948223_assignsubmission_file_Exercice note 2.webarchive][Charlotte Roy_13948223_assignsubmission_file_Exercice note 2.webarchive]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Clara Eloy_13948261_assignsubmission_file_pass.js][Clara Eloy_13948261_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Coralie Bibeau_13948214_assignsubmission_file_Coralie Bibeau et Ariane Garneau-Desrochespass.js][Coralie Bibeau_13948214_assignsubmission_file_Coralie Bibeau et Ariane Garneau-Desrochespass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/David Richard_13948241_assignsubmission_file_pass.js][David Richard_13948241_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Emmanuelle Vigneron_13948232_assignsubmission_file_pass.js][Emmanuelle Vigneron_13948232_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Gabrielle Wester_13948244_assignsubmission_file_pass.js][Gabrielle Wester_13948244_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Geneviève Martin_13948218_assignsubmission_file_Pass (2).js][Geneviève Martin_13948218_assignsubmission_file_Pass (2).js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Guillaume Labonté-Pelletier_13948221_assignsubmission_file_pass.js][Guillaume Labonté-Pelletier_13948221_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Hamza Zarglayoun_13948246_assignsubmission_file_pass.js][Hamza Zarglayoun_13948246_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Jade Ricard_13948275_assignsubmission_file_Exercice noté 2, Jade Ricard.js][Jade Ricard_13948275_assignsubmission_file_Exercice noté 2, Jade Ricard.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Julie Guertin_13948245_assignsubmission_file_pass.js][Julie Guertin_13948245_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Justine Larochelle-Guy_13948260_assignsubmission_file_Exercice 2.txt][Justine Larochelle-Guy_13948260_assignsubmission_file_Exercice 2.txt]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Kim Goyette_13948259_assignsubmission_file_pass(4).js][Kim Goyette_13948259_assignsubmission_file_pass(4).js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Laura Pesenti_13948235_assignsubmission_file_Pass.js][Laura Pesenti_13948235_assignsubmission_file_Pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Laurence Boilard_13948267_assignsubmission_file_pass.js][Laurence Boilard_13948267_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Laurie Charest_13948217_assignsubmission_file_pass.js][Laurie Charest_13948217_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Léa Tremblay_13948208_assignsubmission_file_pass.js][Léa Tremblay_13948208_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Marc-Antoine Akzam-Ouellette_13948248_assignsubmission_file_exercice noté 2.txt][Marc-Antoine Akzam-Ouellette_13948248_assignsubmission_file_exercice noté 2.txt]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Mariane Jean_13948271_assignsubmission_file_pass.js][Mariane Jean_13948271_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Marie-Hélène St-Jean_13948268_assignsubmission_file_pass(4).js][Marie-Hélène St-Jean_13948268_assignsubmission_file_pass(4).js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Marie-Janne Blouin_13948227_assignsubmission_file_pass.js][Marie-Janne Blouin_13948227_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Marie-Noëlle Lortie_13948266_assignsubmission_file_pass.js][Marie-Noëlle Lortie_13948266_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Mégan Giguère_13948209_assignsubmission_file_pass.js.txt][Mégan Giguère_13948209_assignsubmission_file_pass.js.txt]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Mélanie Tak_13948256_assignsubmission_file_Lemieux et Tak-exercice 2-IFT1016-B-A19.rtf][Mélanie Tak_13948256_assignsubmission_file_Lemieux et Tak-exercice 2-IFT1016-B-A19.rtf]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Nawal Imad_13948220_assignsubmission_file_pass (3).js][Nawal Imad_13948220_assignsubmission_file_pass (3).js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Noémie Olmand_13948225_assignsubmission_file_Noémie Olmand- Mot de passe- Exercices noté 1.js][Noémie Olmand_13948225_assignsubmission_file_Noémie Olmand- Mot de passe- Exercices noté 1.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Paulina Jaramillo Salazar_13948238_assignsubmission_file_pass.js][Paulina Jaramillo Salazar_13948238_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Sandrine Rochon_13948253_assignsubmission_file_pass.js][Sandrine Rochon_13948253_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Sarah Déry_13948242_assignsubmission_file_pass (1).js][Sarah Déry_13948242_assignsubmission_file_pass (1).js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Sophie Detroio_13948230_assignsubmission_file_pass.js][Sophie Detroio_13948230_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Valérie Panaite_13948252_assignsubmission_file_pass.js][Valérie Panaite_13948252_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Xavier Michaud_13948264_assignsubmission_file_pass.js][Xavier Michaud_13948264_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Yuri-Anne Prévost_13948272_assignsubmission_file_pass.js][Yuri-Anne Prévost_13948272_assignsubmission_file_pass.js]]
+** TODO [[/home/gaston/aux/ift1016b/exo2_travaux/Élodie Petit_13948240_assignsubmission_file_pass_Exercice_noté_2.js][Élodie Petit_13948240_assignsubmission_file_pass_Exercice_noté_2.js]]
+
+* resultats
+file: ./ex
+
+* consignes
+
+- pdf:  [[file:exo-consignes/Exercice02_1016A19.pdf][exo2_consignes]]
+  file:~/aux/ift1016b/exo-consignes/Exercice02_1016A19.pdf
+
+Le programme devra :
+
+1) Demander à l'utilisateur d'entrer un mot de passe, avec la fonction *prompt*,
+   et stocker le résultat dans une variable nommée *mot*.
+ 
+2) afficher le message "Mot de passe: $(mot entré)"
+
+3) calculer en une seule expressions, la validité du mot de passe, et assigner
+   le résultat à une variable nommée *valide*.
+
+4) Si le mot de passe est valide : demander à l'utilisateur d'entrer le mot de
+   passe une deuxième fois, avec la fonction prompt, et stocker le résultat dans
+   une variable nommée *confirmation*.
+
+5) Dans une variable nommée *identique*, calculer si les deux mots de passe entrés
+   sont identiques
+
+6) Si les deux mots de passe entrés sont identiques : afficher "Vous avez bien
+   configuré votre mot de passe !"
+
+7) Sinon, afficher : "Vous n'avez pas réécrit le même mot de passe"
+
+8) Si le mot de passe est invalide : exit with error
+  
+Conditions de validité du mot de passe:
+- sa longueur est entre 4 et 8 caractères
+- son premier caractère est différent de son dernier
+- son premier caractère est une lettre (soit majuscule ou miniscule)
+- son deuxième caractère est non alphanumérique (ni lettre minuscule ou majuscule or chiffre)
+
+
+* notes
+
+#+name: utf-16 reference
+http://www.fileformat.info/info/charset/UTF-16/list.htm
+
+#+attr_org: :width 700
+[[file:exo2-bareme-1.png]]
+
+#+attr_org: :width 700
+[[file:./exo2-bareme-2.png]]
+
+* log
+retroactive 4 heures
