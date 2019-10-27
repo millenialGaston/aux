@@ -1,0 +1,16 @@
+#+TITLE: jstest
+
+
+* return statement
+#+BEGIN_SRC js
+let sans_return = function(){
+    x = "je reste ici";
+}
+let avec_return = function(){
+    return x = "moi je suis revenu";
+    y = "par contre moi je vais jamais exister";
+}
+console.log(sans_return())
+console.log(avec_return())
+#+END_SRC
+
