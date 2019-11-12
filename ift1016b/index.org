@@ -9,8 +9,11 @@
 
 * liens
 ** solutionnaires
+- exo 1 : [[file:exo1sol.org][solutionnaire 1]]
+- exo 2 : [[file:exo2.org][solutionnaire 2]]
 
 * logistique
+
 - https://discord.gg/jTu9aWW
 
 * publish settings
