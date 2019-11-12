@@ -1,8 +1,20 @@
 #+title: index
+#+author: frederic boileau
+#+email: frederic.boileau@protonmail.com
+#+html_head: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+#+startup:  inlineimages lognoteclock-out hideblocks
+#+todo: fixme(r) todo(t) inprog(p) wait(w) | done(d)
 
 
+
+* liens
+** solutionnaires
+
+* logistique
+- https://discord.gg/jTu9aWW
 
 * publish settings
+** project alist
 #+begin_src emacs-lisp
 (setq org-publish-project-alist
       '(("demos-org"
@@ -23,8 +35,7 @@
 
         ("demos" :components ("demos-org" "demos-static"))))
 #+end_src
-
-#+RESULTS:
-| demos-org    | :base-directory | ~/aux/ift1016b/          | :base-extension | org  | :publishing-directory | ~/aux/docs/ | :recursive | t    | :publishing-function | org-html-publish-to-html | :headline-levels |   4 | :auto-preamble        | t           |            |   |                      |                        |
-| demos-static | :base-directory | ~/aux/ift1016b/          | :base-extension | css\ | js\                   | png\        | jpg\       | gif\ | pdf\                 | mp3\                     | ogg\             | swf | :publishing-directory | ~/aux/docs/ | :recursive | t | :publishing-function | org-publish-attachment |
-| demos        | :components     | (demos-org demos-static) |                 |      |                       |             |            |      |                      |                          |                  |     |                       |             |            |   |                      |                        |
+** TODO set up theming inheritance
+** TODO setup skeleton properly
+** TODO make export more selective (tags etc.)
+** TODO template org mode files
