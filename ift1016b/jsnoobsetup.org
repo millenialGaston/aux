@@ -1,0 +1,11 @@
+#+title: js setup for n00bz
+
+
+* sublime
+https://www.sublimetext.com/3
+
+- On veut faire un IDE:
+  * node https://nodejs.org/en/
+  * terminus: package control
+  * flow https://flow.org/en/docs/install/
+  * javascript enhancements : package control

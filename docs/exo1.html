@@ -1,0 +1,2863 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-11-11 Mon 20:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>exo1</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Frederic Boileau" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">exo1</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org77ee497">1. solutionnaire</a>
+<ul>
+<li><a href="#orgcf70e5c">1.1. 1 conversions de bases:</a>
+<ul>
+<li><a href="#orgd8ab2c6">1.1.1. a) déterminer la puissance de chaque chiffre pour un nombre de 5 chiffres en base 7:&#xa0;&#xa0;&#xa0;<span class="tag"><span class="nomark">nomark</span></span></a></li>
+<li><a href="#org2a09f82">1.1.2. b) convertir le nombre 2aa3 16 en décimal.</a></li>
+<li><a href="#org07dbd54">1.1.3. c) convertir le nombre 4b16</a>
+<ul>
+<li><a href="#orge857642">1.1.3.1. d&rsquo;hexadécimal à décimal</a></li>
+<li><a href="#org27491c8">1.1.3.2. d&rsquo;hexadécimal à binaire</a></li>
+<li><a href="#org2db12d5">1.1.3.3. d&rsquo;hexadécimal à octal</a></li>
+</ul>
+</li>
+<li><a href="#orgd84636a">1.1.4. d) comment peut-on encoder l&rsquo;entier (1011) avec la notation hex de js?</a></li>
+<li><a href="#org87c8b2f">1.1.5. e) quelle est la valeur de 0xee (javascript)?</a></li>
+</ul>
+</li>
+<li><a href="#org10153ac">1.2. 2 représenter un nombre 17 selon la convention non signée sur 5 bits.</a></li>
+<li><a href="#orgaade083">1.3. 3 décodage de nombres binaires signés.</a></li>
+<li><a href="#org151d3bd">1.4. 4 ieee 754 (double i.e. 64 bits)</a>
+<ul>
+<li><a href="#orgae2eaa3">1.4.1. question</a></li>
+<li><a href="#org526e973">1.4.2. reponse</a></li>
+<li><a href="#org72fb349">1.4.3. explications</a></li>
+<li><a href="#orgdaa9335">1.4.4. liens</a></li>
+</ul>
+</li>
+<li><a href="#orgba0d4c8">1.5. 5 js arithmetic expressions&#xa0;&#xa0;&#xa0;<span class="tag"><span class="nomark">nomark</span></span></a></li>
+<li><a href="#org48faad1">1.6. 6 js abstraction through bindings</a></li>
+</ul>
+</li>
+<li><a href="#orgaac9939">2. exo1-travaux/</a>
+<ul>
+<li><a href="#org5167e06">2.1. Adrian<sub>Minano</sub>-Lozano/</a>
+<ul>
+<li><a href="#org4db0e6f">2.1.1. Exercice noté 1-Adrian Minano-Lozano.pdf</a></li>
+<li><a href="#org2fb2028">2.1.2. Exercice1.js</a></li>
+</ul>
+</li>
+<li><a href="#org69d4720">2.2. Alexy<sub>Pauzé</sub>/</a>
+<ul>
+<li><a href="#org875d747">2.2.1. Exercice.1.Alexy<sub>Emmanuelle</sub><sub>final.docx</sub></a></li>
+<li><a href="#orgea1365d">2.2.2. Exercice1 Pauzé-Vigneron.js</a></li>
+</ul>
+</li>
+<li><a href="#org6b9bc2b">2.3. Amélie<sub>Boucher</sub>/</a>
+<ul>
+<li><a href="#org08e132b">2.3.1. Exercicenoté1.pdf</a></li>
+<li><a href="#org06f8824">2.3.2. TP1.pdf</a></li>
+</ul>
+</li>
+<li><a href="#org7318b3a">2.4. Ana<sub>Neder</sub>/</a>
+<ul>
+<li><a href="#org51b696a">2.4.1. exercice noté 1- question 6.txt</a></li>
+<li><a href="#org17c6a95">2.4.2. exercice noté 1-question 1 à 5.pdf</a></li>
+</ul>
+</li>
+<li><a href="#org99be3b4">2.5. Andréanne<sub>Bernatchez</sub>/</a>
+<ul>
+<li><a href="#org5cb39b2">2.5.1. Exercice 01.zip</a></li>
+<li><a href="#org115856b">2.5.2. Exercice 1 (Codeboot).js</a></li>
+</ul>
+</li>
+<li><a href="#orgf81ae30">2.6. Ariane<sub>Brucher</sub>/</a>
+<ul>
+<li><a href="#orga29a96c">2.6.1. BrucherAriane-TanguayHeloise-Exercice1.js</a></li>
+<li><a href="#orgf6cf1b0">2.6.2. BrucherAriane-TanguayHeloise-Exercice1.pdf</a></li>
+</ul>
+</li>
+<li><a href="#org14a3b07">2.7. Ariane<sub>Paradis</sub>/</a>
+<ul>
+<li><a href="#org4c4573b">2.7.1. Exercice noté 1.pdf</a></li>
+<li><a href="#org2b2ae28">2.7.2. Paiements mensuels sur prêt</a></li>
+</ul>
+</li>
+<li><a href="#org1f19edb">2.8. Arielle<sub>Desnoyers</sub>/</a>
+<ul>
+<li><a href="#org224051a">2.8.1. Exercice 6</a></li>
+<li><a href="#orgd35e8d9">2.8.2. PROG TP 1.pdf</a></li>
+</ul>
+</li>
+<li><a href="#org1f7de7a">2.9. Bissan<sub>Nassereddine</sub>/</a>
+<ul>
+<li><a href="#org7c99569">2.9.1. NassereddineBissan-Exercice01.pdf</a></li>
+<li><a href="#org1092f4c">2.9.2. Programme 6.pdf</a></li>
+</ul>
+</li>
+<li><a href="#org8eeb12d">2.10. Camille<sub>Bouchard</sub>/</a>
+<ul>
+<li><a href="#orga409356">2.10.1. Exercice 1.pdf</a></li>
+<li><a href="#org5993df0">2.10.2. untitled2.js</a></li>
+</ul>
+</li>
+<li><a href="#org721e19d">2.11. Camille<sub>Deneault</sub>/</a>
+<ul>
+<li><a href="#orgfc27815">2.11.1. Camille Deneault et Marc-Antoine Akzam-Ouellette<sub>Exercice</sub> 1</a></li>
+</ul>
+</li>
+<li><a href="#orgc573be0">2.12. Camille<sub>Sylvestre</sub>/</a>
+<ul>
+<li><a href="#org709c3dd">2.12.1. dev 1 num 6 Camille Sylvestre (2).js</a></li>
+<li><a href="#orgb3b9cdc">2.12.2. devoir1 num#-5 Camille Sylvestre.pdf</a></li>
+</ul>
+</li>
+<li><a href="#orge6f0e01">2.13. Catherine<sub>Daunais</sub>/</a>
+<ul>
+<li><a href="#orgc739ba5">2.13.1. Exercice noté 1<sub>Code</sub> #6<sub>Daunais</sub><sub>Tanguay.txt</sub></a></li>
+<li><a href="#orgf9e92ad">2.13.2. Exercice noté 1<sub>Daunais</sub><sub>Tanguay.pdf</sub></a></li>
+</ul>
+</li>
+<li><a href="#orgf3f7e1f">2.14. Charline<sub>Delorme</sub>/</a>
+<ul>
+<li><a href="#org8721666">2.14.1. PROG TP 1.pdf</a></li>
+<li><a href="#org442a769">2.14.2. tp 1.js</a></li>
+</ul>
+</li>
+<li><a href="#org9587b51">2.15. Charlotte<sub>Roy</sub>/</a>
+<ul>
+<li><a href="#org3e3994c">2.15.1. Exercice note 1</a></li>
+<li><a href="#org0c33ccb">2.15.2. Exercice1q6.js</a></li>
+</ul>
+</li>
+<li><a href="#org415a04f">2.16. Cléo<sub>St</sub>-Martin/</a>
+<ul>
+<li><a href="#org1ec0a65">2.16.1. Blouin<sub>St</sub>-Martin<sub>Exercice1.js</sub></a></li>
+<li><a href="#org758d8cd">2.16.2. Blouin<sub>St</sub><sub>Martin</sub><sub>Exercie</sub>-noté-1.pdf</a></li>
+</ul>
+</li>
+<li><a href="#orgec7d091">2.17. Coralie<sub>Bibeau</sub>/</a>
+<ul>
+<li><a href="#org105273e">2.17.1. Exercice 1 Coralie et Ariane.js</a></li>
+<li><a href="#org69aa162">2.17.2. Exercice 1 Coralie et Ariane.pdf</a></li>
+</ul>
+</li>
+<li><a href="#orgfc442c2">2.18. David<sub>Richard</sub>/</a>
+<ul>
+<li><a href="#org2eaded3">2.18.1. exercice 1 prog.pdf</a></li>
+<li><a href="#org2f368a7">2.18.2. exercice 1.js</a></li>
+</ul>
+</li>
+<li><a href="#orgfd9e61c">2.19. Eliane<sub>Beauvais</sub>/</a>
+<ul>
+<li><a href="#orgfe2cb44">2.19.1. Exercice noté 01 - EB et MG.docx</a></li>
+</ul>
+</li>
+<li><a href="#orgb108dd2">2.20. Gabrielle<sub>Wester</sub>/</a>
+<ul>
+<li><a href="#org2e2caff">2.20.1. Exercice note 01.txt</a></li>
+<li><a href="#orgdf674c3">2.20.2. IFT1016 Exercice noté 01 Alexandre Montreuil et Gabrielle Wester.pdf</a></li>
+</ul>
+</li>
+<li><a href="#org1e34f5d">2.21. Ghita<sub>Bardaoui</sub>/</a>
+<ul>
+<li><a href="#org4e228fd">2.21.1. IFT1010 exercice noté- Ghita Bardaoui et Celia Khaldi.pdf</a></li>
+<li><a href="#orga893107">2.21.2. ex-note-num-6-Ghita Bardaoui et Celia Khaldi.js</a></li>
+</ul>
+</li>
+<li><a href="#org430429c">2.22. Guillaume<sub>Labonté</sub>-Pelletier/</a>
+<ul>
+<li><a href="#orgad86f21">2.22.1. ExerciceNoté01<sub>Question06.js</sub></a></li>
+<li><a href="#orgde86015">2.22.2. GuillaumeLabonté-Pelletier<sub>ExerciceNoté01.pdf</sub></a></li>
+</ul>
+</li>
+<li><a href="#org69938f4">2.23. Hamza<sub>Zarglayoun</sub>/</a>
+<ul>
+<li><a href="#orgd68e27e">2.23.1. exercice noté #1 (numéros 1 à 5).pdf</a></li>
+<li><a href="#orga0efb68">2.23.2. numéro 6.js</a></li>
+</ul>
+</li>
+<li><a href="#orgb63d003">2.24. Jade<sub>Ricard</sub>/</a>
+<ul>
+<li><a href="#orgb5bcc7d">2.24.1. Exercice noté 1 Jade Ricard .pdf</a></li>
+<li><a href="#org3467c1b">2.24.2. Question 6</a></li>
+</ul>
+</li>
+<li><a href="#org40ceca9">2.25. Janice<sub>Bessard</sub>/</a>
+<ul>
+<li><a href="#org7fb7cdf">2.25.1. ExerciceNoté01.js</a></li>
+<li><a href="#orgb9ad671">2.25.2. exerciceNoté1.pdf</a></li>
+</ul>
+</li>
+<li><a href="#org594a3ee">2.26. Julie<sub>Guertin</sub>/</a>
+<ul>
+<li><a href="#org4d55673">2.26.1. JGuertin<sub>exercice1.pdf</sub></a></li>
+<li><a href="#org21efa45">2.26.2. julie-guertin-exercice1.js</a></li>
+</ul>
+</li>
+<li><a href="#orgc7db3ee">2.27. Justine<sub>Larochelle</sub>-Guy/</a>
+<ul>
+<li><a href="#org10494b1">2.27.1. Exercice Noté 01 Justine L-G et Audrey-Anne Tpdf</a></li>
+</ul>
+</li>
+<li><a href="#orgad0e645">2.28. TODO Kim<sub>Goyette</sub>/</a>
+<ul>
+<li><a href="#org2230373">2.28.1. exercice noté1(1)</a></li>
+<li><a href="#orgce374eb">2.28.2. exercices1.pdf</a></li>
+</ul>
+</li>
+<li><a href="#org742439b">2.29. TODO Laura<sub>Pesenti</sub>/</a>
+<ul>
+<li><a href="#org60ededf">2.29.1. Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/</a>
+<ul>
+<li><a href="#orgf8e8d0b">2.29.1.1. Exercie noté 1 - Laura Pesenti et Maude-Isabelle Ouellet.pdf</a></li>
+<li><a href="#org1a11a9b">2.29.1.2. Question 6 - Exercice noté 1.js</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org32b7417">2.30. TODO Laura<sub>Trubiano</sub>/</a>
+<ul>
+<li><a href="#org35fcbba">2.30.1. Excercice<sub>1.zip</sub></a></li>
+</ul>
+</li>
+<li><a href="#org1172db2">2.31. TODO Léa<sub>Blouin</sub> Gagnon/</a>
+<ul>
+<li><a href="#org6a93ae9">2.31.1. #6</a></li>
+<li><a href="#org89632ac">2.31.2. Archive.zip</a></li>
+</ul>
+</li>
+<li><a href="#orgcb2c532">2.32. TODO Léa<sub>Tremblay</sub>/</a>
+<ul>
+<li><a href="#org3683d80">2.32.1. Exercice 1 noté.pdf</a></li>
+<li><a href="#orgef62838">2.32.2. IMG<sub>2818</sub>-converti.pdf</a></li>
+</ul>
+</li>
+<li><a href="#orge89c820">2.33. Marc-Antoine<sub>Akzam</sub>-Ouellette/</a>
+<ul>
+<li><a href="#orgeef0319">2.33.1. excercice noté 1.docx</a></li>
+</ul>
+</li>
+<li><a href="#org4a4eb6b">2.34. Marguerite<sub>Nolin</sub>/</a>
+<ul>
+<li><a href="#orgc2821d1">2.34.1. Marguerite Nolin- Exercice noté 01- Prog.zip</a></li>
+</ul>
+</li>
+<li><a href="#orgb7c1a71">2.35. Marianne<sub>Lemieux</sub>/</a>
+<ul>
+<li><a href="#org0a2a55c">2.35.1. M. Lemieux<sub>M</sub>. Tak (1).js</a></li>
+<li><a href="#org0165536">2.35.2. M.Lemieux<sub>M.Tak</sub><sub>Exercice</sub><sub>noté</sub><sub>1.docx</sub></a></li>
+</ul>
+</li>
+<li><a href="#orgce6667d">2.36. Marie-Noëlle<sub>Lortie</sub>/</a>
+<ul>
+<li><a href="#orge886b9e">2.36.1. ExNoté 01 en pdf.pdf</a></li>
+<li><a href="#org3cc0b8f">2.36.2. exnote01.js</a></li>
+</ul>
+</li>
+<li><a href="#org501d373">2.37. Mary-Maxime<sub>Leclair</sub>/</a>
+<ul>
+<li><a href="#org96e6cd9">2.37.1. Exercice6.vf.js</a></li>
+<li><a href="#org1412d78">2.37.2. Travail prog 1.pdf</a></li>
+</ul>
+</li>
+<li><a href="#orgf1172fd">2.38. Noémie<sub>Olmand</sub>/</a>
+<ul>
+<li><a href="#org5288e89">2.38.1. Exercice #1 Q (1).6</a></li>
+<li><a href="#orgc9e88fd">2.38.2. Exercices-noté 1.pdf</a></li>
+</ul>
+</li>
+<li><a href="#org7f404d0">2.39. Paulina<sub>Jaramillo</sub> Salazar/</a>
+<ul>
+<li><a href="#org46b1149">2.39.1. IMG<sub>20190924</sub><sub>150953</sub>-converted.pdf</a></li>
+<li><a href="#orgf224a3c">2.39.2. paulina.jaramillo.Q#6.exercice1.pdf</a></li>
+</ul>
+</li>
+<li><a href="#orga392251">2.40. Roua<sub>Nour</sub> Briedj/</a>
+<ul>
+<li><a href="#org4be64bc">2.40.1. remise exercice 1 /</a>
+<ul>
+<li><a href="#org12042b3">2.40.1.1. exercice-noté-1-programme.pdf</a></li>
+<li><a href="#org4d7973d">2.40.1.2. exercice-noté-1.pdf</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org37a00f1">2.41. Sandrine<sub>Rochon</sub>/</a>
+<ul>
+<li><a href="#orgd3e7c6b">2.41.1. Exercice noté 1 #1-5.pdf</a></li>
+<li><a href="#orge729fd8">2.41.2. Exercice noté 1 #6.js</a></li>
+</ul>
+</li>
+<li><a href="#org03ad3d9">2.42. Sophie<sub>Detroio</sub>/</a>
+<ul>
+<li><a href="#orgd2bc8de">2.42.1. Sophie.Detroio.IFT1016B.Exercice#1.zip</a></li>
+</ul>
+</li>
+<li><a href="#orgf990efa">2.43. Valérie<sub>Panaite</sub>/</a>
+<ul>
+<li><a href="#org2445def">2.43.1. exercice noté 1-numéro 6.txt</a></li>
+<li><a href="#org11e9e18">2.43.2. exercice noté-#1-5.pdf</a></li>
+</ul>
+</li>
+<li><a href="#orge19d9bc">2.44. Xavier<sub>Michaud</sub>/</a>
+<ul>
+<li><a href="#org3c82a33">2.44.1. Question 1 à 5.pdf</a></li>
+<li><a href="#orgac9b281">2.44.2. Question 6.js</a></li>
+</ul>
+</li>
+<li><a href="#org1e7a9ec">2.45. Élodie<sub>Petit</sub>/</a>
+<ul>
+<li><a href="#orgf1183a0">2.45.1. Exercice noté 1 CodeBoot.pdf</a></li>
+<li><a href="#orgff6e7bd">2.45.2. Exercice noté 1.pdf</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org724a73e">3. correction</a>
+<ul>
+<li><a href="#org1f4b85b">3.1. still issues</a>
+<ul>
+<li><a href="#orgc0aac5b">3.1.1. <span class="todo fixme">fixme</span> chirele abenaim</a>
+<ul>
+<li><a href="#orgf3eb55a">3.1.1.1. Exercices 1-5.docx</a></li>
+<li><a href="#org7753942">3.1.1.2. Programme de lexercice 6</a></li>
+</ul>
+</li>
+<li><a href="#orga824cb5">3.1.2. <span class="todo fixme">fixme</span> camille deaneault &amp; marc-antoine akzam-ouellette</a>
+<ul>
+<li><a href="#org10144b7">3.1.2.1. Camille Deneault et Marc-Antoine Akzam-Ouellette<sub>Exercice</sub> 1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgeb714e2">3.2. perfect mark</a>
+<ul>
+<li><a href="#orge23bca2">3.2.1. <span class="done done">done</span> adrian minano-lozano</a>
+<ul>
+<li><a href="#org29b7592">3.2.1.1. resume</a></li>
+<li><a href="#orge086a1f">3.2.1.2. commentaires</a></li>
+<li><a href="#org731effb">3.2.1.3. code</a></li>
+<li><a href="#org029169d">3.2.1.4. fichiers</a></li>
+</ul>
+</li>
+<li><a href="#org1324a36">3.2.2. <span class="done done">done</span> alexy pauzé &amp; emmanuelle vigneron</a>
+<ul>
+<li><a href="#orge1ba7f0">3.2.2.1. resume</a></li>
+<li><a href="#org82de094">3.2.2.2. commentaires</a></li>
+<li><a href="#org5689434">3.2.2.3. code</a></li>
+<li><a href="#org82d6d01">3.2.2.4. fichiers</a></li>
+</ul>
+</li>
+<li><a href="#orgc796562">3.2.3. <span class="done done">done</span> amanda tanguay &amp; catherine daunais&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org1938af8">3.2.3.1. Exercice noté 1<sub>Code</sub> #6<sub>Daunais</sub><sub>Tanguay.txt</sub></a></li>
+<li><a href="#orgbd39207">3.2.3.2. Exercice noté 1<sub>Daunais</sub><sub>Tanguay.pdf</sub></a></li>
+</ul>
+</li>
+<li><a href="#org66132aa">3.2.4. <span class="done done">done</span> ana nader &amp; clara eloy</a>
+<ul>
+<li><a href="#org5f8f33c">3.2.4.1. resume</a></li>
+<li><a href="#org536faaf">3.2.4.2. fichiers</a></li>
+</ul>
+</li>
+<li><a href="#orge71249a">3.2.5. <span class="done done">done</span> ariane brucher &amp; heloise tanguay</a>
+<ul>
+<li><a href="#org2416961">3.2.5.1. resume</a></li>
+<li><a href="#org9df1bf9">3.2.5.2. fichiers</a></li>
+</ul>
+</li>
+<li><a href="#org76aa858">3.2.6. <span class="done done">done</span> ariane paradis</a>
+<ul>
+<li><a href="#org5542564">3.2.6.1. fichiers</a></li>
+</ul>
+</li>
+<li><a href="#orga7bd6c4">3.2.7. <span class="done done">done</span> arielle desnoyers &amp; charline delorme</a>
+<ul>
+<li><a href="#orga2bbe48">3.2.7.1. resume</a></li>
+<li><a href="#org566624d">3.2.7.2. fichiers</a></li>
+</ul>
+</li>
+<li><a href="#org6b6cbda">3.2.8. <span class="done done">done</span> camille bouchard&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org4245f59">3.2.8.1. Exercice 1.pdf</a></li>
+<li><a href="#org3cb7987">3.2.8.2. untitled2.js</a></li>
+</ul>
+</li>
+<li><a href="#org93b0396">3.2.9. <span class="done done">done</span> camille deneault &amp; Marc-Antoine<sub>Akzam</sub>-Ouellette&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org06f1269">3.2.9.1. excercice noté 1.docx</a></li>
+</ul>
+</li>
+<li><a href="#orgab3a2ff">3.2.10. <span class="done done">done</span> charline desromes &amp; arielles desnoyers&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#orgb3e791e">3.2.10.1. PROG TP 1.pdf</a></li>
+<li><a href="#orgff8e15f">3.2.10.2. tp 1.js</a></li>
+</ul>
+</li>
+<li><a href="#orgf19e77a">3.2.11. <span class="done done">done</span> charlotte roy &amp; maude turgeon-ares&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org746f813">3.2.11.1. Exercice note 1</a></li>
+<li><a href="#org141ac22">3.2.11.2. Exercice1q6.js</a></li>
+</ul>
+</li>
+<li><a href="#org43275b3">3.2.12. <span class="done done">done</span> cleo st-martin &amp; marie-jeanne blouin&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org511adff">3.2.12.1. Blouin<sub>St</sub>-Martin<sub>Exercice1.js</sub></a></li>
+<li><a href="#org8463516">3.2.12.2. Blouin<sub>St</sub><sub>Martin</sub><sub>Exercie</sub>-noté-1.pdf</a></li>
+</ul>
+</li>
+<li><a href="#orga49626c">3.2.13. <span class="done done">done</span> david richard &amp; jonathan dion&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org7945997">3.2.13.1. exercice 1 prog.pdf</a></li>
+<li><a href="#org95879f6">3.2.13.2. exercice 1.js</a></li>
+</ul>
+</li>
+<li><a href="#org6d580c1">3.2.14. <span class="done done">done</span> gabrielle wester &amp; alexandre montreuil&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org1500067">3.2.14.1. Exercice note 01.txt</a></li>
+<li><a href="#org0f07ea5">3.2.14.2. IFT1016 Exercice noté 01 Alexandre Montreuil et Gabrielle Wester.pdf</a></li>
+</ul>
+</li>
+<li><a href="#org8d37b96">3.2.15. <span class="done done">done</span> genevieve martin &amp; Léa<sub>Blouin</sub> Gagnon&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org6f74a9c">3.2.15.1. #6</a></li>
+<li><a href="#orgdb19817">3.2.15.2. Archive.zip</a></li>
+</ul>
+</li>
+<li><a href="#org5ab915d">3.2.16. <span class="done done">done</span> ghita bardaoui &amp; celia khaldi&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#orge551827">3.2.16.1. IFT1010 exercice noté- Ghita Bardaoui et Celia Khaldi.pdf</a></li>
+<li><a href="#orgaa42cc8">3.2.16.2. ex-note-num-6-Ghita Bardaoui et Celia Khaldi.js</a></li>
+</ul>
+</li>
+<li><a href="#org6992bd9">3.2.17. <span class="done done">done</span> guillaume labonte-pelletier&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org3e5c99b">3.2.17.1. ExerciceNoté01<sub>Question06.js</sub></a></li>
+<li><a href="#org7cd764e">3.2.17.2. GuillaumeLabonté-Pelletier<sub>ExerciceNoté01.pdf</sub></a></li>
+</ul>
+</li>
+<li><a href="#orgb7b2eed">3.2.18. <span class="done done">done</span> hamza zarglayoun &amp; sylvie tran&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org2f4337d">3.2.18.1. exercice noté #1 (numéros 1 à 5).pdf</a></li>
+<li><a href="#org488c221">3.2.18.2. numéro 6.js</a></li>
+</ul>
+</li>
+<li><a href="#orgfb414ae">3.2.19. <span class="done done">done</span> jade ricard</a>
+<ul>
+<li><a href="#org3a7acf4">3.2.19.1. Exercice noté 1 Jade Ricard .pdf</a></li>
+<li><a href="#org2ff5c57">3.2.19.2. Question 6</a></li>
+</ul>
+</li>
+<li><a href="#orgc57e0ad">3.2.20. <span class="done done">done</span> julie guertin&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#orgbf9a5ac">3.2.20.1. JGuertin<sub>exercice1.pdf</sub></a></li>
+<li><a href="#org5109fc5">3.2.20.2. julie-guertin-exercice1.js</a></li>
+</ul>
+</li>
+<li><a href="#orgc89139d">3.2.21. <span class="done done">done</span> justine larochelle-guy &amp; audrey-anne turcotte&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org8451ddc">3.2.21.1. Exercice Noté 01 Justine L-G et Audrey-Anne Tpdf</a></li>
+</ul>
+</li>
+<li><a href="#org1af8b96">3.2.22. <span class="done done">done</span> laurence boilard &amp; marie-noëlle lortie&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#orgf6b4c04">3.2.22.1. ExNoté 01 en pdf.pdf</a></li>
+<li><a href="#org6054332">3.2.22.2. exnote01.js</a></li>
+</ul>
+</li>
+<li><a href="#org67d8d46">3.2.23. <span class="done done">done</span> laurie charet &amp; mary-maxime leclair&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org556f455">3.2.23.1. Exercice6.vf.js</a></li>
+<li><a href="#orgd87ade7">3.2.23.2. Travail prog 1.pdf</a></li>
+</ul>
+</li>
+<li><a href="#org5d7cad3">3.2.24. <span class="done done">done</span> lea tremblay&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#orgf26f2b6">3.2.24.1. Exercice 1 noté.pdf</a></li>
+<li><a href="#orga4f4a89">3.2.24.2. IMG<sub>2818</sub>-converti.pdf</a></li>
+</ul>
+</li>
+<li><a href="#org2a6f224">3.2.25. <span class="done done">done</span> Marguerite<sub>Nolin</sub>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span>&#xa0;<span class="studium">studium</span></span></a>
+<ul>
+<li><a href="#org833c1ef">3.2.25.1. Marguerite Nolin- Exercice noté 01- Prog.zip</a></li>
+</ul>
+</li>
+<li><a href="#org2febff7">3.2.26. <span class="done done">done</span> megan giguere bliane beauvais&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org9c4a8ce">3.2.26.1. Exercice noté 01 - EB et MG.docx</a></li>
+</ul>
+</li>
+<li><a href="#org96ff733">3.2.27. <span class="done done">done</span> nassereddine bissan</a>
+<ul>
+<li><a href="#orgd38aac2">3.2.27.1. fichiers</a></li>
+</ul>
+</li>
+<li><a href="#org8d50e22">3.2.28. <span class="done done">done</span> never tourigny Élodie<sub>Petit</sub>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#orgee2b5f6">3.2.28.1. Exercice noté 1 CodeBoot.pdf</a></li>
+</ul>
+</li>
+<li><a href="#org951389e">3.2.29. <span class="done done">done</span> noemie nolmand&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org609e0ae">3.2.29.1. Exercice #1 Q (1).6</a></li>
+<li><a href="#org6bb5d99">3.2.29.2. Exercices-noté 1.pdf</a></li>
+</ul>
+</li>
+<li><a href="#orgb2eeab3">3.2.30. <span class="done done">done</span> paulina jaramillo&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org113b4f1">3.2.30.1. IMG<sub>20190924</sub><sub>150953</sub>-converted.pdf</a></li>
+<li><a href="#org40a5450">3.2.30.2. paulina.jaramillo.Q#6.exercice1.pdf</a></li>
+</ul>
+</li>
+<li><a href="#org567dbd4">3.2.31. <span class="done done">done</span> Sophie<sub>Detroio</sub>/&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org0f83597">3.2.31.1. Sophie.Detroio.IFT1016B.Exercice#1.zip</a></li>
+</ul>
+</li>
+<li><a href="#org28f85dd">3.2.32. <span class="done done">done</span> xavier michaud&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org729f07e">3.2.32.1. Question 1 à 5.pdf</a></li>
+<li><a href="#org49107c6">3.2.32.2. Question 6.js</a></li>
+</ul>
+</li>
+<li><a href="#org1921b0b">3.2.33. <span class="done done">done</span> yuri anne prevost &amp; Laura<sub>Trubiano</sub>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></a>
+<ul>
+<li><a href="#org91d5698">3.2.33.1. Excercice<sub>1.zip</sub></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org40266d8">3.3. not perfect</a>
+<ul>
+<li><a href="#org9f03e91">3.3.1. <span class="done done">done</span> nawal imad &amp; roua nour briedj&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></a>
+<ul>
+<li><a href="#orgf71dc85">3.3.1.1. remise exercice 1 /</a></li>
+</ul>
+</li>
+<li><a href="#org67467cb">3.3.2. <span class="done done">done</span> laura pesenti &amp; maude-isabelle ouellet&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></a>
+<ul>
+<li><a href="#org30e48af">3.3.2.1. Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></a></li>
+</ul>
+</li>
+<li><a href="#orge799f94">3.3.3. <span class="done done">done</span> melanie tack Marianne<sub>Lemieux</sub>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></a>
+<ul>
+<li><a href="#orgfbe7498">3.3.3.1. M. Lemieux<sub>M</sub>. Tak (1).js</a></li>
+<li><a href="#org4b649cc">3.3.3.2. M.Lemieux<sub>M.Tak</sub><sub>Exercice</sub><sub>noté</sub><sub>1.docx</sub></a></li>
+</ul>
+</li>
+<li><a href="#org66bfc15">3.3.4. <span class="done done">done</span> sandrine rochon &amp; sarah dery&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></a>
+<ul>
+<li><a href="#org45cad03">3.3.4.1. Exercice noté 1 #1-5.pdf</a></li>
+<li><a href="#orgebab93e">3.3.4.2. Exercice noté 1 #6.js</a></li>
+</ul>
+</li>
+<li><a href="#orgfc828dd">3.3.5. <span class="done done">done</span> valerie panaite&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></a>
+<ul>
+<li><a href="#orgd8b4d6e">3.3.5.1. exercice noté 1-numéro 6.txt</a></li>
+<li><a href="#org50bac1f">3.3.5.2. exercice noté-#1-5.pdf</a></li>
+</ul>
+</li>
+<li><a href="#orgf1a58c9">3.3.6. <span class="done done">done</span> Kim<sub>Goyette</sub>/&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></a>
+<ul>
+<li><a href="#org416ccb1">3.3.6.1. exercice noté1(1)</a></li>
+<li><a href="#org8777481">3.3.6.2. exercices1.pdf</a></li>
+</ul>
+</li>
+<li><a href="#org237b80b">3.3.7. <span class="done done">done</span> janice bessard &amp; marie-helene st-jean&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></a>
+<ul>
+<li><a href="#org6e50540">3.3.7.1. ExerciceNoté01.js</a></li>
+<li><a href="#org334c841">3.3.7.2. exerciceNoté1.pdf</a></li>
+</ul>
+</li>
+<li><a href="#org199cf67">3.3.8. <span class="done done">done</span> andreanne bernatchez&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></a>
+<ul>
+<li><a href="#orgebbddf9">3.3.8.1. resume</a></li>
+<li><a href="#org8940706">3.3.8.2. fichiers</a></li>
+</ul>
+</li>
+<li><a href="#orge7ca508">3.3.9. <span class="done done">done</span> camille sylvestre&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></a>
+<ul>
+<li><a href="#org06fbf80">3.3.9.1. resume</a></li>
+<li><a href="#org75766b2">3.3.9.2. dev 1 num 6 Camille Sylvestre (2).js</a></li>
+<li><a href="#org5a04f34">3.3.9.3. devoir1 num#-5 Camille Sylvestre.pdf</a></li>
+</ul>
+</li>
+<li><a href="#org3443c49">3.3.10. <span class="done done">done</span> amélie boucher &amp; vanessa Potvin Bujold&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></a>
+<ul>
+<li><a href="#org56b8a6f">3.3.10.1. resume</a></li>
+<li><a href="#orgc19cd40">3.3.10.2. fichiers</a></li>
+</ul>
+</li>
+<li><a href="#org4911804">3.3.11. <span class="done done">done</span> coralie bibeau &amp; ariane garneau&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></a>
+<ul>
+<li><a href="#org06d494e">3.3.11.1. Exercice 1 Coralie et Ariane.js</a></li>
+<li><a href="#org070ab6a">3.3.11.2. Exercice 1 Coralie et Ariane.pdf</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org77ee497" class="outline-2">
+<h2 id="org77ee497"><span class="section-number-2">1</span> solutionnaire</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgcf70e5c" class="outline-3">
+<h3 id="orgcf70e5c"><span class="section-number-3">1.1</span> 1 conversions de bases:</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-orgd8ab2c6" class="outline-4">
+<h4 id="orgd8ab2c6"><span class="section-number-4">1.1.1</span> a) déterminer la puissance de chaque chiffre pour un nombre de 5 chiffres en base 7:&#xa0;&#xa0;&#xa0;<span class="tag"><span class="nomark">nomark</span></span></h4>
+<div class="outline-text-4" id="text-1-1-1">
+<ul class="org-ul">
+<li>question pas clair donc pas prise en compte</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2a09f82" class="outline-4">
+<h4 id="org2a09f82"><span class="section-number-4">1.1.2</span> b) convertir le nombre 2aa3 16 en décimal.</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<p>
+\[ (2aa3)_{hex} = 2 \times 16^3 + 10\times 16^2 + 10\times 16^1 + 3\times 16^0
+ = (100915)_{10} \]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org07dbd54" class="outline-4">
+<h4 id="org07dbd54"><span class="section-number-4">1.1.3</span> c) convertir le nombre 4b16</h4>
+<div class="outline-text-4" id="text-1-1-3">
+</div>
+<div id="outline-container-orge857642" class="outline-5">
+<h5 id="orge857642"><span class="section-number-5">1.1.3.1</span> d&rsquo;hexadécimal à décimal</h5>
+<div class="outline-text-5" id="text-1-1-3-1">
+<p>
+\[ 4B_{16} = (4\times 16^1 + 11\times 1)_{10} = 75_{10} \]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org27491c8" class="outline-5">
+<h5 id="org27491c8"><span class="section-number-5">1.1.3.2</span> d&rsquo;hexadécimal à binaire</h5>
+<div class="outline-text-5" id="text-1-1-3-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">4</td>
+<td class="org-right">B</td>
+</tr>
+
+<tr>
+<td class="org-right">0100</td>
+<td class="org-right">1011</td>
+</tr>
+</tbody>
+</table>
+<p>
+-&gt; \[ 4B_{16} = 01001011_{2} \]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2db12d5" class="outline-5">
+<h5 id="org2db12d5"><span class="section-number-5">1.1.3.3</span> d&rsquo;hexadécimal à octal</h5>
+<div class="outline-text-5" id="text-1-1-3-3">
+<p>
+On peut faire des paquets de 3 avec la representation binaire. Il faut commencer
+par les chiffres les moins représentatifs (la droite) vers les plus
+représentatifs (la gauche). Si le nombre de bits n&rsquo;est pas un multiple de 3
+le &ldquo;paquet&rdquo; le plus à gauche n&rsquo;aura pas trois chiffre. On interprète celà
+comme un (comme ici) ou deux <code>0</code> de implicite à gauche.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">(0) 01</td>
+<td class="org-right">001</td>
+<td class="org-right">011</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">3</td>
+</tr>
+</tbody>
+</table>
+<p>
+-&gt; \[4B_{16} = (01001011)_{2} = (0 01001011)_{2} = (113)_{8} \]
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgd84636a" class="outline-4">
+<h4 id="orgd84636a"><span class="section-number-4">1.1.4</span> d) comment peut-on encoder l&rsquo;entier (1011) avec la notation hex de js?</h4>
+<div class="outline-text-4" id="text-1-1-4">
+<p>
+pour indiquer que le nombre est écrit en hexa en js on le précède de &rsquo;0x&rsquo;.
+</p>
+</div>
+</div>
+<div id="outline-container-org87c8b2f" class="outline-4">
+<h4 id="org87c8b2f"><span class="section-number-4">1.1.5</span> e) quelle est la valeur de 0xee (javascript)?</h4>
+<div class="outline-text-4" id="text-1-1-5">
+<p>
+\[ 0xee = (ee)_{\mathrm{hex}} = (14\times 16^1 + 14\times 16^0)_{10} = (238)_{10} \]
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org10153ac" class="outline-3">
+<h3 id="org10153ac"><span class="section-number-3">1.2</span> 2 représenter un nombre 17 selon la convention non signée sur 5 bits.</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+on sait que 17 = 16 + 1 donc nous avons: 10000 + 00001 = 10001
+<i>évidemment le fait que le nombre est non-signé est crucial</i>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaade083" class="outline-3">
+<h3 id="orgaade083"><span class="section-number-3">1.3</span> 3 décodage de nombres binaires signés.</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+quelle valeurs sont encodées par la convention complément à 2 sur 5 bits par les chaines
+binaires suivantes :
+</p>
+<ul class="org-ul">
+<li>01101 : le chiffre le plus significatif est un zéro donc on n&rsquo;a pas à se
+soucier des compléments, la valeur en décimale s&rsquo;écrit <b>13</b></li>
+<li>10011 : est le complément à 1 sur 5 bits du nombre précédent,
+la  valeur s&rsquo;écrit donc -13 en décimale avec signe.</li>
+<li id="note ">observer que la somme des deux nombres en binaires donne 100000</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org151d3bd" class="outline-3">
+<h3 id="org151d3bd"><span class="section-number-3">1.4</span> 4 ieee 754 (double i.e. 64 bits)</h3>
+<div class="outline-text-3" id="text-1-4">
+</div>
+<div id="outline-container-orgae2eaa3" class="outline-4">
+<h4 id="orgae2eaa3"><span class="section-number-4">1.4.1</span> question</h4>
+<div class="outline-text-4" id="text-1-4-1">
+<p>
+rappelr l&rsquo;anatomie d&rsquo;un nombre à virgule flottante précision double ieee 754 (64 bits).
+quel et l&rsquo;encodage en précision double ieee 754 (64 bits) des nombres point flottants
+3.15 e -4? donnez le contenu des champs s, e et f.
+</p>
+</div>
+</div>
+<div id="outline-container-org526e973" class="outline-4">
+<h4 id="org526e973"><span class="section-number-4">1.4.2</span> reponse</h4>
+<div class="outline-text-4" id="text-1-4-2">
+<table id="org1b210b1" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">decimal</th>
+<th scope="col" class="org-right">bit-signe (s)</th>
+<th scope="col" class="org-right">exposent (e)</th>
+<th scope="col" class="org-right">mantisse (f)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">3.15</td>
+<td class="org-right">0</td>
+<td class="org-right">10000000000</td>
+<td class="org-right">1001001100110011001100110011001100110011001100110011</td>
+</tr>
+
+<tr>
+<td class="org-right">-4</td>
+<td class="org-right">1</td>
+<td class="org-right">10000000001</td>
+<td class="org-right">0000000000000000000000000000000000000000000000000000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org72fb349" class="outline-4">
+<h4 id="org72fb349"><span class="section-number-4">1.4.3</span> explications</h4>
+<div class="outline-text-4" id="text-1-4-3">
+<p>
+tout d&rsquo;abord prendre le réflexe de remarquer que 4 est une puissance de deux,
+alors que 3.15 loin de là. le nombre 3 est simplement 011 en binaire
+(modulo le padding a gauche). les parties fractionnaires sont plus faciles
+à comprendre en forme fractionelle et d&rsquo;enlever les puissances de deux.
+\[ 0.15 = 3/20 = 3 /(5 \times 2^{2} ) = 3/5 \times 2^{-2} = 0.6 \times 2^{-2  }\]
+</p>
+
+<table id="orgeecaa8d" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">\(0.6 \times 2\)</td>
+<td class="org-right">1.2</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-left">\(0.2 \times 2\)</td>
+<td class="org-right">0.4</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">\(0.4 \times 2\)</td>
+<td class="org-right">0.8</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">\(0.8 \times 2\)</td>
+<td class="org-right">1.6</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-left">0.6</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">etc.</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-orgdaa9335" class="outline-4">
+<h4 id="orgdaa9335"><span class="section-number-4">1.4.4</span> liens</h4>
+<div class="outline-text-4" id="text-1-4-4">
+<ul class="org-ul">
+<li><a href="https://stackoverflow.com/questions/4987176/how-do-you-convert-a-fraction-to-binary">https://stackoverflow.com/questions/4987176/how-do-you-convert-a-fraction-to-binary</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgba0d4c8" class="outline-3">
+<h3 id="orgba0d4c8"><span class="section-number-3">1.5</span> 5 js arithmetic expressions&#xa0;&#xa0;&#xa0;<span class="tag"><span class="nomark">nomark</span></span></h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+trouve la plus petite expression javascript (ayant le minimum de caractères
+incluat les parenthèses et symboles, et pas de blancs) contenant les nombres
+10, 2,3, et 4 (exactement une fois chaque), et les opérateurs +, - et * (autant
+de foi que vous voulez), dont la valeur est 9.
+</p>
+
+<p>
+#+begi<sub>src</sub> js
+10-2+4-3
+#+end<sub>rc</sub>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org48faad1" class="outline-3">
+<h3 id="org48faad1"><span class="section-number-3">1.6</span> 6 js abstraction through bindings</h3>
+<div class="outline-text-3" id="text-1-6">
+<p>
+lorsqu&rsquo;on obtient un prêt hypothécaire à paiements fixes, on s&rsquo;engage à rembourser le prêt
+sur un certain nombre de mois en payant le même montant à chaque mois. si p est le
+montant du prêt, et que n est le nombre de mois, et que i [sic, t] est le taux d&rsquo;intérêt
+annuel en pourcents, alors la formule mathématique suivante peut être utilisée
+pour calculer <code>m</code>, le montant à payer à chaque mois:
+</p>
+
+<p>
+\[
+m = \frac{p(1+\frac{t}{12\times 100})^n \times \frac{t}{12\times 100}}
+{(1+\frac{t}{12\times 100})^{n }-1}
+\]
+</p>
+
+<p>
+on veut en général abstraire la structure des détails d&rsquo;un programme. puisque
+la valeur \[ \frac{t}{12\times 100} \] semble se repeter on déclare une nouvelles variable
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="color: #454459;">// </span><span style="color: #454459;">constantes</span>
+<span style="color: #9587DD;">let</span> <span style="color: #41b0f3;">p</span> = <span style="color: #c79af4;">200000</span>
+<span style="color: #9587DD;">let</span> <span style="color: #41b0f3;">t</span> = <span style="color: #c79af4;">5.5</span>
+<span style="color: #9587DD;">let</span> <span style="color: #41b0f3;">n</span> = <span style="color: #c79af4;">360</span>
+<span style="color: #454459;">// </span><span style="color: #454459;">parametre calcul&#233;</span>
+<span style="color: #9587DD;">let</span> <span style="color: #41b0f3;">taux_mens</span> = t/<span style="color: #0D9C94;">(</span><span style="color: #c79af4;">12</span>*<span style="color: #c79af4;">100</span><span style="color: #0D9C94;">)</span>
+<span style="color: #454459;">// </span><span style="color: #454459;">montant a payer</span>
+<span style="color: #9587DD;">let</span> <span style="color: #41b0f3;">m</span> = <span style="color: #0D9C94;">(</span>p * <span style="color: #47ba99;">(</span><span style="color: #62D2DB;">(</span><span style="color: #c79af4;">1</span> + taux_mens<span style="color: #62D2DB;">)</span>**n<span style="color: #47ba99;">)</span> * taux_mens<span style="color: #0D9C94;">)</span>/<span style="color: #0D9C94;">(</span><span style="color: #47ba99;">(</span><span style="color: #62D2DB;">(</span><span style="color: #c79af4;">1</span> + taux_mens<span style="color: #62D2DB;">)</span>**n<span style="color: #47ba99;">)</span> -<span style="color: #c79af4;">1</span><span style="color: #0D9C94;">)</span>
+console.log<span style="color: #0D9C94;">(</span>m<span style="color: #0D9C94;">)</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgaac9939" class="outline-2">
+<h2 id="orgaac9939"><span class="section-number-2">2</span> <a href="exo1-travaux/">exo1-travaux/</a></h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org5167e06" class="outline-3">
+<h3 id="org5167e06"><span class="section-number-3">2.1</span> <a href="exo1-travaux/Adrian_Minano-Lozano/">Adrian<sub>Minano</sub>-Lozano/</a></h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org4db0e6f" class="outline-4">
+<h4 id="org4db0e6f"><span class="section-number-4">2.1.1</span> <a href="exo1-travaux/Adrian_Minano-Lozano/Exercice noté 1-Adrian Minano-Lozano.pdf">Exercice noté 1-Adrian Minano-Lozano.pdf</a></h4>
+</div>
+<div id="outline-container-org2fb2028" class="outline-4">
+<h4 id="org2fb2028"><span class="section-number-4">2.1.2</span> <a href="exo1-travaux/Adrian_Minano-Lozano/Exercice1.js">Exercice1.js</a></h4>
+</div>
+</div>
+<div id="outline-container-org69d4720" class="outline-3">
+<h3 id="org69d4720"><span class="section-number-3">2.2</span> <a href="exo1-travaux/Alexy_Pauzé/">Alexy<sub>Pauzé</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-org875d747" class="outline-4">
+<h4 id="org875d747"><span class="section-number-4">2.2.1</span> <a href="exo1-travaux/Alexy_Pauzé/Exercice.1.Alexy_Emmanuelle_final.docx">Exercice.1.Alexy<sub>Emmanuelle</sub><sub>final.docx</sub></a></h4>
+</div>
+<div id="outline-container-orgea1365d" class="outline-4">
+<h4 id="orgea1365d"><span class="section-number-4">2.2.2</span> <a href="exo1-travaux/Alexy_Pauzé/Exercice1 Pauzé-Vigneron.js">Exercice1 Pauzé-Vigneron.js</a></h4>
+</div>
+</div>
+<div id="outline-container-org6b9bc2b" class="outline-3">
+<h3 id="org6b9bc2b"><span class="section-number-3">2.3</span> <a href="exo1-travaux/Amélie_Boucher/">Amélie<sub>Boucher</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+<div id="outline-container-org08e132b" class="outline-4">
+<h4 id="org08e132b"><span class="section-number-4">2.3.1</span> <a href="exo1-travaux/Amélie_Boucher/Exercicenoté1.pdf">Exercicenoté1.pdf</a></h4>
+</div>
+<div id="outline-container-org06f8824" class="outline-4">
+<h4 id="org06f8824"><span class="section-number-4">2.3.2</span> <a href="exo1-travaux/Amélie_Boucher/TP1.pdf">TP1.pdf</a></h4>
+</div>
+</div>
+<div id="outline-container-org7318b3a" class="outline-3">
+<h3 id="org7318b3a"><span class="section-number-3">2.4</span> <a href="exo1-travaux/Ana_Neder/">Ana<sub>Neder</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-4">
+</div>
+<div id="outline-container-org51b696a" class="outline-4">
+<h4 id="org51b696a"><span class="section-number-4">2.4.1</span> <a href="exo1-travaux/Ana_Neder/exercice noté 1- question 6.txt">exercice noté 1- question 6.txt</a></h4>
+</div>
+<div id="outline-container-org17c6a95" class="outline-4">
+<h4 id="org17c6a95"><span class="section-number-4">2.4.2</span> <a href="exo1-travaux/Ana_Neder/exercice noté 1-question 1 à 5.pdf">exercice noté 1-question 1 à 5.pdf</a></h4>
+</div>
+</div>
+<div id="outline-container-org99be3b4" class="outline-3">
+<h3 id="org99be3b4"><span class="section-number-3">2.5</span> <a href="exo1-travaux/Andréanne_Bernatchez/">Andréanne<sub>Bernatchez</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-5">
+</div>
+<div id="outline-container-org5cb39b2" class="outline-4">
+<h4 id="org5cb39b2"><span class="section-number-4">2.5.1</span> <a href="exo1-travaux/Andréanne_Bernatchez/Exercice 01.zip">Exercice 01.zip</a></h4>
+</div>
+<div id="outline-container-org115856b" class="outline-4">
+<h4 id="org115856b"><span class="section-number-4">2.5.2</span> <a href="exo1-travaux/Andréanne_Bernatchez/Exercice 1 (Codeboot).js">Exercice 1 (Codeboot).js</a></h4>
+</div>
+</div>
+<div id="outline-container-orgf81ae30" class="outline-3">
+<h3 id="orgf81ae30"><span class="section-number-3">2.6</span> <a href="exo1-travaux/Ariane_Brucher/">Ariane<sub>Brucher</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-6">
+</div>
+<div id="outline-container-orga29a96c" class="outline-4">
+<h4 id="orga29a96c"><span class="section-number-4">2.6.1</span> <a href="exo1-travaux/Ariane_Brucher/BrucherAriane-TanguayHeloise-Exercice1.js">BrucherAriane-TanguayHeloise-Exercice1.js</a></h4>
+</div>
+<div id="outline-container-orgf6cf1b0" class="outline-4">
+<h4 id="orgf6cf1b0"><span class="section-number-4">2.6.2</span> <a href="exo1-travaux/Ariane_Brucher/BrucherAriane-TanguayHeloise-Exercice1.pdf">BrucherAriane-TanguayHeloise-Exercice1.pdf</a></h4>
+</div>
+</div>
+<div id="outline-container-org14a3b07" class="outline-3">
+<h3 id="org14a3b07"><span class="section-number-3">2.7</span> <a href="exo1-travaux/Ariane_Paradis/">Ariane<sub>Paradis</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-7">
+</div>
+<div id="outline-container-org4c4573b" class="outline-4">
+<h4 id="org4c4573b"><span class="section-number-4">2.7.1</span> <a href="exo1-travaux/Ariane_Paradis/Exercice noté 1.pdf">Exercice noté 1.pdf</a></h4>
+</div>
+<div id="outline-container-org2b2ae28" class="outline-4">
+<h4 id="org2b2ae28"><span class="section-number-4">2.7.2</span> <a href="exo1-travaux/Ariane_Paradis/Paiements mensuels sur prêt">Paiements mensuels sur prêt</a></h4>
+</div>
+</div>
+<div id="outline-container-org1f19edb" class="outline-3">
+<h3 id="org1f19edb"><span class="section-number-3">2.8</span> <a href="exo1-travaux/Arielle_Desnoyers/">Arielle<sub>Desnoyers</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-8">
+</div>
+<div id="outline-container-org224051a" class="outline-4">
+<h4 id="org224051a"><span class="section-number-4">2.8.1</span> <a href="exo1-travaux/Arielle_Desnoyers/Exercice 6">Exercice 6</a></h4>
+</div>
+<div id="outline-container-orgd35e8d9" class="outline-4">
+<h4 id="orgd35e8d9"><span class="section-number-4">2.8.2</span> <a href="exo1-travaux/Arielle_Desnoyers/PROG TP 1.pdf">PROG TP 1.pdf</a></h4>
+</div>
+</div>
+<div id="outline-container-org1f7de7a" class="outline-3">
+<h3 id="org1f7de7a"><span class="section-number-3">2.9</span> <a href="exo1-travaux/Bissan_Nassereddine/">Bissan<sub>Nassereddine</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-9">
+</div>
+<div id="outline-container-org7c99569" class="outline-4">
+<h4 id="org7c99569"><span class="section-number-4">2.9.1</span> <a href="exo1-travaux/Bissan_Nassereddine/NassereddineBissan-Exercice01.pdf">NassereddineBissan-Exercice01.pdf</a></h4>
+</div>
+<div id="outline-container-org1092f4c" class="outline-4">
+<h4 id="org1092f4c"><span class="section-number-4">2.9.2</span> <a href="exo1-travaux/Bissan_Nassereddine/Programme 6.pdf">Programme 6.pdf</a></h4>
+</div>
+</div>
+<div id="outline-container-org8eeb12d" class="outline-3">
+<h3 id="org8eeb12d"><span class="section-number-3">2.10</span> <a href="exo1-travaux/Camille_Bouchard/">Camille<sub>Bouchard</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-10">
+</div>
+<div id="outline-container-orga409356" class="outline-4">
+<h4 id="orga409356"><span class="section-number-4">2.10.1</span> <a href="exo1-travaux/Camille_Bouchard/Exercice 1.pdf">Exercice 1.pdf</a></h4>
+</div>
+<div id="outline-container-org5993df0" class="outline-4">
+<h4 id="org5993df0"><span class="section-number-4">2.10.2</span> <a href="exo1-travaux/Camille_Bouchard/untitled2.js">untitled2.js</a></h4>
+</div>
+</div>
+<div id="outline-container-org721e19d" class="outline-3">
+<h3 id="org721e19d"><span class="section-number-3">2.11</span> <a href="exo1-travaux/Camille_Deneault/">Camille<sub>Deneault</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-11">
+</div>
+<div id="outline-container-orgfc27815" class="outline-4">
+<h4 id="orgfc27815"><span class="section-number-4">2.11.1</span> <a href="exo1-travaux/Camille_Deneault/Camille Deneault et Marc-Antoine Akzam-Ouellette_Exercice 1">Camille Deneault et Marc-Antoine Akzam-Ouellette<sub>Exercice</sub> 1</a></h4>
+</div>
+</div>
+<div id="outline-container-orgc573be0" class="outline-3">
+<h3 id="orgc573be0"><span class="section-number-3">2.12</span> <a href="exo1-travaux/Camille_Sylvestre/">Camille<sub>Sylvestre</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-12">
+</div>
+<div id="outline-container-org709c3dd" class="outline-4">
+<h4 id="org709c3dd"><span class="section-number-4">2.12.1</span> <a href="exo1-travaux/Camille_Sylvestre/dev 1 num 6 Camille Sylvestre (2).js">dev 1 num 6 Camille Sylvestre (2).js</a></h4>
+</div>
+<div id="outline-container-orgb3b9cdc" class="outline-4">
+<h4 id="orgb3b9cdc"><span class="section-number-4">2.12.2</span> <a href="exo1-travaux/Camille_Sylvestre/devoir1 num#-5 Camille Sylvestre.pdf">devoir1 num#-5 Camille Sylvestre.pdf</a></h4>
+</div>
+</div>
+<div id="outline-container-orge6f0e01" class="outline-3">
+<h3 id="orge6f0e01"><span class="section-number-3">2.13</span> <a href="exo1-travaux/Catherine_Daunais/">Catherine<sub>Daunais</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-13">
+</div>
+<div id="outline-container-orgc739ba5" class="outline-4">
+<h4 id="orgc739ba5"><span class="section-number-4">2.13.1</span> <a href="exo1-travaux/Catherine_Daunais/Exercice noté 1_Code #6_Daunais_Tanguay.txt">Exercice noté 1<sub>Code</sub> #6<sub>Daunais</sub><sub>Tanguay.txt</sub></a></h4>
+</div>
+<div id="outline-container-orgf9e92ad" class="outline-4">
+<h4 id="orgf9e92ad"><span class="section-number-4">2.13.2</span> <a href="exo1-travaux/Catherine_Daunais/Exercice noté 1_Daunais_Tanguay.pdf">Exercice noté 1<sub>Daunais</sub><sub>Tanguay.pdf</sub></a></h4>
+</div>
+</div>
+<div id="outline-container-orgf3f7e1f" class="outline-3">
+<h3 id="orgf3f7e1f"><span class="section-number-3">2.14</span> <a href="exo1-travaux/Charline_Delorme/">Charline<sub>Delorme</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-14">
+</div>
+<div id="outline-container-org8721666" class="outline-4">
+<h4 id="org8721666"><span class="section-number-4">2.14.1</span> <a href="exo1-travaux/Charline_Delorme/PROG TP 1.pdf">PROG TP 1.pdf</a></h4>
+</div>
+<div id="outline-container-org442a769" class="outline-4">
+<h4 id="org442a769"><span class="section-number-4">2.14.2</span> <a href="exo1-travaux/Charline_Delorme/tp 1.js">tp 1.js</a></h4>
+</div>
+</div>
+<div id="outline-container-org9587b51" class="outline-3">
+<h3 id="org9587b51"><span class="section-number-3">2.15</span> <a href="exo1-travaux/Charlotte_Roy/">Charlotte<sub>Roy</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-15">
+</div>
+<div id="outline-container-org3e3994c" class="outline-4">
+<h4 id="org3e3994c"><span class="section-number-4">2.15.1</span> <a href="exo1-travaux/Charlotte_Roy/Exercice note 1">Exercice note 1</a></h4>
+</div>
+<div id="outline-container-org0c33ccb" class="outline-4">
+<h4 id="org0c33ccb"><span class="section-number-4">2.15.2</span> <a href="exo1-travaux/Charlotte_Roy/Exercice1q6.js">Exercice1q6.js</a></h4>
+</div>
+</div>
+<div id="outline-container-org415a04f" class="outline-3">
+<h3 id="org415a04f"><span class="section-number-3">2.16</span> <a href="exo1-travaux/Cléo_St-Martin/">Cléo<sub>St</sub>-Martin/</a></h3>
+<div class="outline-text-3" id="text-2-16">
+</div>
+<div id="outline-container-org1ec0a65" class="outline-4">
+<h4 id="org1ec0a65"><span class="section-number-4">2.16.1</span> <a href="exo1-travaux/Cléo_St-Martin/Blouin_St-Martin_Exercice1.js">Blouin<sub>St</sub>-Martin<sub>Exercice1.js</sub></a></h4>
+</div>
+<div id="outline-container-org758d8cd" class="outline-4">
+<h4 id="org758d8cd"><span class="section-number-4">2.16.2</span> <a href="exo1-travaux/Cléo_St-Martin/Blouin_St_Martin_Exercie-noté-1.pdf">Blouin<sub>St</sub><sub>Martin</sub><sub>Exercie</sub>-noté-1.pdf</a></h4>
+</div>
+</div>
+<div id="outline-container-orgec7d091" class="outline-3">
+<h3 id="orgec7d091"><span class="section-number-3">2.17</span> <a href="exo1-travaux/Coralie_Bibeau/">Coralie<sub>Bibeau</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-17">
+</div>
+<div id="outline-container-org105273e" class="outline-4">
+<h4 id="org105273e"><span class="section-number-4">2.17.1</span> <a href="exo1-travaux/Coralie_Bibeau/Exercice 1 Coralie et Ariane.js">Exercice 1 Coralie et Ariane.js</a></h4>
+</div>
+<div id="outline-container-org69aa162" class="outline-4">
+<h4 id="org69aa162"><span class="section-number-4">2.17.2</span> <a href="exo1-travaux/Coralie_Bibeau/Exercice 1 Coralie et Ariane.pdf">Exercice 1 Coralie et Ariane.pdf</a></h4>
+</div>
+</div>
+<div id="outline-container-orgfc442c2" class="outline-3">
+<h3 id="orgfc442c2"><span class="section-number-3">2.18</span> <a href="exo1-travaux/David_Richard/">David<sub>Richard</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-18">
+</div>
+<div id="outline-container-org2eaded3" class="outline-4">
+<h4 id="org2eaded3"><span class="section-number-4">2.18.1</span> <a href="exo1-travaux/David_Richard/exercice 1 prog.pdf">exercice 1 prog.pdf</a></h4>
+</div>
+<div id="outline-container-org2f368a7" class="outline-4">
+<h4 id="org2f368a7"><span class="section-number-4">2.18.2</span> <a href="exo1-travaux/David_Richard/exercice 1.js">exercice 1.js</a></h4>
+</div>
+</div>
+<div id="outline-container-orgfd9e61c" class="outline-3">
+<h3 id="orgfd9e61c"><span class="section-number-3">2.19</span> <a href="exo1-travaux/Eliane_Beauvais/">Eliane<sub>Beauvais</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-19">
+</div>
+<div id="outline-container-orgfe2cb44" class="outline-4">
+<h4 id="orgfe2cb44"><span class="section-number-4">2.19.1</span> <a href="exo1-travaux/Eliane_Beauvais/Exercice noté 01 - EB et MG.docx">Exercice noté 01 - EB et MG.docx</a></h4>
+</div>
+</div>
+<div id="outline-container-orgb108dd2" class="outline-3">
+<h3 id="orgb108dd2"><span class="section-number-3">2.20</span> <a href="exo1-travaux/Gabrielle_Wester/">Gabrielle<sub>Wester</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-20">
+</div>
+<div id="outline-container-org2e2caff" class="outline-4">
+<h4 id="org2e2caff"><span class="section-number-4">2.20.1</span> <a href="exo1-travaux/Gabrielle_Wester/Exercice note 01.txt">Exercice note 01.txt</a></h4>
+</div>
+<div id="outline-container-orgdf674c3" class="outline-4">
+<h4 id="orgdf674c3"><span class="section-number-4">2.20.2</span> <a href="exo1-travaux/Gabrielle_Wester/IFT1016 Exercice noté 01 Alexandre Montreuil et Gabrielle Wester.pdf">IFT1016 Exercice noté 01 Alexandre Montreuil et Gabrielle Wester.pdf</a></h4>
+</div>
+</div>
+<div id="outline-container-org1e34f5d" class="outline-3">
+<h3 id="org1e34f5d"><span class="section-number-3">2.21</span> <a href="exo1-travaux/Ghita_Bardaoui/">Ghita<sub>Bardaoui</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-21">
+</div>
+<div id="outline-container-org4e228fd" class="outline-4">
+<h4 id="org4e228fd"><span class="section-number-4">2.21.1</span> <a href="exo1-travaux/Ghita_Bardaoui/IFT1010 exercice noté- Ghita Bardaoui et Celia Khaldi.pdf">IFT1010 exercice noté- Ghita Bardaoui et Celia Khaldi.pdf</a></h4>
+</div>
+<div id="outline-container-orga893107" class="outline-4">
+<h4 id="orga893107"><span class="section-number-4">2.21.2</span> <a href="exo1-travaux/Ghita_Bardaoui/ex-note-num-6-Ghita Bardaoui et Celia Khaldi.js">ex-note-num-6-Ghita Bardaoui et Celia Khaldi.js</a></h4>
+</div>
+</div>
+<div id="outline-container-org430429c" class="outline-3">
+<h3 id="org430429c"><span class="section-number-3">2.22</span> <a href="exo1-travaux/Guillaume_Labonté-Pelletier/">Guillaume<sub>Labonté</sub>-Pelletier/</a></h3>
+<div class="outline-text-3" id="text-2-22">
+</div>
+<div id="outline-container-orgad86f21" class="outline-4">
+<h4 id="orgad86f21"><span class="section-number-4">2.22.1</span> <a href="exo1-travaux/Guillaume_Labonté-Pelletier/ExerciceNoté01_Question06.js">ExerciceNoté01<sub>Question06.js</sub></a></h4>
+</div>
+<div id="outline-container-orgde86015" class="outline-4">
+<h4 id="orgde86015"><span class="section-number-4">2.22.2</span> <a href="exo1-travaux/Guillaume_Labonté-Pelletier/GuillaumeLabonté-Pelletier_ExerciceNoté01.pdf">GuillaumeLabonté-Pelletier<sub>ExerciceNoté01.pdf</sub></a></h4>
+</div>
+</div>
+<div id="outline-container-org69938f4" class="outline-3">
+<h3 id="org69938f4"><span class="section-number-3">2.23</span> <a href="exo1-travaux/Hamza_Zarglayoun/">Hamza<sub>Zarglayoun</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-23">
+</div>
+<div id="outline-container-orgd68e27e" class="outline-4">
+<h4 id="orgd68e27e"><span class="section-number-4">2.23.1</span> <a href="exo1-travaux/Hamza_Zarglayoun/exercice noté #1 (numéros 1 à 5).pdf">exercice noté #1 (numéros 1 à 5).pdf</a></h4>
+</div>
+<div id="outline-container-orga0efb68" class="outline-4">
+<h4 id="orga0efb68"><span class="section-number-4">2.23.2</span> <a href="exo1-travaux/Hamza_Zarglayoun/numéro 6.js">numéro 6.js</a></h4>
+</div>
+</div>
+<div id="outline-container-orgb63d003" class="outline-3">
+<h3 id="orgb63d003"><span class="section-number-3">2.24</span> <a href="exo1-travaux/Jade_Ricard/">Jade<sub>Ricard</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-24">
+</div>
+<div id="outline-container-orgb5bcc7d" class="outline-4">
+<h4 id="orgb5bcc7d"><span class="section-number-4">2.24.1</span> <a href="exo1-travaux/Jade_Ricard/Exercice noté 1 Jade Ricard .pdf">Exercice noté 1 Jade Ricard .pdf</a></h4>
+</div>
+<div id="outline-container-org3467c1b" class="outline-4">
+<h4 id="org3467c1b"><span class="section-number-4">2.24.2</span> <a href="exo1-travaux/Jade_Ricard/Question 6">Question 6</a></h4>
+</div>
+</div>
+<div id="outline-container-org40ceca9" class="outline-3">
+<h3 id="org40ceca9"><span class="section-number-3">2.25</span> <a href="exo1-travaux/Janice_Bessard/">Janice<sub>Bessard</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-25">
+</div>
+<div id="outline-container-org7fb7cdf" class="outline-4">
+<h4 id="org7fb7cdf"><span class="section-number-4">2.25.1</span> <a href="exo1-travaux/Janice_Bessard/ExerciceNoté01.js">ExerciceNoté01.js</a></h4>
+</div>
+<div id="outline-container-orgb9ad671" class="outline-4">
+<h4 id="orgb9ad671"><span class="section-number-4">2.25.2</span> <a href="exo1-travaux/Janice_Bessard/exerciceNoté1.pdf">exerciceNoté1.pdf</a></h4>
+</div>
+</div>
+<div id="outline-container-org594a3ee" class="outline-3">
+<h3 id="org594a3ee"><span class="section-number-3">2.26</span> <a href="exo1-travaux/Julie_Guertin/">Julie<sub>Guertin</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-26">
+</div>
+<div id="outline-container-org4d55673" class="outline-4">
+<h4 id="org4d55673"><span class="section-number-4">2.26.1</span> <a href="exo1-travaux/Julie_Guertin/JGuertin_exercice1.pdf">JGuertin<sub>exercice1.pdf</sub></a></h4>
+</div>
+<div id="outline-container-org21efa45" class="outline-4">
+<h4 id="org21efa45"><span class="section-number-4">2.26.2</span> <a href="exo1-travaux/Julie_Guertin/julie-guertin-exercice1.js">julie-guertin-exercice1.js</a></h4>
+</div>
+</div>
+<div id="outline-container-orgc7db3ee" class="outline-3">
+<h3 id="orgc7db3ee"><span class="section-number-3">2.27</span> <a href="exo1-travaux/Justine_Larochelle-Guy/">Justine<sub>Larochelle</sub>-Guy/</a></h3>
+<div class="outline-text-3" id="text-2-27">
+</div>
+<div id="outline-container-org10494b1" class="outline-4">
+<h4 id="org10494b1"><span class="section-number-4">2.27.1</span> <a href="exo1-travaux/Justine_Larochelle-Guy/Exercice Noté 01 Justine L-G et Audrey-Anne Tpdf">Exercice Noté 01 Justine L-G et Audrey-Anne Tpdf</a></h4>
+</div>
+</div>
+<div id="outline-container-orgad0e645" class="outline-3">
+<h3 id="orgad0e645"><span class="section-number-3">2.28</span> TODO <a href="exo1-travaux/Kim_Goyette/">Kim<sub>Goyette</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-28">
+</div>
+<div id="outline-container-org2230373" class="outline-4">
+<h4 id="org2230373"><span class="section-number-4">2.28.1</span> <a href="exo1-travaux/Kim_Goyette/exercice noté1(1)">exercice noté1(1)</a></h4>
+</div>
+<div id="outline-container-orgce374eb" class="outline-4">
+<h4 id="orgce374eb"><span class="section-number-4">2.28.2</span> <a href="exo1-travaux/Kim_Goyette/exercices1.pdf">exercices1.pdf</a></h4>
+</div>
+</div>
+<div id="outline-container-org742439b" class="outline-3">
+<h3 id="org742439b"><span class="section-number-3">2.29</span> TODO <a href="exo1-travaux/Laura_Pesenti/">Laura<sub>Pesenti</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-29">
+</div>
+<div id="outline-container-org60ededf" class="outline-4">
+<h4 id="org60ededf"><span class="section-number-4">2.29.1</span> <a href="exo1-travaux/Laura_Pesenti/Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/">Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/</a></h4>
+<div class="outline-text-4" id="text-2-29-1">
+</div>
+<div id="outline-container-orgf8e8d0b" class="outline-5">
+<h5 id="orgf8e8d0b"><span class="section-number-5">2.29.1.1</span> <a href="exo1-travaux/Laura_Pesenti/Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/Exercie noté 1 - Laura Pesenti et Maude-Isabelle Ouellet.pdf">Exercie noté 1 - Laura Pesenti et Maude-Isabelle Ouellet.pdf</a></h5>
+</div>
+<div id="outline-container-org1a11a9b" class="outline-5">
+<h5 id="org1a11a9b"><span class="section-number-5">2.29.1.2</span> <a href="exo1-travaux/Laura_Pesenti/Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/Question 6 - Exercice noté 1.js">Question 6 - Exercice noté 1.js</a></h5>
+</div>
+</div>
+</div>
+<div id="outline-container-org32b7417" class="outline-3">
+<h3 id="org32b7417"><span class="section-number-3">2.30</span> TODO <a href="exo1-travaux/Laura_Trubiano/">Laura<sub>Trubiano</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-30">
+</div>
+<div id="outline-container-org35fcbba" class="outline-4">
+<h4 id="org35fcbba"><span class="section-number-4">2.30.1</span> <a href="exo1-travaux/Laura_Trubiano/Excercice_1.zip">Excercice<sub>1.zip</sub></a></h4>
+</div>
+</div>
+<div id="outline-container-org1172db2" class="outline-3">
+<h3 id="org1172db2"><span class="section-number-3">2.31</span> TODO <a href="exo1-travaux/Léa_Blouin Gagnon/">Léa<sub>Blouin</sub> Gagnon/</a></h3>
+<div class="outline-text-3" id="text-2-31">
+</div>
+<div id="outline-container-org6a93ae9" class="outline-4">
+<h4 id="org6a93ae9"><span class="section-number-4">2.31.1</span> <a href="exo1-travaux/Léa_Blouin Gagnon/#6">#6</a></h4>
+</div>
+<div id="outline-container-org89632ac" class="outline-4">
+<h4 id="org89632ac"><span class="section-number-4">2.31.2</span> <a href="exo1-travaux/Léa_Blouin Gagnon/Archive.zip">Archive.zip</a></h4>
+</div>
+</div>
+<div id="outline-container-orgcb2c532" class="outline-3">
+<h3 id="orgcb2c532"><span class="section-number-3">2.32</span> TODO <a href="exo1-travaux/Léa_Tremblay/">Léa<sub>Tremblay</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-32">
+</div>
+<div id="outline-container-org3683d80" class="outline-4">
+<h4 id="org3683d80"><span class="section-number-4">2.32.1</span> <a href="exo1-travaux/Léa_Tremblay/Exercice 1 noté.pdf">Exercice 1 noté.pdf</a></h4>
+</div>
+<div id="outline-container-orgef62838" class="outline-4">
+<h4 id="orgef62838"><span class="section-number-4">2.32.2</span> <a href="exo1-travaux/Léa_Tremblay/IMG_2818-converti.pdf">IMG<sub>2818</sub>-converti.pdf</a></h4>
+</div>
+</div>
+<div id="outline-container-orge89c820" class="outline-3">
+<h3 id="orge89c820"><span class="section-number-3">2.33</span> <a href="exo1-travaux/Marc-Antoine_Akzam-Ouellette/">Marc-Antoine<sub>Akzam</sub>-Ouellette/</a></h3>
+<div class="outline-text-3" id="text-2-33">
+</div>
+<div id="outline-container-orgeef0319" class="outline-4">
+<h4 id="orgeef0319"><span class="section-number-4">2.33.1</span> <a href="exo1-travaux/Marc-Antoine_Akzam-Ouellette/excercice noté 1.docx">excercice noté 1.docx</a></h4>
+</div>
+</div>
+<div id="outline-container-org4a4eb6b" class="outline-3">
+<h3 id="org4a4eb6b"><span class="section-number-3">2.34</span> <a href="exo1-travaux/Marguerite_Nolin/">Marguerite<sub>Nolin</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-34">
+</div>
+<div id="outline-container-orgc2821d1" class="outline-4">
+<h4 id="orgc2821d1"><span class="section-number-4">2.34.1</span> <a href="exo1-travaux/Marguerite_Nolin/Marguerite Nolin- Exercice noté 01- Prog.zip">Marguerite Nolin- Exercice noté 01- Prog.zip</a></h4>
+</div>
+</div>
+<div id="outline-container-orgb7c1a71" class="outline-3">
+<h3 id="orgb7c1a71"><span class="section-number-3">2.35</span> <a href="exo1-travaux/Marianne_Lemieux/">Marianne<sub>Lemieux</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-35">
+</div>
+<div id="outline-container-org0a2a55c" class="outline-4">
+<h4 id="org0a2a55c"><span class="section-number-4">2.35.1</span> <a href="exo1-travaux/Marianne_Lemieux/M. Lemieux_M. Tak (1).js">M. Lemieux<sub>M</sub>. Tak (1).js</a></h4>
+</div>
+<div id="outline-container-org0165536" class="outline-4">
+<h4 id="org0165536"><span class="section-number-4">2.35.2</span> <a href="exo1-travaux/Marianne_Lemieux/M.Lemieux_M.Tak_Exercice_noté_1.docx">M.Lemieux<sub>M.Tak</sub><sub>Exercice</sub><sub>noté</sub><sub>1.docx</sub></a></h4>
+</div>
+</div>
+<div id="outline-container-orgce6667d" class="outline-3">
+<h3 id="orgce6667d"><span class="section-number-3">2.36</span> <a href="exo1-travaux/Marie-Noëlle_Lortie/">Marie-Noëlle<sub>Lortie</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-36">
+</div>
+<div id="outline-container-orge886b9e" class="outline-4">
+<h4 id="orge886b9e"><span class="section-number-4">2.36.1</span> <a href="exo1-travaux/Marie-Noëlle_Lortie/ExNoté 01 en pdf.pdf">ExNoté 01 en pdf.pdf</a></h4>
+</div>
+<div id="outline-container-org3cc0b8f" class="outline-4">
+<h4 id="org3cc0b8f"><span class="section-number-4">2.36.2</span> <a href="exo1-travaux/Marie-Noëlle_Lortie/exnote01.js">exnote01.js</a></h4>
+</div>
+</div>
+<div id="outline-container-org501d373" class="outline-3">
+<h3 id="org501d373"><span class="section-number-3">2.37</span> <a href="exo1-travaux/Mary-Maxime_Leclair/">Mary-Maxime<sub>Leclair</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-37">
+</div>
+<div id="outline-container-org96e6cd9" class="outline-4">
+<h4 id="org96e6cd9"><span class="section-number-4">2.37.1</span> <a href="exo1-travaux/Mary-Maxime_Leclair/Exercice6.vf.js">Exercice6.vf.js</a></h4>
+</div>
+<div id="outline-container-org1412d78" class="outline-4">
+<h4 id="org1412d78"><span class="section-number-4">2.37.2</span> <a href="exo1-travaux/Mary-Maxime_Leclair/Travail prog 1.pdf">Travail prog 1.pdf</a></h4>
+</div>
+</div>
+<div id="outline-container-orgf1172fd" class="outline-3">
+<h3 id="orgf1172fd"><span class="section-number-3">2.38</span> <a href="exo1-travaux/Noémie_Olmand/">Noémie<sub>Olmand</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-38">
+</div>
+<div id="outline-container-org5288e89" class="outline-4">
+<h4 id="org5288e89"><span class="section-number-4">2.38.1</span> <a href="exo1-travaux/Noémie_Olmand/Exercice #1 Q (1).6">Exercice #1 Q (1).6</a></h4>
+</div>
+<div id="outline-container-orgc9e88fd" class="outline-4">
+<h4 id="orgc9e88fd"><span class="section-number-4">2.38.2</span> <a href="exo1-travaux/Noémie_Olmand/Exercices-noté 1.pdf">Exercices-noté 1.pdf</a></h4>
+</div>
+</div>
+<div id="outline-container-org7f404d0" class="outline-3">
+<h3 id="org7f404d0"><span class="section-number-3">2.39</span> <a href="exo1-travaux/Paulina_Jaramillo Salazar/">Paulina<sub>Jaramillo</sub> Salazar/</a></h3>
+<div class="outline-text-3" id="text-2-39">
+</div>
+<div id="outline-container-org46b1149" class="outline-4">
+<h4 id="org46b1149"><span class="section-number-4">2.39.1</span> <a href="exo1-travaux/Paulina_Jaramillo Salazar/IMG_20190924_150953-converted.pdf">IMG<sub>20190924</sub><sub>150953</sub>-converted.pdf</a></h4>
+</div>
+<div id="outline-container-orgf224a3c" class="outline-4">
+<h4 id="orgf224a3c"><span class="section-number-4">2.39.2</span> <a href="exo1-travaux/Paulina_Jaramillo Salazar/paulina.jaramillo.Q#6.exercice1.pdf">paulina.jaramillo.Q#6.exercice1.pdf</a></h4>
+</div>
+</div>
+<div id="outline-container-orga392251" class="outline-3">
+<h3 id="orga392251"><span class="section-number-3">2.40</span> <a href="exo1-travaux/Roua_Nour Briedj/">Roua<sub>Nour</sub> Briedj/</a></h3>
+<div class="outline-text-3" id="text-2-40">
+</div>
+<div id="outline-container-org4be64bc" class="outline-4">
+<h4 id="org4be64bc"><span class="section-number-4">2.40.1</span> <a href="exo1-travaux/Roua_Nour Briedj/remise exercice 1 /">remise exercice 1 /</a></h4>
+<div class="outline-text-4" id="text-2-40-1">
+</div>
+<div id="outline-container-org12042b3" class="outline-5">
+<h5 id="org12042b3"><span class="section-number-5">2.40.1.1</span> <a href="exo1-travaux/Roua_Nour Briedj/remise exercice 1 /exercice-noté-1-programme.pdf">exercice-noté-1-programme.pdf</a></h5>
+</div>
+<div id="outline-container-org4d7973d" class="outline-5">
+<h5 id="org4d7973d"><span class="section-number-5">2.40.1.2</span> <a href="exo1-travaux/Roua_Nour Briedj/remise exercice 1 /exercice-noté-1.pdf">exercice-noté-1.pdf</a></h5>
+</div>
+</div>
+</div>
+<div id="outline-container-org37a00f1" class="outline-3">
+<h3 id="org37a00f1"><span class="section-number-3">2.41</span> <a href="exo1-travaux/Sandrine_Rochon/">Sandrine<sub>Rochon</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-41">
+</div>
+<div id="outline-container-orgd3e7c6b" class="outline-4">
+<h4 id="orgd3e7c6b"><span class="section-number-4">2.41.1</span> <a href="exo1-travaux/Sandrine_Rochon/Exercice noté 1 #1-5.pdf">Exercice noté 1 #1-5.pdf</a></h4>
+</div>
+<div id="outline-container-orge729fd8" class="outline-4">
+<h4 id="orge729fd8"><span class="section-number-4">2.41.2</span> <a href="exo1-travaux/Sandrine_Rochon/Exercice noté 1 #6.js">Exercice noté 1 #6.js</a></h4>
+</div>
+</div>
+<div id="outline-container-org03ad3d9" class="outline-3">
+<h3 id="org03ad3d9"><span class="section-number-3">2.42</span> <a href="exo1-travaux/Sophie_Detroio/">Sophie<sub>Detroio</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-42">
+</div>
+<div id="outline-container-orgd2bc8de" class="outline-4">
+<h4 id="orgd2bc8de"><span class="section-number-4">2.42.1</span> <a href="exo1-travaux/Sophie_Detroio/Sophie.Detroio.IFT1016B.Exercice#1.zip">Sophie.Detroio.IFT1016B.Exercice#1.zip</a></h4>
+</div>
+</div>
+<div id="outline-container-orgf990efa" class="outline-3">
+<h3 id="orgf990efa"><span class="section-number-3">2.43</span> <a href="exo1-travaux/Valérie_Panaite/">Valérie<sub>Panaite</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-43">
+</div>
+<div id="outline-container-org2445def" class="outline-4">
+<h4 id="org2445def"><span class="section-number-4">2.43.1</span> <a href="exo1-travaux/Valérie_Panaite/exercice noté 1-numéro 6.txt">exercice noté 1-numéro 6.txt</a></h4>
+</div>
+<div id="outline-container-org11e9e18" class="outline-4">
+<h4 id="org11e9e18"><span class="section-number-4">2.43.2</span> <a href="exo1-travaux/Valérie_Panaite/exercice noté-#1-5.pdf">exercice noté-#1-5.pdf</a></h4>
+</div>
+</div>
+<div id="outline-container-orge19d9bc" class="outline-3">
+<h3 id="orge19d9bc"><span class="section-number-3">2.44</span> <a href="exo1-travaux/Xavier_Michaud/">Xavier<sub>Michaud</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-44">
+</div>
+<div id="outline-container-org3c82a33" class="outline-4">
+<h4 id="org3c82a33"><span class="section-number-4">2.44.1</span> <a href="exo1-travaux/Xavier_Michaud/Question 1 à 5.pdf">Question 1 à 5.pdf</a></h4>
+</div>
+<div id="outline-container-orgac9b281" class="outline-4">
+<h4 id="orgac9b281"><span class="section-number-4">2.44.2</span> <a href="exo1-travaux/Xavier_Michaud/Question 6.js">Question 6.js</a></h4>
+</div>
+</div>
+<div id="outline-container-org1e7a9ec" class="outline-3">
+<h3 id="org1e7a9ec"><span class="section-number-3">2.45</span> <a href="exo1-travaux/Élodie_Petit/">Élodie<sub>Petit</sub>/</a></h3>
+<div class="outline-text-3" id="text-2-45">
+</div>
+<div id="outline-container-orgf1183a0" class="outline-4">
+<h4 id="orgf1183a0"><span class="section-number-4">2.45.1</span> <a href="exo1-travaux/Élodie_Petit/Exercice noté 1 CodeBoot.pdf">Exercice noté 1 CodeBoot.pdf</a></h4>
+</div>
+<div id="outline-container-orgff6e7bd" class="outline-4">
+<h4 id="orgff6e7bd"><span class="section-number-4">2.45.2</span> <a href="exo1-travaux/Élodie_Petit/Exercice noté 1.pdf">Exercice noté 1.pdf</a></h4>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org724a73e" class="outline-2">
+<h2 id="org724a73e"><span class="section-number-2">3</span> correction</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org1f4b85b" class="outline-3">
+<h3 id="org1f4b85b"><span class="section-number-3">3.1</span> still issues</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-orgc0aac5b" class="outline-4">
+<h4 id="orgc0aac5b"><span class="section-number-4">3.1.1</span> <span class="todo fixme">fixme</span> chirele abenaim</h4>
+<div class="outline-text-4" id="text-3-1-1">
+</div>
+<div id="outline-container-orgf3eb55a" class="outline-5">
+<h5 id="orgf3eb55a"><span class="section-number-5">3.1.1.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Chirèle Abenhaim_13929948/Exercices 1-5.docx">Exercices 1-5.docx</a></h5>
+</div>
+<div id="outline-container-org7753942" class="outline-5">
+<h5 id="org7753942"><span class="section-number-5">3.1.1.2</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Chirèle Abenhaim_13929948/Programme de lexercice 6">Programme de lexercice 6</a></h5>
+</div>
+</div>
+<div id="outline-container-orga824cb5" class="outline-4">
+<h4 id="orga824cb5"><span class="section-number-4">3.1.2</span> <span class="todo fixme">fixme</span> camille deaneault &amp; marc-antoine akzam-ouellette</h4>
+<div class="outline-text-4" id="text-3-1-2">
+</div>
+<div id="outline-container-org10144b7" class="outline-5">
+<h5 id="org10144b7"><span class="section-number-5">3.1.2.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Camille Deneault_13929936/Camille Deneault et Marc-Antoine Akzam-Ouellette_Exercice 1">Camille Deneault et Marc-Antoine Akzam-Ouellette<sub>Exercice</sub> 1</a></h5>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgeb714e2" class="outline-3">
+<h3 id="orgeb714e2"><span class="section-number-3">3.2</span> perfect mark</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-orge23bca2" class="outline-4">
+<h4 id="orge23bca2"><span class="section-number-4">3.2.1</span> <span class="done done">done</span> adrian minano-lozano</h4>
+<div class="outline-text-4" id="text-3-2-1">
+</div>
+<div id="outline-container-org29b7592" class="outline-5">
+<h5 id="org29b7592"><span class="section-number-5">3.2.1.1</span> resume</h5>
+<div class="outline-text-5" id="text-3-2-1-1">
+<table id="org204d37a" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">1a</th>
+<th scope="col" class="org-right">1b</th>
+<th scope="col" class="org-right">1c</th>
+<th scope="col" class="org-right">1d</th>
+<th scope="col" class="org-right">1e</th>
+<th scope="col" class="org-right">2</th>
+<th scope="col" class="org-right">3</th>
+<th scope="col" class="org-right">4</th>
+<th scope="col" class="org-right">5</th>
+<th scope="col" class="org-right">6</th>
+<th scope="col" class="org-right">total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orge086a1f" class="outline-5">
+<h5 id="orge086a1f"><span class="section-number-5">3.2.1.2</span> commentaires</h5>
+<div class="outline-text-5" id="text-3-2-1-2">
+<ul class="org-ul">
+<li>met des parenthèses autour des nombres avant de specifier la base stp, j&rsquo;ai
+du plisser les yeux pour comprendre :
+<img src="./images/screenshot-01.png" alt="screenshot-01.png" /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org731effb" class="outline-5">
+<h5 id="org731effb"><span class="section-number-5">3.2.1.3</span> code</h5>
+<div class="outline-text-5" id="text-3-2-1-3">
+<div class="org-src-container">
+<pre class="src src-js"><span style="color: #9587DD;">var</span> <span style="color: #41b0f3;">p</span>=<span style="color: #c79af4;">200000</span>;
+<span style="color: #9587DD;">var</span> <span style="color: #41b0f3;">t</span>=<span style="color: #c79af4;">5.5</span>;
+<span style="color: #9587DD;">var</span> <span style="color: #41b0f3;">n</span>=<span style="color: #c79af4;">360</span>;
+<span style="color: #9587DD;">var</span> <span style="color: #41b0f3;">a</span>=t/<span style="color: #0D9C94;">(</span><span style="color: #c79af4;">12</span>*<span style="color: #c79af4;">100</span><span style="color: #0D9C94;">)</span>;
+<span style="color: #9587DD;">var</span> <span style="color: #41b0f3;">b</span>=<span style="color: #c79af4;">1</span>+a;
+<span style="color: #9587DD;">var</span> <span style="color: #41b0f3;">c</span>=math.pow<span style="color: #0D9C94;">(</span>b,n<span style="color: #0D9C94;">)</span>;
+<span style="color: #9587DD;">var</span> <span style="color: #41b0f3;">m</span>=<span style="color: #0D9C94;">(</span>p*c*a<span style="color: #0D9C94;">)</span>/<span style="color: #0D9C94;">(</span>c-<span style="color: #c79af4;">1</span><span style="color: #0D9C94;">)</span>;
+print <span style="color: #0D9C94;">(</span>m<span style="color: #0D9C94;">)</span>;
+</pre>
+</div>
+
+<p>
+sans soucis mais pour les programmes plus long stp essaie de mettre des noms de
+variables plus descriptifs quand tu vas en avoir plus :) (pour 5 lignes des
+lettres au hasard ca va, )
+</p>
+</div>
+</div>
+<div id="outline-container-org029169d" class="outline-5">
+<h5 id="org029169d"><span class="section-number-5">3.2.1.4</span> fichiers</h5>
+<div class="outline-text-5" id="text-3-2-1-4">
+<ul class="org-ul">
+<li><a href="file:///home/sole/udem/aux/aux-if1016/travaux/adrian\ minano-lozano_13929938/exercice\ noté 1-adrian\ minano-lozano.pdf">exercice noté 1-adrian minano-lozano.pdf</a></li>
+<li><a href="file:///home/sole/udem/aux/aux-if1016/travaux/adrian minano-lozano_13929938/exercice1.js">exercice1.js</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org1324a36" class="outline-4">
+<h4 id="org1324a36"><span class="section-number-4">3.2.2</span> <span class="done done">done</span> alexy pauzé &amp; emmanuelle vigneron</h4>
+<div class="outline-text-4" id="text-3-2-2">
+</div>
+<div id="outline-container-orge1ba7f0" class="outline-5">
+<h5 id="orge1ba7f0"><span class="section-number-5">3.2.2.1</span> resume</h5>
+<div class="outline-text-5" id="text-3-2-2-1">
+<table id="orge23690e" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">1a</th>
+<th scope="col" class="org-right">1b</th>
+<th scope="col" class="org-right">1c</th>
+<th scope="col" class="org-right">1d</th>
+<th scope="col" class="org-right">1e</th>
+<th scope="col" class="org-right">2</th>
+<th scope="col" class="org-right">3</th>
+<th scope="col" class="org-right">4</th>
+<th scope="col" class="org-right">5</th>
+<th scope="col" class="org-right">6</th>
+<th scope="col" class="org-right">total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org82de094" class="outline-5">
+<h5 id="org82de094"><span class="section-number-5">3.2.2.2</span> commentaires</h5>
+<div class="outline-text-5" id="text-3-2-2-2">
+<p>
+Excellent travail mais en pdf svp la prochaine fois :)
+</p>
+</div>
+</div>
+<div id="outline-container-org5689434" class="outline-5">
+<h5 id="org5689434"><span class="section-number-5">3.2.2.3</span> code</h5>
+<div class="outline-text-5" id="text-3-2-2-3">
+<div class="org-src-container">
+<pre class="src src-js"><span style="color: #454459;">//</span><span style="color: #454459;">Alexy Pauz&#233; et Emmanuelle Vigneron</span>
+<span style="color: #454459;">//</span><span style="color: #454459;">Calcul du taux d'int&#233;r&#234;t</span>
+
+<span style="color: #9587DD;">var</span> <span style="color: #41b0f3;">p</span> = <span style="color: #c79af4;">200000</span>;
+<span style="color: #9587DD;">var</span> <span style="color: #41b0f3;">n</span> = <span style="color: #c79af4;">360</span>;
+<span style="color: #9587DD;">var</span> <span style="color: #41b0f3;">i</span> = <span style="color: #c79af4;">5.5</span>;
+<span style="color: #9587DD;">var</span> <span style="color: #41b0f3;">r</span>= <span style="color: #c79af4;">1</span>/<span style="color: #0D9C94;">(</span><span style="color: #c79af4;">12</span>*<span style="color: #c79af4;">100</span><span style="color: #0D9C94;">)</span>;
+<span style="color: #9587DD;">var</span> <span style="color: #41b0f3;">c</span> = Math.pow<span style="color: #0D9C94;">(</span><span style="color: #47ba99;">(</span><span style="color: #c79af4;">1</span>+r<span style="color: #47ba99;">)</span>,n<span style="color: #0D9C94;">)</span>;
+<span style="color: #9587DD;">var</span> <span style="color: #41b0f3;">m</span> = <span style="color: #0D9C94;">(</span>p*c*r<span style="color: #0D9C94;">)</span>/<span style="color: #0D9C94;">(</span>c-<span style="color: #c79af4;">1</span><span style="color: #0D9C94;">)</span>;
+print <span style="color: #0D9C94;">(</span>m<span style="color: #0D9C94;">)</span>;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org82d6d01" class="outline-5">
+<h5 id="org82d6d01"><span class="section-number-5">3.2.2.4</span> fichiers</h5>
+<div class="outline-text-5" id="text-3-2-2-4">
+</div>
+<ol class="org-ol">
+<li><a id="org44a5deb"></a><a href="file:///home/gaston/udem/aux/aux-if1016/travaux/Alexy Pauzé_13929961/Exercice.1.Alexy_Emmanuelle_final.pdf">exo1<sub>alexyPauze</sub>&amp;EmmanuelleVigneron</a><br /></li>
+<li><a id="org18b7f66"></a><a href="file:///home/sole/udem/aux/aux-if1016/travaux/Alexy Pauzé_13929961/Exercice1 Pauzé-Vigneron.js">Exercice1 Pauzé-Vigneron.js</a><br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgc796562" class="outline-4">
+<h4 id="orgc796562"><span class="section-number-4">3.2.3</span> <span class="done done">done</span> amanda tanguay &amp; catherine daunais&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-3">
+</div>
+<div id="outline-container-org1938af8" class="outline-5">
+<h5 id="org1938af8"><span class="section-number-5">3.2.3.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Catherine Daunais_13929955/Exercice noté 1_Code #6_Daunais_Tanguay.txt">Exercice noté 1<sub>Code</sub> #6<sub>Daunais</sub><sub>Tanguay.txt</sub></a></h5>
+</div>
+<div id="outline-container-orgbd39207" class="outline-5">
+<h5 id="orgbd39207"><span class="section-number-5">3.2.3.2</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Catherine Daunais_13929955/Exercice noté 1_Daunais_Tanguay.pdf">Exercice noté 1<sub>Daunais</sub><sub>Tanguay.pdf</sub></a></h5>
+</div>
+</div>
+<div id="outline-container-org66132aa" class="outline-4">
+<h4 id="org66132aa"><span class="section-number-4">3.2.4</span> <span class="done done">done</span> ana nader &amp; clara eloy</h4>
+<div class="outline-text-4" id="text-3-2-4">
+</div>
+<div id="outline-container-org5f8f33c" class="outline-5">
+<h5 id="org5f8f33c"><span class="section-number-5">3.2.4.1</span> resume</h5>
+<div class="outline-text-5" id="text-3-2-4-1">
+<table id="org4113aca" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">1a</th>
+<th scope="col" class="org-right">1b</th>
+<th scope="col" class="org-right">1c</th>
+<th scope="col" class="org-right">1d</th>
+<th scope="col" class="org-right">1e</th>
+<th scope="col" class="org-right">2</th>
+<th scope="col" class="org-right">3</th>
+<th scope="col" class="org-right">4</th>
+<th scope="col" class="org-right">5</th>
+<th scope="col" class="org-right">6</th>
+<th scope="col" class="org-right">total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">-0.5</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org536faaf" class="outline-5">
+<h5 id="org536faaf"><span class="section-number-5">3.2.4.2</span> fichiers</h5>
+<div class="outline-text-5" id="text-3-2-4-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgad22bcb"></a><a href="file:///home/sole/udem/aux/aux-if1016/travaux/Ana Neder_13929947/exercice noté 1- question 6.txt">exercice noté 1- question 6.txt</a><br /></li>
+<li><a id="org5da7680"></a><a href="file:///home/sole/udem/aux/aux-if1016/travaux/Ana Neder_13929947/exercice noté 1-question 1 à 5.pdf">exercice noté 1-question 1 à 5.pdf</a><br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orge71249a" class="outline-4">
+<h4 id="orge71249a"><span class="section-number-4">3.2.5</span> <span class="done done">done</span> ariane brucher &amp; heloise tanguay</h4>
+<div class="outline-text-4" id="text-3-2-5">
+</div>
+<div id="outline-container-org2416961" class="outline-5">
+<h5 id="org2416961"><span class="section-number-5">3.2.5.1</span> resume</h5>
+<div class="outline-text-5" id="text-3-2-5-1">
+<table id="org879f067" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">1a</th>
+<th scope="col" class="org-right">1b</th>
+<th scope="col" class="org-right">1c</th>
+<th scope="col" class="org-right">1d</th>
+<th scope="col" class="org-right">1e</th>
+<th scope="col" class="org-right">2</th>
+<th scope="col" class="org-right">3</th>
+<th scope="col" class="org-right">4</th>
+<th scope="col" class="org-right">5</th>
+<th scope="col" class="org-right">6</th>
+<th scope="col" class="org-right">total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org9df1bf9" class="outline-5">
+<h5 id="org9df1bf9"><span class="section-number-5">3.2.5.2</span> fichiers</h5>
+<div class="outline-text-5" id="text-3-2-5-2">
+</div>
+<ol class="org-ol">
+<li><a id="org6a45eba"></a><a href="file:///home/sole/udem/aux/aux-if1016/travaux/Ariane Brucher_13929972/BrucherAriane-TanguayHeloise-Exercice1.js">BrucherAriane-TanguayHeloise-Exercice1.js</a><br /></li>
+<li><a id="orgb3ef10c"></a><a href="file:///home/sole/udem/aux/aux-if1016/travaux/Ariane Brucher_13929972/BrucherAriane-TanguayHeloise-Exercice1.pdf">BrucherAriane-TanguayHeloise-Exercice1.pdf</a><br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org76aa858" class="outline-4">
+<h4 id="org76aa858"><span class="section-number-4">3.2.6</span> <span class="done done">done</span> ariane paradis</h4>
+<div class="outline-text-4" id="text-3-2-6">
+</div>
+
+<div id="outline-container-org5542564" class="outline-5">
+<h5 id="org5542564"><span class="section-number-5">3.2.6.1</span> fichiers</h5>
+<div class="outline-text-5" id="text-3-2-6-1">
+</div>
+<ol class="org-ol">
+<li><a id="org3cd98dc"></a><a href="file:///home/sole/udem/aux/aux-if1016/travaux/Ariane Paradis_13929946/Exercice noté 1.pdf">Exercice noté 1.pdf</a><br /></li>
+<li><a id="org478eee6"></a><a href="file:///home/sole/udem/aux/aux-if1016/travaux/Ariane Paradis_13929946/Paiements mensuels sur prêt">Paiements mensuels sur prêt</a><br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orga7bd6c4" class="outline-4">
+<h4 id="orga7bd6c4"><span class="section-number-4">3.2.7</span> <span class="done done">done</span> arielle desnoyers &amp; charline delorme</h4>
+<div class="outline-text-4" id="text-3-2-7">
+</div>
+<div id="outline-container-orga2bbe48" class="outline-5">
+<h5 id="orga2bbe48"><span class="section-number-5">3.2.7.1</span> resume</h5>
+<div class="outline-text-5" id="text-3-2-7-1">
+<table id="orgbc18f8c" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">1a</th>
+<th scope="col" class="org-right">1b</th>
+<th scope="col" class="org-right">1c</th>
+<th scope="col" class="org-right">1d</th>
+<th scope="col" class="org-right">1e</th>
+<th scope="col" class="org-right">2</th>
+<th scope="col" class="org-right">3</th>
+<th scope="col" class="org-right">4</th>
+<th scope="col" class="org-right">5</th>
+<th scope="col" class="org-right">6</th>
+<th scope="col" class="org-right">total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org566624d" class="outline-5">
+<h5 id="org566624d"><span class="section-number-5">3.2.7.2</span> fichiers</h5>
+<div class="outline-text-5" id="text-3-2-7-2">
+</div>
+<ol class="org-ol">
+<li><a id="orge21c47e"></a><a href="file:///home/sole/udem/aux/aux-if1016/travaux/Arielle Desnoyers_13929964/Exercice 6">Exercice 6</a><br /></li>
+<li><a id="org905d6b5"></a><a href="file:///home/sole/udem/aux/aux-if1016/travaux/Arielle Desnoyers_13929964/PROG TP 1.pdf">PROG TP 1.pdf</a><br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org6b6cbda" class="outline-4">
+<h4 id="org6b6cbda"><span class="section-number-4">3.2.8</span> <span class="done done">done</span> camille bouchard&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-8">
+</div>
+<div id="outline-container-org4245f59" class="outline-5">
+<h5 id="org4245f59"><span class="section-number-5">3.2.8.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Camille Bouchard_13929923/Exercice 1.pdf">Exercice 1.pdf</a></h5>
+</div>
+<div id="outline-container-org3cb7987" class="outline-5">
+<h5 id="org3cb7987"><span class="section-number-5">3.2.8.2</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Camille Bouchard_13929923/untitled2.js">untitled2.js</a></h5>
+</div>
+</div>
+<div id="outline-container-org93b0396" class="outline-4">
+<h4 id="org93b0396"><span class="section-number-4">3.2.9</span> <span class="done done">done</span> camille deneault &amp; Marc-Antoine<sub>Akzam</sub>-Ouellette&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-9">
+</div>
+<div id="outline-container-org06f1269" class="outline-5">
+<h5 id="org06f1269"><span class="section-number-5">3.2.9.1</span> <a href="exo1-travaux/Marc-Antoine_Akzam-Ouellette/excercice noté 1.docx">excercice noté 1.docx</a></h5>
+</div>
+</div>
+<div id="outline-container-orgab3a2ff" class="outline-4">
+<h4 id="orgab3a2ff"><span class="section-number-4">3.2.10</span> <span class="done done">done</span> charline desromes &amp; arielles desnoyers&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-10">
+</div>
+<div id="outline-container-orgb3e791e" class="outline-5">
+<h5 id="orgb3e791e"><span class="section-number-5">3.2.10.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Charline Delorme_13929929/PROG TP 1.pdf">PROG TP 1.pdf</a></h5>
+</div>
+<div id="outline-container-orgff8e15f" class="outline-5">
+<h5 id="orgff8e15f"><span class="section-number-5">3.2.10.2</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Charline Delorme_13929929/tp 1.js">tp 1.js</a></h5>
+</div>
+</div>
+<div id="outline-container-orgf19e77a" class="outline-4">
+<h4 id="orgf19e77a"><span class="section-number-4">3.2.11</span> <span class="done done">done</span> charlotte roy &amp; maude turgeon-ares&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-11">
+</div>
+<div id="outline-container-org746f813" class="outline-5">
+<h5 id="org746f813"><span class="section-number-5">3.2.11.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Charlotte Roy_13929903/Exercice note 1">Exercice note 1</a></h5>
+</div>
+<div id="outline-container-org141ac22" class="outline-5">
+<h5 id="org141ac22"><span class="section-number-5">3.2.11.2</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Charlotte Roy_13929903/Exercice1q6.js">Exercice1q6.js</a></h5>
+</div>
+</div>
+<div id="outline-container-org43275b3" class="outline-4">
+<h4 id="org43275b3"><span class="section-number-4">3.2.12</span> <span class="done done">done</span> cleo st-martin &amp; marie-jeanne blouin&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-12">
+</div>
+<div id="outline-container-org511adff" class="outline-5">
+<h5 id="org511adff"><span class="section-number-5">3.2.12.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Cléo St-Martin_13929950/Blouin_St-Martin_Exercice1.js">Blouin<sub>St</sub>-Martin<sub>Exercice1.js</sub></a></h5>
+</div>
+<div id="outline-container-org8463516" class="outline-5">
+<h5 id="org8463516"><span class="section-number-5">3.2.12.2</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Cléo St-Martin_13929950/Blouin_St_Martin_Exercie-noté-1.pdf">Blouin<sub>St</sub><sub>Martin</sub><sub>Exercie</sub>-noté-1.pdf</a></h5>
+</div>
+</div>
+<div id="outline-container-orga49626c" class="outline-4">
+<h4 id="orga49626c"><span class="section-number-4">3.2.13</span> <span class="done done">done</span> david richard &amp; jonathan dion&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-13">
+</div>
+<div id="outline-container-org7945997" class="outline-5">
+<h5 id="org7945997"><span class="section-number-5">3.2.13.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/David Richard_13929908/exercice 1 prog.pdf">exercice 1 prog.pdf</a></h5>
+</div>
+<div id="outline-container-org95879f6" class="outline-5">
+<h5 id="org95879f6"><span class="section-number-5">3.2.13.2</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/David Richard_13929908/exercice 1.js">exercice 1.js</a></h5>
+</div>
+</div>
+<div id="outline-container-org6d580c1" class="outline-4">
+<h4 id="org6d580c1"><span class="section-number-4">3.2.14</span> <span class="done done">done</span> gabrielle wester &amp; alexandre montreuil&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-14">
+</div>
+<div id="outline-container-org1500067" class="outline-5">
+<h5 id="org1500067"><span class="section-number-5">3.2.14.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Gabrielle Wester_13929910/Exercice note 01.txt">Exercice note 01.txt</a></h5>
+</div>
+<div id="outline-container-org0f07ea5" class="outline-5">
+<h5 id="org0f07ea5"><span class="section-number-5">3.2.14.2</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Gabrielle Wester_13929910/IFT1016 Exercice noté 01 Alexandre Montreuil et Gabrielle Wester.pdf">IFT1016 Exercice noté 01 Alexandre Montreuil et Gabrielle Wester.pdf</a></h5>
+</div>
+</div>
+<div id="outline-container-org8d37b96" class="outline-4">
+<h4 id="org8d37b96"><span class="section-number-4">3.2.15</span> <span class="done done">done</span> genevieve martin &amp; Léa<sub>Blouin</sub> Gagnon&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-15">
+<p>
+mais common
+</p>
+</div>
+<div id="outline-container-org6f74a9c" class="outline-5">
+<h5 id="org6f74a9c"><span class="section-number-5">3.2.15.1</span> <a href="exo1-travaux/Léa_Blouin Gagnon/#6">#6</a></h5>
+</div>
+<div id="outline-container-orgdb19817" class="outline-5">
+<h5 id="orgdb19817"><span class="section-number-5">3.2.15.2</span> <a href="exo1-travaux/Léa_Blouin Gagnon/Archive.zip">Archive.zip</a></h5>
+</div>
+</div>
+<div id="outline-container-org5ab915d" class="outline-4">
+<h4 id="org5ab915d"><span class="section-number-4">3.2.16</span> <span class="done done">done</span> ghita bardaoui &amp; celia khaldi&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-16">
+</div>
+<div id="outline-container-orge551827" class="outline-5">
+<h5 id="orge551827"><span class="section-number-5">3.2.16.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Ghita Bardaoui_13929960/IFT1010 exercice noté- Ghita Bardaoui et Celia Khaldi.pdf">IFT1010 exercice noté- Ghita Bardaoui et Celia Khaldi.pdf</a></h5>
+</div>
+<div id="outline-container-orgaa42cc8" class="outline-5">
+<h5 id="orgaa42cc8"><span class="section-number-5">3.2.16.2</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Ghita Bardaoui_13929960/ex-note-num-6-Ghita Bardaoui et Celia Khaldi.js">ex-note-num-6-Ghita Bardaoui et Celia Khaldi.js</a></h5>
+</div>
+</div>
+<div id="outline-container-org6992bd9" class="outline-4">
+<h4 id="org6992bd9"><span class="section-number-4">3.2.17</span> <span class="done done">done</span> guillaume labonte-pelletier&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-17">
+</div>
+<div id="outline-container-org3e5c99b" class="outline-5">
+<h5 id="org3e5c99b"><span class="section-number-5">3.2.17.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Guillaume Labonté-Pelletier_13929959/ExerciceNoté01_Question06.js">ExerciceNoté01<sub>Question06.js</sub></a></h5>
+</div>
+<div id="outline-container-org7cd764e" class="outline-5">
+<h5 id="org7cd764e"><span class="section-number-5">3.2.17.2</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Guillaume Labonté-Pelletier_13929959/GuillaumeLabonté-Pelletier_ExerciceNoté01.pdf">GuillaumeLabonté-Pelletier<sub>ExerciceNoté01.pdf</sub></a></h5>
+</div>
+</div>
+<div id="outline-container-orgb7b2eed" class="outline-4">
+<h4 id="orgb7b2eed"><span class="section-number-4">3.2.18</span> <span class="done done">done</span> hamza zarglayoun &amp; sylvie tran&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-18">
+</div>
+<div id="outline-container-org2f4337d" class="outline-5">
+<h5 id="org2f4337d"><span class="section-number-5">3.2.18.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Hamza Zarglayoun_13929926/exercice noté #1 (numéros 1 à 5).pdf">exercice noté #1 (numéros 1 à 5).pdf</a></h5>
+</div>
+<div id="outline-container-org488c221" class="outline-5">
+<h5 id="org488c221"><span class="section-number-5">3.2.18.2</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Hamza Zarglayoun_13929926/numéro 6.js">numéro 6.js</a></h5>
+</div>
+</div>
+<div id="outline-container-orgfb414ae" class="outline-4">
+<h4 id="orgfb414ae"><span class="section-number-4">3.2.19</span> <span class="done done">done</span> jade ricard</h4>
+<div class="outline-text-4" id="text-3-2-19">
+</div>
+<div id="outline-container-org3a7acf4" class="outline-5">
+<h5 id="org3a7acf4"><span class="section-number-5">3.2.19.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Jade Ricard_13929957/Exercice noté 1 Jade Ricard .pdf">Exercice noté 1 Jade Ricard .pdf</a></h5>
+</div>
+<div id="outline-container-org2ff5c57" class="outline-5">
+<h5 id="org2ff5c57"><span class="section-number-5">3.2.19.2</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Jade Ricard_13929957/Question 6">Question 6</a></h5>
+</div>
+</div>
+<div id="outline-container-orgc57e0ad" class="outline-4">
+<h4 id="orgc57e0ad"><span class="section-number-4">3.2.20</span> <span class="done done">done</span> julie guertin&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-20">
+</div>
+<div id="outline-container-orgbf9a5ac" class="outline-5">
+<h5 id="orgbf9a5ac"><span class="section-number-5">3.2.20.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Julie Guertin_13929940/JGuertin_exercice1.pdf">JGuertin<sub>exercice1.pdf</sub></a></h5>
+</div>
+<div id="outline-container-org5109fc5" class="outline-5">
+<h5 id="org5109fc5"><span class="section-number-5">3.2.20.2</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Julie Guertin_13929940/julie-guertin-exercice1.js">julie-guertin-exercice1.js</a></h5>
+</div>
+</div>
+<div id="outline-container-orgc89139d" class="outline-4">
+<h4 id="orgc89139d"><span class="section-number-4">3.2.21</span> <span class="done done">done</span> justine larochelle-guy &amp; audrey-anne turcotte&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-21">
+</div>
+<div id="outline-container-org8451ddc" class="outline-5">
+<h5 id="org8451ddc"><span class="section-number-5">3.2.21.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Justine Larochelle-Guy_13929914/Exercice Noté 01 Justine L-G et Audrey-Anne Tpdf">Exercice Noté 01 Justine L-G et Audrey-Anne Tpdf</a></h5>
+</div>
+</div>
+<div id="outline-container-org1af8b96" class="outline-4">
+<h4 id="org1af8b96"><span class="section-number-4">3.2.22</span> <span class="done done">done</span> laurence boilard &amp; marie-noëlle lortie&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-22">
+<p>
+mais comon
+</p>
+</div>
+<div id="outline-container-orgf6b4c04" class="outline-5">
+<h5 id="orgf6b4c04"><span class="section-number-5">3.2.22.1</span> <a href="exo1-travaux/Marie-Noëlle_Lortie/ExNoté 01 en pdf.pdf">ExNoté 01 en pdf.pdf</a></h5>
+</div>
+<div id="outline-container-org6054332" class="outline-5">
+<h5 id="org6054332"><span class="section-number-5">3.2.22.2</span> <a href="exo1-travaux/Marie-Noëlle_Lortie/exnote01.js">exnote01.js</a></h5>
+</div>
+</div>
+<div id="outline-container-org67d8d46" class="outline-4">
+<h4 id="org67d8d46"><span class="section-number-4">3.2.23</span> <span class="done done">done</span> laurie charet &amp; mary-maxime leclair&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-23">
+</div>
+<div id="outline-container-org556f455" class="outline-5">
+<h5 id="org556f455"><span class="section-number-5">3.2.23.1</span> <a href="exo1-travaux/Mary-Maxime_Leclair/Exercice6.vf.js">Exercice6.vf.js</a></h5>
+</div>
+<div id="outline-container-orgd87ade7" class="outline-5">
+<h5 id="orgd87ade7"><span class="section-number-5">3.2.23.2</span> <a href="exo1-travaux/Mary-Maxime_Leclair/Travail prog 1.pdf">Travail prog 1.pdf</a></h5>
+</div>
+</div>
+<div id="outline-container-org5d7cad3" class="outline-4">
+<h4 id="org5d7cad3"><span class="section-number-4">3.2.24</span> <span class="done done">done</span> lea tremblay&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-24">
+</div>
+<div id="outline-container-orgf26f2b6" class="outline-5">
+<h5 id="orgf26f2b6"><span class="section-number-5">3.2.24.1</span> <a href="exo1-travaux/Léa_Tremblay/Exercice 1 noté.pdf">Exercice 1 noté.pdf</a></h5>
+</div>
+<div id="outline-container-orga4f4a89" class="outline-5">
+<h5 id="orga4f4a89"><span class="section-number-5">3.2.24.2</span> <a href="exo1-travaux/Léa_Tremblay/IMG_2818-converti.pdf">IMG<sub>2818</sub>-converti.pdf</a></h5>
+</div>
+</div>
+
+<div id="outline-container-org2a6f224" class="outline-4">
+<h4 id="org2a6f224"><span class="section-number-4">3.2.25</span> <span class="done done">done</span> Marguerite<sub>Nolin</sub>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span>&#xa0;<span class="studium">studium</span></span></h4>
+<div class="outline-text-4" id="text-3-2-25">
+</div>
+<div id="outline-container-org833c1ef" class="outline-5">
+<h5 id="org833c1ef"><span class="section-number-5">3.2.25.1</span> <a href="exo1-travaux/Marguerite_Nolin/Marguerite Nolin- Exercice noté 01- Prog.zip">Marguerite Nolin- Exercice noté 01- Prog.zip</a></h5>
+</div>
+</div>
+<div id="outline-container-org2febff7" class="outline-4">
+<h4 id="org2febff7"><span class="section-number-4">3.2.26</span> <span class="done done">done</span> megan giguere bliane beauvais&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-26">
+</div>
+<div id="outline-container-org9c4a8ce" class="outline-5">
+<h5 id="org9c4a8ce"><span class="section-number-5">3.2.26.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Eliane Beauvais_13929937/Exercice noté 01 - EB et MG.docx">Exercice noté 01 - EB et MG.docx</a></h5>
+</div>
+</div>
+<div id="outline-container-org96ff733" class="outline-4">
+<h4 id="org96ff733"><span class="section-number-4">3.2.27</span> <span class="done done">done</span> nassereddine bissan</h4>
+<div class="outline-text-4" id="text-3-2-27">
+</div>
+<div id="outline-container-orgd38aac2" class="outline-5">
+<h5 id="orgd38aac2"><span class="section-number-5">3.2.27.1</span> fichiers</h5>
+<div class="outline-text-5" id="text-3-2-27-1">
+</div>
+<ol class="org-ol">
+<li><a id="org4fe3f10"></a><a href="file:///home/sole/udem/aux/aux-if1016/travaux/Bissan Nassereddine_13929920/NassereddineBissan-Exercice01.pdf">NassereddineBissan-Exercice01.pdf</a><br /></li>
+<li><a id="org3d21762"></a><a href="file:///home/sole/udem/aux/aux-if1016/travaux/Bissan Nassereddine_13929920/Programme 6.pdf">Programme 6.pdf</a><br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org8d50e22" class="outline-4">
+<h4 id="org8d50e22"><span class="section-number-4">3.2.28</span> <span class="done done">done</span> never tourigny Élodie<sub>Petit</sub>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-28">
+</div>
+<div id="outline-container-orgee2b5f6" class="outline-5">
+<h5 id="orgee2b5f6"><span class="section-number-5">3.2.28.1</span> <a href="exo1-travaux/Élodie_Petit/Exercice noté 1 CodeBoot.pdf">Exercice noté 1 CodeBoot.pdf</a></h5>
+</div>
+</div>
+
+<div id="outline-container-org951389e" class="outline-4">
+<h4 id="org951389e"><span class="section-number-4">3.2.29</span> <span class="done done">done</span> noemie nolmand&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-29">
+</div>
+<div id="outline-container-org609e0ae" class="outline-5">
+<h5 id="org609e0ae"><span class="section-number-5">3.2.29.1</span> <a href="exo1-travaux/Noémie_Olmand/Exercice #1 Q (1).6">Exercice #1 Q (1).6</a></h5>
+</div>
+<div id="outline-container-org6bb5d99" class="outline-5">
+<h5 id="org6bb5d99"><span class="section-number-5">3.2.29.2</span> <a href="exo1-travaux/Noémie_Olmand/Exercices-noté 1.pdf">Exercices-noté 1.pdf</a></h5>
+</div>
+</div>
+<div id="outline-container-orgb2eeab3" class="outline-4">
+<h4 id="orgb2eeab3"><span class="section-number-4">3.2.30</span> <span class="done done">done</span> paulina jaramillo&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-30">
+</div>
+<div id="outline-container-org113b4f1" class="outline-5">
+<h5 id="org113b4f1"><span class="section-number-5">3.2.30.1</span> <a href="exo1-travaux/Paulina_Jaramillo Salazar/IMG_20190924_150953-converted.pdf">IMG<sub>20190924</sub><sub>150953</sub>-converted.pdf</a></h5>
+</div>
+<div id="outline-container-org40a5450" class="outline-5">
+<h5 id="org40a5450"><span class="section-number-5">3.2.30.2</span> <a href="exo1-travaux/Paulina_Jaramillo Salazar/paulina.jaramillo.Q#6.exercice1.pdf">paulina.jaramillo.Q#6.exercice1.pdf</a></h5>
+</div>
+</div>
+<div id="outline-container-org567dbd4" class="outline-4">
+<h4 id="org567dbd4"><span class="section-number-4">3.2.31</span> <span class="done done">done</span> <a href="exo1-travaux/Sophie_Detroio/">Sophie<sub>Detroio</sub>/</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-31">
+<p>
+<a href="exo1-travaux/Sophie_Detroio/sophiedetroioexo1.pdf">exo1-travaux/Sophie_Detroio/sophiedetroioexo1.pdf</a>
+</p>
+</div>
+<div id="outline-container-org0f83597" class="outline-5">
+<h5 id="org0f83597"><span class="section-number-5">3.2.31.1</span> <a href="exo1-travaux/Sophie_Detroio/Sophie.Detroio.IFT1016B.Exercice#1.zip">Sophie.Detroio.IFT1016B.Exercice#1.zip</a></h5>
+</div>
+</div>
+<div id="outline-container-org28f85dd" class="outline-4">
+<h4 id="org28f85dd"><span class="section-number-4">3.2.32</span> <span class="done done">done</span> xavier michaud&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-32">
+</div>
+<div id="outline-container-org729f07e" class="outline-5">
+<h5 id="org729f07e"><span class="section-number-5">3.2.32.1</span> <a href="exo1-travaux/Xavier_Michaud/Question 1 à 5.pdf">Question 1 à 5.pdf</a></h5>
+</div>
+<div id="outline-container-org49107c6" class="outline-5">
+<h5 id="org49107c6"><span class="section-number-5">3.2.32.2</span> <a href="exo1-travaux/Xavier_Michaud/Question 6.js">Question 6.js</a></h5>
+</div>
+</div>
+
+<div id="outline-container-org1921b0b" class="outline-4">
+<h4 id="org1921b0b"><span class="section-number-4">3.2.33</span> <span class="done done">done</span> yuri anne prevost &amp; Laura<sub>Trubiano</sub>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ok">ok</span></span></h4>
+<div class="outline-text-4" id="text-3-2-33">
+</div>
+<div id="outline-container-org91d5698" class="outline-5">
+<h5 id="org91d5698"><span class="section-number-5">3.2.33.1</span> <a href="exo1-travaux/Laura_Trubiano/Excercice_1.zip">Excercice<sub>1.zip</sub></a></h5>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org40266d8" class="outline-3">
+<h3 id="org40266d8"><span class="section-number-3">3.3</span> not perfect</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-org9f03e91" class="outline-4">
+<h4 id="org9f03e91"><span class="section-number-4">3.3.1</span> <span class="done done">done</span> nawal imad &amp; roua nour briedj&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></h4>
+<div class="outline-text-4" id="text-3-3-1">
+<p>
+3 : -0.5
+</p>
+</div>
+<div id="outline-container-orgf71dc85" class="outline-5">
+<h5 id="orgf71dc85"><span class="section-number-5">3.3.1.1</span> <a href="exo1-travaux/Roua_Nour Briedj/remise exercice 1 /">remise exercice 1 /</a></h5>
+<div class="outline-text-5" id="text-3-3-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="orga4db00a"></a><a href="exo1-travaux/Roua_Nour Briedj/remise exercice 1 /exercice-noté-1-programme.pdf">exercice-noté-1-programme.pdf</a><br /></li>
+<li><a id="org5833289"></a><a href="exo1-travaux/Roua_Nour Briedj/remise exercice 1 /exercice-noté-1.pdf">exercice-noté-1.pdf</a><br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org67467cb" class="outline-4">
+<h4 id="org67467cb"><span class="section-number-4">3.3.2</span> <span class="done done">done</span> laura pesenti &amp; maude-isabelle ouellet&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></h4>
+<div class="outline-text-4" id="text-3-3-2">
+<p>
+fail: 3 et 4 : -1
+</p>
+</div>
+<div id="outline-container-org30e48af" class="outline-5">
+<h5 id="org30e48af"><span class="section-number-5">3.3.2.1</span> <a href="exo1-travaux/Laura_Pesenti/Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/">Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></h5>
+<div class="outline-text-5" id="text-3-3-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgbd3fc39"></a><a href="exo1-travaux/Laura_Pesenti/Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/Exercie noté 1 - Laura Pesenti et Maude-Isabelle Ouellet.pdf">Exercie noté 1 - Laura Pesenti et Maude-Isabelle Ouellet.pdf</a><br /></li>
+<li><a id="org2175d0f"></a><a href="exo1-travaux/Laura_Pesenti/Exercice noté 1 - Laura Pesenti et Maude-Isabelle Ouellet/Question 6 - Exercice noté 1.js">Question 6 - Exercice noté 1.js</a><br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orge799f94" class="outline-4">
+<h4 id="orge799f94"><span class="section-number-4">3.3.3</span> <span class="done done">done</span> melanie tack Marianne<sub>Lemieux</sub>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></h4>
+<div class="outline-text-4" id="text-3-3-3">
+<p>
+-0.5 3
+</p>
+</div>
+<div id="outline-container-orgfbe7498" class="outline-5">
+<h5 id="orgfbe7498"><span class="section-number-5">3.3.3.1</span> <a href="exo1-travaux/Marianne_Lemieux/M. Lemieux_M. Tak (1).js">M. Lemieux<sub>M</sub>. Tak (1).js</a></h5>
+</div>
+<div id="outline-container-org4b649cc" class="outline-5">
+<h5 id="org4b649cc"><span class="section-number-5">3.3.3.2</span> <a href="exo1-travaux/Marianne_Lemieux/M.Lemieux_M.Tak_Exercice_noté_1.docx">M.Lemieux<sub>M.Tak</sub><sub>Exercice</sub><sub>noté</sub><sub>1.docx</sub></a></h5>
+</div>
+</div>
+<div id="outline-container-org66bfc15" class="outline-4">
+<h4 id="org66bfc15"><span class="section-number-4">3.3.4</span> <span class="done done">done</span> sandrine rochon &amp; sarah dery&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></h4>
+<div class="outline-text-4" id="text-3-3-4">
+<p>
+3:-0.5
+</p>
+</div>
+<div id="outline-container-org45cad03" class="outline-5">
+<h5 id="org45cad03"><span class="section-number-5">3.3.4.1</span> <a href="exo1-travaux/Sandrine_Rochon/Exercice noté 1 #1-5.pdf">Exercice noté 1 #1-5.pdf</a></h5>
+</div>
+<div id="outline-container-orgebab93e" class="outline-5">
+<h5 id="orgebab93e"><span class="section-number-5">3.3.4.2</span> <a href="exo1-travaux/Sandrine_Rochon/Exercice noté 1 #6.js">Exercice noté 1 #6.js</a></h5>
+</div>
+</div>
+<div id="outline-container-orgfc828dd" class="outline-4">
+<h4 id="orgfc828dd"><span class="section-number-4">3.3.5</span> <span class="done done">done</span> valerie panaite&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></h4>
+<div class="outline-text-4" id="text-3-3-5">
+<p>
+-0.5 3
+</p>
+</div>
+<div id="outline-container-orgd8b4d6e" class="outline-5">
+<h5 id="orgd8b4d6e"><span class="section-number-5">3.3.5.1</span> <a href="exo1-travaux/Valérie_Panaite/exercice noté 1-numéro 6.txt">exercice noté 1-numéro 6.txt</a></h5>
+</div>
+<div id="outline-container-org50bac1f" class="outline-5">
+<h5 id="org50bac1f"><span class="section-number-5">3.3.5.2</span> <a href="exo1-travaux/Valérie_Panaite/exercice noté-#1-5.pdf">exercice noté-#1-5.pdf</a></h5>
+</div>
+</div>
+
+<div id="outline-container-orgf1a58c9" class="outline-4">
+<h4 id="orgf1a58c9"><span class="section-number-4">3.3.6</span> <span class="done done">done</span> <a href="exo1-travaux/Kim_Goyette/">Kim<sub>Goyette</sub>/</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></h4>
+<div class="outline-text-4" id="text-3-3-6">
+<p>
+fail 3(un tout petit peu) et 4 : -0.5
+</p>
+</div>
+<div id="outline-container-org416ccb1" class="outline-5">
+<h5 id="org416ccb1"><span class="section-number-5">3.3.6.1</span> <a href="exo1-travaux/Kim_Goyette/exercice noté1(1)">exercice noté1(1)</a></h5>
+</div>
+<div id="outline-container-org8777481" class="outline-5">
+<h5 id="org8777481"><span class="section-number-5">3.3.6.2</span> <a href="exo1-travaux/Kim_Goyette/exercices1.pdf">exercices1.pdf</a></h5>
+</div>
+</div>
+<div id="outline-container-org237b80b" class="outline-4">
+<h4 id="org237b80b"><span class="section-number-4">3.3.7</span> <span class="done done">done</span> janice bessard &amp; marie-helene st-jean&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></h4>
+<div class="outline-text-4" id="text-3-3-7">
+<p>
+-0.5 pour le 3
+</p>
+</div>
+<div id="outline-container-org6e50540" class="outline-5">
+<h5 id="org6e50540"><span class="section-number-5">3.3.7.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Janice Bessard_13929956/ExerciceNoté01.js">ExerciceNoté01.js</a></h5>
+</div>
+<div id="outline-container-org334c841" class="outline-5">
+<h5 id="org334c841"><span class="section-number-5">3.3.7.2</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Janice Bessard_13929956/exerciceNoté1.pdf">exerciceNoté1.pdf</a></h5>
+</div>
+</div>
+<div id="outline-container-org199cf67" class="outline-4">
+<h4 id="org199cf67"><span class="section-number-4">3.3.8</span> <span class="done done">done</span> andreanne bernatchez&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></h4>
+<div class="outline-text-4" id="text-3-3-8">
+</div>
+<div id="outline-container-orgebbddf9" class="outline-5">
+<h5 id="orgebbddf9"><span class="section-number-5">3.3.8.1</span> resume</h5>
+<div class="outline-text-5" id="text-3-3-8-1">
+<table id="org9cbd9f2" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">1a</th>
+<th scope="col" class="org-right">1b</th>
+<th scope="col" class="org-right">1c</th>
+<th scope="col" class="org-right">1d</th>
+<th scope="col" class="org-right">1e</th>
+<th scope="col" class="org-right">2</th>
+<th scope="col" class="org-right">3</th>
+<th scope="col" class="org-right">4</th>
+<th scope="col" class="org-right">5</th>
+<th scope="col" class="org-right">6</th>
+<th scope="col" class="org-right">total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">-0.5</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">-0.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org8940706" class="outline-5">
+<h5 id="org8940706"><span class="section-number-5">3.3.8.2</span> fichiers</h5>
+<div class="outline-text-5" id="text-3-3-8-2">
+</div>
+<ol class="org-ol">
+<li><a id="org076c0c4"></a><a href="file:///home/sole/udem/aux/aux-if1016/travaux/Andréanne Bernatchez_13929906/andreannedeflated/exo1.pdf">Exercice 01</a><br /></li>
+<li><a id="org43759f5"></a><a href="file:///home/sole/udem/aux/aux-if1016/travaux/Andréanne Bernatchez_13929906/Exercice 1 (Codeboot).js">Exercice 1 (Codeboot).js</a><br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orge7ca508" class="outline-4">
+<h4 id="orge7ca508"><span class="section-number-4">3.3.9</span> <span class="done done">done</span> camille sylvestre&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></h4>
+<div class="outline-text-4" id="text-3-3-9">
+</div>
+
+<div id="outline-container-org06fbf80" class="outline-5">
+<h5 id="org06fbf80"><span class="section-number-5">3.3.9.1</span> resume</h5>
+<div class="outline-text-5" id="text-3-3-9-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">1a</th>
+<th scope="col" class="org-right">1b</th>
+<th scope="col" class="org-right">1c</th>
+<th scope="col" class="org-right">1d</th>
+<th scope="col" class="org-right">1e</th>
+<th scope="col" class="org-right">2</th>
+<th scope="col" class="org-right">3</th>
+<th scope="col" class="org-right">4</th>
+<th scope="col" class="org-right">5</th>
+<th scope="col" class="org-right">6</th>
+<th scope="col" class="org-right">total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">-0.5</td>
+<td class="org-right">0</td>
+<td class="org-right">-0.5</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org75766b2" class="outline-5">
+<h5 id="org75766b2"><span class="section-number-5">3.3.9.2</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Camille Sylvestre_13929927/dev 1 num 6 Camille Sylvestre (2).js">dev 1 num 6 Camille Sylvestre (2).js</a></h5>
+</div>
+<div id="outline-container-org5a04f34" class="outline-5">
+<h5 id="org5a04f34"><span class="section-number-5">3.3.9.3</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Camille Sylvestre_13929927/devoir1 num#-5 Camille Sylvestre.pdf">devoir1 num#-5 Camille Sylvestre.pdf</a></h5>
+</div>
+</div>
+<div id="outline-container-org3443c49" class="outline-4">
+<h4 id="org3443c49"><span class="section-number-4">3.3.10</span> <span class="done done">done</span> amélie boucher &amp; vanessa Potvin Bujold&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></h4>
+<div class="outline-text-4" id="text-3-3-10">
+</div>
+<div id="outline-container-org56b8a6f" class="outline-5">
+<h5 id="org56b8a6f"><span class="section-number-5">3.3.10.1</span> resume</h5>
+<div class="outline-text-5" id="text-3-3-10-1">
+<table id="org732217c" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">1a</th>
+<th scope="col" class="org-right">1b</th>
+<th scope="col" class="org-right">1c</th>
+<th scope="col" class="org-right">1d</th>
+<th scope="col" class="org-right">1e</th>
+<th scope="col" class="org-right">2</th>
+<th scope="col" class="org-right">3</th>
+<th scope="col" class="org-right">4</th>
+<th scope="col" class="org-right">5</th>
+<th scope="col" class="org-right">6</th>
+<th scope="col" class="org-right">total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">-0.5</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">-.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgc19cd40" class="outline-5">
+<h5 id="orgc19cd40"><span class="section-number-5">3.3.10.2</span> fichiers</h5>
+<div class="outline-text-5" id="text-3-3-10-2">
+</div>
+<ol class="org-ol">
+<li><a id="org3111000"></a><a href="file:///home/sole/udem/aux/aux-if1016/travaux/Amélie Boucher_13929924/TP1.pdf">TP1.pdf</a><br /></li>
+<li><a id="org51dab58"></a>code <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Amélie Boucher_13929924/Exercicenoté1.pdf">Exercicenoté1.pdf</a><br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org4911804" class="outline-4">
+<h4 id="org4911804"><span class="section-number-4">3.3.11</span> <span class="done done">done</span> coralie bibeau &amp; ariane garneau&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notperf">notperf</span></span></h4>
+<div class="outline-text-4" id="text-3-3-11">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">3</td>
+</tr>
+
+<tr>
+<td class="org-right">-0.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-org06d494e" class="outline-5">
+<h5 id="org06d494e"><span class="section-number-5">3.3.11.1</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Coralie Bibeau_13929918/Exercice 1 Coralie et Ariane.js">Exercice 1 Coralie et Ariane.js</a></h5>
+</div>
+<div id="outline-container-org070ab6a" class="outline-5">
+<h5 id="org070ab6a"><span class="section-number-5">3.3.11.2</span> <a href="file:///home/sole/udem/aux/aux-if1016/travaux/Coralie Bibeau_13929918/Exercice 1 Coralie et Ariane.pdf">Exercice 1 Coralie et Ariane.pdf</a></h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Frederic Boileau</p>
+<p class="date">Created: 2019-11-11 Mon 20:33</p>
+</div>
+</body>
+</html>
