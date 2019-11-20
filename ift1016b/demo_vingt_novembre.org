@@ -1,0 +1,9 @@
+#+title: demo tortue et node
+#+property: dir .
+
+* documents
+-  [[./_20191120_05263614-A-environnement-traditionnelIFT1016.pdf][_20191120_05263614-A-environnement-traditionnelIFT1016.pdf]]
+-  [[./_20191120_05265610-A-tortue.pdf][_20191120_05265610-A-tortue.pdf]]
+-  [[./_20191120_053755TP et Labo de la semaine 8.pdf][_20191120_053755TP et Labo de la semaine 8.pdf]]
+
+* tortue
