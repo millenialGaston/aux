@@ -1,9 +1,48 @@
 #+title: demo tortue et node
 #+property: dir .
 
-* documents
+* mon opinion très controversée sur les démos
+
+- /l'exercice/ est survalorisé
+- soit on est en train d'essayer de comprendre, soit de simuler une
+  évaluation, pas les deux en même temps.
+
+
+* sophistication
+
+* etape importantes
+- /oublier/ la syntaxe
+- comprendre le modele de representation du monde de l'ordinateur
+- comprendre comment les effets sont propages, et peuvent etre assembles
+
+
+* concepts importants
+- state !!!, explicit model of the world
+- dynamically knowing where you are vs knowing absolutely where you are
+- l'interface de /tortue/ n'est pas importante! ne pas apprendre par coeur
+- utiliser les edge cases pour comprendre, polygone, si on utilise un
+  autre nombre que 360 par exemple.
+- comprendre un programme en le cassant
+- meilleur noms pour cotes dans le programme?
+
+- effets
+  - la tortue bouge
+  - un dessin apparait sur la feuille
+  - etat local vs etat global
+  - si on enleve la tortue sa trace reste
+
+
+
+* documents                                                             :ATTACH:
+:PROPERTIES:
+:ID:       ad22c25b-0303-4dae-a34b-de3fb4f03b65
+:END:
 -  [[./_20191120_05263614-A-environnement-traditionnelIFT1016.pdf][_20191120_05263614-A-environnement-traditionnelIFT1016.pdf]]
 -  [[./_20191120_05265610-A-tortue.pdf][_20191120_05265610-A-tortue.pdf]]
--  [[./_20191120_053755TP et Labo de la semaine 8.pdf][_20191120_053755TP et Labo de la semaine 8.pdf]]
 
-* tortue
+-  [[./_20191120_053755TP et Labo de la semaine 8.pdf][_20191120_053755TP et Labo de la semaine 8.pdf]]
+-  [[./../../org/.attach/_20191120_054110demo08_figures.pdf][_20191120_054110demo08_figures.pdf]]
+
+-  [[./../../org/.attach/_20191120_054415exoNote_tortue.pdf][_20191120_054415exoNote_tortue.pdf]]
+
+* question: comment on ferait tortue
