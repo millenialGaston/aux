@@ -1,0 +1,3 @@
+[submodule "monwiki"]
+	path = monwiki
+	url = ./monwiki/

@@ -8,14 +8,6 @@
   évaluation, pas les deux en même temps.
 
 
-* sophistication
-
-* etape importantes
-- /oublier/ la syntaxe
-- comprendre le modele de representation du monde de l'ordinateur
-- comprendre comment les effets sont propages, et peuvent etre assembles
-
-
 * concepts importants
 - state !!!, explicit model of the world
 - dynamically knowing where you are vs knowing absolutely where you are
@@ -23,14 +15,27 @@
 - utiliser les edge cases pour comprendre, polygone, si on utilise un
   autre nombre que 360 par exemple.
 - comprendre un programme en le cassant
-- meilleur noms pour cotes dans le programme?
+- meilleur noms pour la variable cotes dans le programme?
 
 - effets
   - la tortue bouge
   - un dessin apparait sur la feuille
   - etat local vs etat global
-  - si on enleve la tortue sa trace reste
+  - si on enleve la tortue sa trace reste ??
 
+- etat implicite vs explicite
+
+
+
+* etape importantes
+- /oublier/ la syntaxe
+- comprendre le modele de representation du monde de l'ordinateur
+- comprendre comment les effets sont propages, et peuvent etre assembles
+
+
+* sophistication
+- changer le monde par delegation des effets sur letat
+- path representation of state
 
 
 * documents                                                             :ATTACH:
@@ -45,4 +50,6 @@
 
 -  [[./../../org/.attach/_20191120_054415exoNote_tortue.pdf][_20191120_054415exoNote_tortue.pdf]]
 
+
 * question: comment on ferait tortue
+fonctionnel?
