@@ -1,0 +1,90 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /home/gaston/aux/ift1016b/revisionfinal.org
+
+
+* -Boucles simples (a) (6 points)
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2019-12-06 Fri 21:20
+  :ARCHIVE_FILE: ~/aux/ift1016b/revisionfinal.org
+  :ARCHIVE_OLPATH: final 2014
+  :ARCHIVE_CATEGORY: revisionfinal
+  :END:
+Écrire une fonction loop qui tire aléatoirement des nombres entiers entre O et
+10 0 (inclus).
+Les tirages s'arrêtent lorsque la valeur 0 est tirée;
+
+#+begin_src js :results verbatim
+let gen = function(range){return Math.floor((range*Math.random()));};
+let x = gen(10);
+var tableau = [x];
+while (x != 0){
+    x = gen(10);
+    tableau.push(x);
+};
+console.log(tableau);
+let stats function(tableau) {
+   // le nombre de tirages non nuls réalisés,
+    let nombreTotal = tableau.length - 1;
+
+
+}
+#+end_src
+
+#+RESULTS:
+: [
+:   4, 3, 7, 7, 6,
+:   2, 8, 2, 3, 9,
+:   1, 0
+: ]
+: 2
+
+
+et la
+fonction affiche selon lexemple donné ci-après:
+• le nombre de tirages non nuls réalisés,
+
+• le nombre d'entiers pairs tirés (la valeur 0 n'est pas comptée) et
+le pourcentage que cela représente par rapport au nombre total de tirages non
+nuls,
+
+
+• la moyenne des entiers impairs. Pour les tirages successifs: 1 5 3 69 56 0,
+l'affichage suivant doit être produit: 5 tirages >O, nbpairs: 1 (20.00%) moy
+pairs: 56.00 moy impairs: 26.80
+
+
+#+begin_src js
+
+let add = function(arr){
+    let total = 0;
+    for (i = 0; i<arr.length; i++){
+        total += arr[i];
+    }
+    return total;
+
+};
+console.log(add([1,2,3]))
+console.log(arrSum([1,2,3]));
+#+end_src
+
+#+RESULTS:
+: 6
+: 6
+: undefined
+
+#+begin_src js :results verbatim
+
+let arrSum = arr => arr.reduce((a,b) => a + b, 0);
+let mapreduce = tab => arrSum(tab.map(Math.sqrt))
+console.log(mapreduce([9, 25, 49]));
+
+let fun = function()
+
+
+#+end_src
+
+#+RESULTS:
+: 15
+: undefined

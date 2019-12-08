@@ -1,0 +1,22 @@
+#+title: demo 9
+
+
+* practical concerns
+** node js
+** shell
+** text editor
+
+* comment etudier pour l'exam
+** notions
+- fonctions
+- tableaux
+- structures
+- portee de variable = scope
+- fichiers
+- pierre colmez
+
+** tricks/particularite
+- nested loops
+- if else imbrique
+- modulo
+- tableaux

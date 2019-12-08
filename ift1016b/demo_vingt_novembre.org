@@ -1,12 +1,6 @@
 #+title: demo tortue et node
 #+property: dir .
 
-* mon opinion très controversée sur les démos
-
-- /l'exercice/ est survalorisé
-- soit on est en train d'essayer de comprendre, soit de simuler une
-  évaluation, pas les deux en même temps.
-
 
 * sophistication
 

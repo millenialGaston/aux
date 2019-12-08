@@ -1,0 +1,130 @@
+#+title: revision final
+
+* final 2014
+** echauffement (14 points)
+#+begin_src js
+let a=1,b=3;
+console.log((a+b)+"+"+b+a ,"=",2*(a+b))
+#+end_src
+
+#+RESULTS:
+: 4+31 = 8
+: undefined
+
+#+begin_src js
+let a=1,b=3;
+console.log(a/b);
+#+end_src
+
+#+RESULTS:
+
+
+#+begin_src js
+let a=1,b=3;
+console.log(a-b+1-b*a);
+#+end_src
+
+#+RESULTS:
+: -4
+: undefined
+
+#+begin_src js
+let a=1,b=3;
+console.log((Math.random() === 1)? true:false);
+#+end_src
+
+#+RESULTS:
+: false
+: undefined
+
+#+begin_src js :results verbatim
+let a=1,b=3;
+console.log([a,"b",b]);
+#+end_src
+
+#+RESULTS:
+: [ 1, 'b', 3 ]
+: undefined
+** que produit ce code
+#+begin_src js :results verbatim
+var t = [1,2,3];
+var r = [5,6,7];
+let quiz = function(r,t) {
+    r = t;
+    t[1] = r[2];
+    console.log(t);
+    return r;
+};
+console.log(quiz(f,q));
+#+end_src
+
+#+RESULTS:
+#+begin_src js :results verbatim
+var t = [1,2,3];
+var r = ["a","b","c"];
+let quiz = function(r,t) {
+    r = t;
+    t[1] = r[2];
+    return r;
+};
+
+var s = quiz(t,r);
+
+console.log(t);
+console.log(r);
+s[1] = 5;
+console.log("t=",t,"r=",r,"s=",s);
+#+end_src
+
+#+RESULTS:
+: [ 1, 2, 3 ]
+: [ 'a', 'c', 'c' ]
+: t= [ 1, 2, 3 ] r= [ 'a', 5, 'c' ] s= [ 'a', 5, 'c' ]
+: undefined
+
+** -Boucles simples (a) (6 points)
+Écrire une fonction loop qui tire aléatoirement des nombres entiers entre O et
+10 0 (inclus).
+Les tirages s'arrêtent lorsque la valeur 0 est tirée;
+
+#+begin_src js :results verbatim
+let gen = function(range){return Math.floor((range*Math.random()));};
+let x = gen(10);
+var tableau = [x];
+while (x != 0){
+    x = gen(10);
+    tableau.push(x);
+};
+console.log(tableau);
+let stats function(tableau) {
+   // le nombre de tirages non nuls réalisés,
+
+
+}
+#+end_src
+
+#+RESULTS:
+: [
+:   4, 3, 7, 7, 6,
+:   2, 8, 2, 3, 9,
+:   1, 0
+: ]
+: 2
+
+
+et la
+fonction affiche selon lexemple donné ci-après:
+• le nombre de tirages non nuls réalisés,
+
+• le nombre d'entiers pairs tirés (la valeur 0 n'est pas comptée) et
+le pourcentage que cela représente par rapport au nombre total de tirages non
+nuls,
+
+
+• la moyenne des entiers impairs. Pour les tirages successifs: 1 5 3 69 56 0,
+l'affichage suivant doit être produit: 5 tirages >O, nbpairs: 1 (20.00%) moy
+pairs: 56.00 moy impairs: 26.80
+
+#+begin_src js
+
+#+end_src
