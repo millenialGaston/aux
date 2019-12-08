@@ -1,0 +1,160 @@
+#+TITLE:solutionairemeta
+
+* tortue generale
+** api de base
+- grille avec lignes au 10 pixels.
+- mouvements, fonctions avec nombre de pixels comme parametre:
+  - fd : avancer
+  - lt : angle positif
+  - bk : reculer
+  - rt : angle negatif
+
+- fonctions d'état
+  - pu, pd
+** examples
+*** polygones
+#+name: tortue-carre
+#+BEGIN_SRC js
+var carre = function (largeur) {
+    for (var i=1; i<=4; i++) {
+        fd(largeur);
+        rt(90);
+    }
+};
+carre(50);
+#+END_SRC
+
+
+#+BEGIN_QUOTE
+remarquer la symmetrie utilisee dans l'éxo suivant
+#+END_QUOTE
+
+#+name: rectangle
+#+BEGIN_SRC js
+var rectangle = function (largeur, hauteur) {
+    for (var i=1; i<=2; i++) {
+        fd(hauteur);
+        rt(90);
+        fd(largeur);
+        rt(90);
+    }
+};
+var carre = function (largeur) {
+    rectangle(largeur, largeur);
+};
+rectangle(80, 20); // dessiner un rectangle
+carre(50);
+#+END_SRC
+
+- polygones vs rectangle ?
+
+#+name: polygones
+#+BEGIN_SRC js
+var polygoneReg = function (cote, nbCotes) {
+    for (var i=1; i<=nbCotes; i++) {
+        fd(cote);
+        rt(360/nbCotes);
+    }
+};
+var carre = function (largeur) {
+    polygoneReg(largeur, 4);
+};
+polygoneReg(50, 6); // dessiner un hexagone
+carre(30); // dessiner un carré
+polygoneReg(1, 200);
+#+END_SRC
+
+*** centre
+#+name: carre-centre
+#+BEGIN_SRC js
+var polygoneReg = function (cote, nbCotes) {
+    for (var i=1; i<=nbCotes; i++) {
+        fd(cote);
+        rt(360/nbCotes);
+    }
+};
+
+var polygoneRegC = function (cote, nbCotes) {
+    var r = cote / (2*Math.tan(Math.PI/nbCotes));
+    pu(); lt(90); fd(r); rt(90); bk(cote/2); pd();
+    polygoneReg(cote, nbCotes);
+    pu(); lt(90); bk(r); rt(90); fd(cote/2); pd();
+};
+
+var carreC = function (largeur) {
+    polygoneRegC(largeur, 4);
+};
+
+polygoneRegC(50, 6);
+carreC(30);
+polygoneRegC(1, 200);
+// dessiner un hexagone
+// dessiner un carré
+// dessiner un cercle
+#+END_SRC
+
+- notes :: state has to be enforced, inefficent. micro local
+  state here is pu? and angle
+
+#+BEGIN_SRC js
+var r = cote / (2*Math.tan(Math.PI/nbCotes));
+pu(); lt(90); fd(r); rt(90); bk(cote/2); pd();
+polygoneReg(cote, nbCotes);
+pu(); lt(90); bk(r); rt(90); fd(cote/2); pd();
+#+END_SRC
+
+donc on peut voir en runnant le code que r est la distance orthogonale
+au segment de droite.
+
+*** etoile
+- note :: exemple de code ou ne pas connaitre la precesceance des
+  operateur peut creer des bugs
+#+BEGIN_SRC js
+var polygoneRegPointu = function (cote, nbPointes) {
+    for (var i=1; i<=nbPointes; i++) {
+        fd(cote);
+        rt(180 - 180/nbPointes);
+    }
+};
+pu(); bk(80); pd();
+polygoneRegPointu(160, 5);
+#+END_SRC
+
+*** spirales
+**** carre
+#+name: spirale-carre-1
+#+BEGIN_SRC js
+for (var i=1; i<=10; i++) {
+    for (var j=1; j<=2; j++) {
+        fd(i*10); rt(90);
+    }
+}
+#+END_SRC
+
+- note :: jespere jamais voir ca
+
+#+name: spirale-carre-2
+#+BEGIN_SRC js
+for (var i=1; i<=20; i++) {
+    fd(((i+1)>>1)*10); rt(90);
+}
+#+END_SRC
+**** ronde
+- note :: d'abord un cercle est mathématiquement
+  un polygone /limite/, c'est à dire que l'on peut approximer
+  un cercle à n'importe qu'elle précision prédéterminée, il suffit
+  de dessiner un polygone régulier avec /assez/ de côtés.
+  (C'est la vrai définition d'une limite à l'infini en maths.)
+
+- note :: ici la boucle fait plus de pas qui sont plus petits
+
+#+BEGIN_SRC js
+for (var i=1; i<=300; i++) {
+    fd(i*0.05); rt(10);
+}
+#+END_SRC
+
+=fd(cote);rt(360/nbCotes)=
+donc le cote devient de plus en plus en plus grand
+
+* exo 8
